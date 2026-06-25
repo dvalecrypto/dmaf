@@ -6,21 +6,25 @@ status: Draft
 version: 0.1.0
 owner: DMAF Practice Lead
 release: Release-1.0
+
 practice_domain:
-* Governance
-* Executive Advisory
-* Modernization Architecture
-  lifecycle_stage:
-* Opportunity Qualification & Modernization Strategy
-* Strategy & Business Value
-* Discovery & Assessment
-* Modernization Architecture
-  guiding_principles:
-* Business Value Before Technology
-* Databricks by Design
-* Modernization Is an Operating Model
-* Everything Is Traceable
-  last_updated: YYYY-MM-DD
+  - Governance
+  - Executive Advisory
+  - Modernization Architecture
+
+lifecycle_stage:
+  - Opportunity Qualification & Modernization Strategy
+  - Strategy & Business Value
+  - Discovery & Assessment
+  - Modernization Architecture
+
+guiding_principles:
+  - Business Value Before Technology
+  - Databricks by Design
+  - Modernization Is an Operating Model
+  - Everything Is Traceable
+
+last_updated: YYYY-MM-DD
 
 ---
 
