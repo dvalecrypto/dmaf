@@ -2353,60 +2353,623 @@ Strong governance will allow the Workbench to reason over DMAF assets, recommend
 
 ---
 
-# 16. Document Structure
+# 16. Product Roadmap Alignment
 
-The full Foundation Architecture is organized as follows:
+DMAF is managed as a productized practice capability.
 
-1. Purpose of This Document
-2. DMAF Definition
-3. Strategic Positioning
-4. Core Belief
-5. Intended Audiences
-6. Release 1.0 Foundation Scope
-7. Foundation Architecture Principles
-8. DMAF Guiding Principles
-9. Practice Domains
-10. Cross-Cutting Capabilities
-11. DMAF Lifecycle
-12. DMAF Meta Model
-13. DMAF Knowledge Graph
-14. DMAF Capability Model
-15. DMAF Governance Model
-16. Product Roadmap Alignment
-17. Repository and Asset Governance
-18. Definition of Release 1.0 Baseline
-19. Open Decisions and Future Enhancements
-20. Approval and Baseline Status
+This means the framework should evolve through planned releases, controlled backlog items, reusable assets, governance checkpoints, and continuous improvement.
+
+DMAF is not a one-time document set. It is a long-lived advisory product that will expand across methodology, consulting assets, reference architectures, industry packs, automation, AI agents, and the Modernization Intelligence Workbench.
 
 ---
 
-# 17. Current Status
+## 16.1 DMAF Product Architecture
 
-This document is currently in **Draft v0.5.0** status.
+DMAF is one product within a broader Databricks Modernization Advisory Suite.
 
-This update adds:
+The broader suite may eventually include:
 
-* DMAF Capability Model;
-* capability hierarchy;
-* capability definition standard;
-* capability maturity model;
-* capability ownership model;
-* capability lifecycle;
+* Databricks Modernization Advisory Framework;
+* Modernization Intelligence Workbench;
+* Databricks Reference Architecture Library;
+* Migration Factory Toolkit;
+* Coexistence & Validation Toolkit;
+* Executive Advisory Toolkit;
+* Proposal Accelerator;
+* Industry Advisory Packs;
+* AI Advisory Agents;
+* Practice Intelligence Dashboard.
+
+DMAF provides the methodology and governance foundation for these assets.
+
+The Workbench and future software capabilities should not replace DMAF. They should operationalize DMAF.
+
+---
+
+## 16.2 Release Strategy
+
+DMAF should evolve through structured releases.
+
+The initial release roadmap is:
+
+| Release     | Focus                 | Primary Outcome                                                                              |
+| ----------- | --------------------- | -------------------------------------------------------------------------------------------- |
+| Release 1.0 | Foundation            | Charter, principles, domains, lifecycle, governance, meta model, knowledge graph             |
+| Release 1.5 | Practice Architecture | Capability catalogue, operating model, maturity model, ownership, KPIs                       |
+| Release 2.0 | Consulting Assets     | Playbook, discovery kits, architecture assets, migration factory toolkit, validation toolkit |
+| Release 3.0 | Industry Packs        | Banking-first industry pack, then additional industry extensions                             |
+| Release 4.0 | Workbench Blueprint   | Modernization Intelligence Workbench architecture and prototype                              |
+| Release 5.0 | AI Advisory Services  | AI-assisted advisory agents, prompts, automation, recommendation support                     |
+| Release 6.0 | Practice Intelligence | Dashboards, reuse analytics, proposal intelligence, delivery insights                        |
+
+This roadmap should be reviewed and refined as DMAF matures.
+
+---
+
+## 16.3 Sprint-Based Delivery Model
+
+DMAF should be built through controlled sprints.
+
+Each sprint should produce a tangible, reusable output.
+
+A recommended sprint model is:
+
+| Sprint    | Focus                            | Primary Output                                          |
+| --------- | -------------------------------- | ------------------------------------------------------- |
+| Sprint 0  | Repository Foundation            | GitHub repository initialized                           |
+| Sprint 1  | Foundation Architecture          | DMAF Foundation Architecture v1.0                       |
+| Sprint 2  | Framework Core                   | Charter, principles, taxonomy, lifecycle refinement     |
+| Sprint 3  | Capability Model                 | Practice capability catalogue and maturity model        |
+| Sprint 4  | Asset Architecture               | Asset catalogue, metadata standards, naming conventions |
+| Sprint 5  | Migration Factory Toolkit        | Scoring, wave planning, migration factory model         |
+| Sprint 6  | Coexistence & Validation Toolkit | Parallel run, reconciliation, cutover readiness         |
+| Sprint 7  | Architecture Library             | Databricks reference architecture patterns              |
+| Sprint 8  | Executive Advisory Toolkit       | Executive narratives, proposal assets, decision support |
+| Sprint 9  | Banking Industry Pack            | Banking modernization advisory pack                     |
+| Sprint 10 | Workbench Blueprint              | Workbench architecture and functional specification     |
+| Sprint 11 | Release Packaging                | Release notes, baseline register, final QA              |
+
+Sprint plans may change, but the principle should remain: each sprint produces permanent intellectual property.
+
+---
+
+## 16.4 Backlog Management
+
+DMAF should maintain a product backlog.
+
+Backlog items may include:
+
+* new framework sections;
+* new consulting assets;
+* architecture diagrams;
+* playbook chapters;
+* reference architectures;
+* industry packs;
+* scripts;
+* calculators;
+* workbooks;
+* prompts;
+* Workbench features;
+* research items;
+* governance improvements.
+
+Each backlog item should identify:
+
+* title;
+* description;
+* release target;
+* sprint target;
+* practice domain;
+* lifecycle stage;
+* priority;
+* owner;
+* dependencies;
+* status;
+* acceptance criteria;
+* automation potential.
+
+The backlog should help DMAF remain focused and avoid uncontrolled content growth.
+
+---
+
+## 16.5 Roadmap Governance
+
+Roadmap changes should be intentional.
+
+A roadmap item should be added only if it:
+
+* improves a defined DMAF capability;
+* supports a practice domain;
+* aligns with the guiding principles;
+* contributes to a future release;
+* has clear reuse potential;
+* improves advisory quality, delivery consistency, or automation potential.
+
+The roadmap should not be treated as a wish list. It should be treated as a governed product plan.
+
+---
+
+# 17. Repository and Asset Governance
+
+The DMAF GitHub repository is the source of truth for the framework.
+
+The repository should be treated as a product repository, not a document dump.
+
+Repository structure, naming conventions, metadata, versioning, and review discipline are essential to the long-term value of DMAF.
+
+---
+
+## 17.1 Repository Structure
+
+The repository is organized into major areas:
+
+```text
+00-Governance/
+01-Framework/
+02-Playbook/
+03-Assets/
+04-Reference-Architectures/
+05-Workbench/
+06-Research/
+07-Releases/
+99-Archive/
+```
+
+Each top-level folder has a specific purpose.
+
+| Folder                     | Purpose                                                                  |
+| -------------------------- | ------------------------------------------------------------------------ |
+| 00-Governance              | Charter, roadmap, release notes, baseline register, governance standards |
+| 01-Framework               | Practice domains, lifecycle, taxonomy, meta model, capability model      |
+| 02-Playbook                | Practitioner guidance for applying DMAF                                  |
+| 03-Assets                  | Reusable templates, workbooks, diagrams, workshops, accelerators         |
+| 04-Reference-Architectures | Databricks-centered architecture patterns                                |
+| 05-Workbench               | Future software, prompts, agents, specifications, knowledge assets       |
+| 06-Research                | Databricks, Azure, AI, competitor, and industry research                 |
+| 07-Releases                | Release packages, snapshots, and release documentation                   |
+| 99-Archive                 | Retired, deprecated, or historical materials                             |
+
+This structure may evolve, but changes should be governed.
+
+---
+
+## 17.2 Markdown-First Authoring
+
+DMAF should use Markdown as the preferred authoring format for framework and methodology content.
+
+Markdown is preferred because it is:
+
+* Git-friendly;
+* easy to version;
+* easy to review;
+* readable in GitHub;
+* compatible with VS Code;
+* AI-friendly;
+* easy to convert into Word, PDF, HTML, or slide content.
+
+Client-facing outputs may later be converted into PowerPoint, Word, Excel, draw.io, HTML, or PDF formats.
+
+The source of truth should remain Markdown where practical.
+
+---
+
+## 17.3 Asset Metadata
+
+Major DMAF assets should include metadata.
+
+Metadata improves traceability, search, governance, reuse, and future Workbench automation.
+
+A standard metadata block should include:
+
+```yaml
+asset_id: DMAF-XXX-000
+title: Asset Title
+status: Draft
+version: 0.1.0
+owner: Owner Role
+release: Release-1.0
+practice_domain:
+  - Practice Domain
+capability:
+  - Capability Name
+lifecycle_stage:
+  - Lifecycle Stage
+guiding_principles:
+  - Guiding Principle
+dependencies:
+  - Related Asset
+last_updated: YYYY-MM-DD
+```
+
+Metadata should be treated as part of the asset, not optional decoration.
+
+---
+
+## 17.4 Naming Conventions
+
+DMAF assets should use clear, consistent naming.
+
+Recommended naming rules:
+
+* use lowercase file names;
+* use hyphens instead of spaces;
+* include the asset purpose in the file name;
+* include version only when needed;
+* avoid vague names such as `final`, `latest`, or `new`;
+* avoid client names in reusable framework assets unless the asset is explicitly client-specific.
+
+Examples:
+
+```text
+dmaf-foundation-architecture-v1.md
+migration-factory-planning-workbook.md
+coexistence-validation-checklist.md
+banking-modernization-advisory-pack.md
+databricks-lakehouse-reference-architecture.md
+```
+
+Naming consistency is important because the repository will eventually support search, indexing, automation, and Workbench integration.
+
+---
+
+## 17.5 Asset Quality Standard
+
+DMAF assets should meet a minimum quality standard before being approved.
+
+A reusable DMAF asset should be:
+
+* clearly named;
+* mapped to a practice domain;
+* mapped to one or more lifecycle stages;
+* aligned to at least one guiding principle;
+* reusable across engagements;
+* free of confidential client information;
+* written for a defined audience;
+* versioned;
+* reviewed;
+* traceable;
+* suitable for future Workbench indexing where applicable.
+
+Assets that do not meet these standards should remain in Draft or be archived.
+
+---
+
+## 17.6 Confidentiality and Client Content
+
+The core DMAF repository should not contain confidential client information.
+
+Client-specific materials should be separated from reusable DMAF intellectual property.
+
+If an engagement produces a useful artifact, it should be sanitized, generalized, and converted into reusable DMAF form before being added to the core repository.
+
+The repository should avoid storing:
+
+* client confidential data;
+* proprietary client architecture details;
+* named client risks unless approved;
+* credentials;
+* production data;
+* sensitive financial or regulatory details;
+* private meeting notes;
+* unapproved client deliverables.
+
+DMAF should preserve reusable learning without exposing confidential information.
+
+---
+
+## 17.7 Asset Lifecycle
+
+DMAF assets should follow a governed lifecycle:
+
+```text
+Proposed → Draft → Review → Approved → Baselined → Deprecated → Archived
+```
+
+This lifecycle ensures that users understand whether an asset is experimental, usable, official, retired, or historical.
+
+The status should be reflected in the asset metadata.
+
+---
+
+## 17.8 Release Notes
+
+Each major release should include release notes.
+
+Release notes should summarize:
+
+* new framework content;
+* new assets;
+* modified assets;
+* deprecated assets;
+* open issues;
+* known limitations;
+* approval status;
+* recommended next release focus.
+
+Release notes should live in:
+
+```text
+00-Governance/Release-Notes/
+```
+
+Release notes help DMAF remain transparent and auditable as it evolves.
+
+---
+
+## 17.9 Baseline Register
+
+The baseline register should track approved decisions, gates, and release artifacts.
+
+It should live in:
+
+```text
+00-Governance/Baseline-Register/
+```
+
+The baseline register should eventually include entries for:
+
+* DMAF Charter;
+* Guiding Principles;
+* Practice Domains;
+* Lifecycle;
+* Meta Model;
+* Knowledge Graph;
+* Capability Model;
+* Governance Model;
+* Foundation Architecture;
+* Release 1.0 Baseline.
+
+The baseline register becomes the formal record of DMAF evolution.
+
+---
+
+# 18. Definition of Release 1.0 Baseline
+
+Release 1.0 establishes the official foundation of DMAF.
+
+It does not complete the full consulting asset library or Workbench. Instead, it defines the conceptual and governance foundation required to build those future assets consistently.
+
+---
+
+## 18.1 Release 1.0 Purpose
+
+The purpose of Release 1.0 is to establish DMAF as a coherent, governed, Databricks-first modernization framework.
+
+Release 1.0 should answer:
+
+* What is DMAF?
+* Why does DMAF exist?
+* What principles govern it?
+* What domains organize the practice?
+* What lifecycle stages structure modernization?
+* What cross-cutting capabilities apply across the framework?
+* How are methods, assets, and platform services related?
+* How should assets be governed?
+* How will DMAF evolve as a productized practice capability?
+
+---
+
+## 18.2 Release 1.0 Included Components
+
+Release 1.0 includes:
+
+* Foundation Architecture;
+* guiding principles;
+* practice domains;
+* cross-cutting capabilities;
+* lifecycle model;
+* meta model;
+* knowledge graph;
+* capability model;
 * governance model;
-* asset status model;
-* versioning standard;
-* baseline register concept;
-* sprint governance;
-* change control;
-* repository governance.
+* repository structure;
+* asset traceability approach;
+* roadmap alignment;
+* baseline register concept.
 
-Subsequent updates will add:
+These components form the minimum viable foundation for DMAF.
 
-* product roadmap alignment;
-* repository and asset governance;
-* Release 1.0 baseline definition;
-* open decisions and future enhancements;
-* approval and baseline status.
+---
+
+## 18.3 Release 1.0 Exclusions
+
+Release 1.0 does not include the full development of:
+
+* complete playbook chapters;
+* full capability catalogue;
+* full asset catalogue;
+* complete migration factory toolkit;
+* complete validation toolkit;
+* complete architecture library;
+* complete banking industry pack;
+* Workbench prototype;
+* AI agents;
+* proposal accelerator;
+* practice intelligence dashboards.
+
+Those items belong to future releases and sprints.
+
+This distinction is important because Release 1.0 is a foundation release, not a completed product suite.
+
+---
+
+## 18.4 Release 1.0 Acceptance Criteria
+
+Release 1.0 may be considered complete when:
+
+1. The Foundation Architecture document is complete and reviewed.
+2. The guiding principles are documented and baselined.
+3. The nine practice domains are documented and baselined.
+4. The lifecycle model is documented and baselined.
+5. The cross-cutting capabilities are documented.
+6. The meta model and knowledge graph are documented.
+7. The capability hierarchy is documented.
+8. The governance model is documented.
+9. The repository structure is in place.
+10. The roadmap file exists and reflects sprint status.
+11. The baseline register has been created.
+12. Release notes have been created.
+13. Open decisions are documented.
+14. Sprint 1 is marked complete.
+
+Release 1.0 should not be baselined until these criteria are met.
+
+---
+
+## 18.5 Release 1.0 Success Measures
+
+Release 1.0 is successful if it enables future DMAF work to proceed with clarity.
+
+Success measures include:
+
+* consistent terminology;
+* clear framework structure;
+* clear roadmap;
+* traceability from assets to framework concepts;
+* ability to onboard a contributor;
+* ability to create future assets without redefining DMAF;
+* ability to distinguish framework, playbook, asset library, reference architecture, and Workbench;
+* ability to govern future releases.
+
+The goal of Release 1.0 is not volume. The goal is clarity, consistency, and control.
+
+---
+
+# 19. Open Decisions and Future Enhancements
+
+DMAF Release 1.0 intentionally leaves some items for future definition.
+
+These items should be tracked as roadmap or backlog items rather than forced prematurely into the Foundation Architecture.
+
+---
+
+## 19.1 Open Decisions
+
+The following decisions remain open:
+
+| Decision Area                  | Open Question                                                            | Likely Future Sprint |
+| ------------------------------ | ------------------------------------------------------------------------ | -------------------- |
+| Capability Catalogue           | What are the detailed capabilities under each practice domain?           | Sprint 3             |
+| Asset Catalogue                | What reusable assets should exist in the initial DMAF asset library?     | Sprint 4             |
+| Operating Model                | What roles, RACI, and governance forums are required?                    | Sprint 3 or 4        |
+| Reference Architecture Library | What standard Databricks architecture patterns should be included first? | Sprint 7             |
+| Industry Pack Strategy         | Which industries should follow banking?                                  | Sprint 9+            |
+| Workbench Scope                | What is the minimum viable Workbench?                                    | Sprint 10            |
+| AI Agent Strategy              | Which advisory agents should be created first?                           | Future release       |
+| Practice Metrics               | Which KPIs should govern DMAF adoption and effectiveness?                | Sprint 3 or 11       |
+
+These decisions should be made through future sprint planning and governance review.
+
+---
+
+## 19.2 Future Enhancements
+
+Future DMAF enhancements may include:
+
+* detailed capability catalogue;
+* practice operating model;
+* RACI model;
+* asset catalogue;
+* migration factory workbook;
+* complexity scoring model;
+* coexistence decision framework;
+* validation playbook;
+* architecture decision record template;
+* Databricks reference architecture library;
+* executive advisory deck;
+* proposal accelerator;
+* banking industry pack;
+* Workbench functional specification;
+* AI prompt library;
+* modernization knowledge graph prototype;
+* practice intelligence dashboard.
+
+Future enhancements should be prioritized based on reuse value, sales enablement value, delivery value, and automation potential.
+
+---
+
+## 19.3 Risks to Manage
+
+As DMAF grows, the following risks should be managed:
+
+| Risk                | Description                            | Mitigation                                 |
+| ------------------- | -------------------------------------- | ------------------------------------------ |
+| Content sprawl      | Too many disconnected assets           | Enforce metadata and capability mapping    |
+| Terminology drift   | Concepts renamed inconsistently        | Maintain taxonomy and glossary             |
+| Over-engineering    | Framework becomes too heavy to use     | Keep assets practical and engagement-ready |
+| Under-governance    | Assets added without review            | Use status model and baseline register     |
+| Client leakage      | Confidential material enters core repo | Sanitize and generalize engagement outputs |
+| Tool-first thinking | Workbench overshadows methodology      | Keep DMAF as source of truth               |
+| Static framework    | DMAF stops evolving                    | Use roadmap, backlog, and release cadence  |
+
+These risks should be reviewed at major release checkpoints.
+
+---
+
+# 20. Approval and Baseline Status
+
+This document is currently in **Draft v0.6.0** status.
+
+It is not yet baselined.
+
+---
+
+## 20.1 Current Approval Status
+
+| Component                       | Status      |
+| ------------------------------- | ----------- |
+| Repository Foundation           | Complete    |
+| Foundation Architecture Draft   | In Progress |
+| Guiding Principles              | Drafted     |
+| Practice Domains                | Drafted     |
+| Cross-Cutting Capabilities      | Drafted     |
+| Lifecycle Model                 | Drafted     |
+| Meta Model                      | Drafted     |
+| Knowledge Graph                 | Drafted     |
+| Capability Model                | Drafted     |
+| Governance Model                | Drafted     |
+| Product Roadmap Alignment       | Drafted     |
+| Repository and Asset Governance | Drafted     |
+| Release 1.0 Baseline Definition | Drafted     |
+
+---
+
+## 20.2 Remaining Sprint 1 Work
+
+Before Sprint 1 can be completed, the following work remains:
+
+1. Perform an architecture consistency review.
+2. Check terminology across the document.
+3. Confirm section numbering and metadata.
+4. Confirm all previously approved DMAF decisions are represented.
+5. Create or update the baseline register.
+6. Create Release 1.0 release notes.
+7. Mark Sprint 1 complete in the roadmap after approval.
+
+---
+
+## 20.3 Baseline Decision
+
+The Foundation Architecture should be baselined only after review.
+
+Recommended baseline statement:
+
+> DMAF Foundation Architecture v1.0 is approved as the foundation reference for Release 1.0 of the Databricks Modernization Advisory Framework. Future DMAF assets, playbooks, reference architectures, industry packs, and Workbench capabilities should align to this foundation unless a governed change is approved.
+
+---
+
+## 20.4 Next Planned Artifacts
+
+The next planned artifacts after Foundation Architecture review are:
+
+1. DMAF Baseline Register;
+2. Release 1.0 Release Notes;
+3. DMAF Taxonomy and Glossary;
+4. Practice Capability Catalogue;
+5. Asset Catalogue and Metadata Standard.
+
+These artifacts will move DMAF from foundation architecture into practice architecture and asset development.
+
 
 
 
