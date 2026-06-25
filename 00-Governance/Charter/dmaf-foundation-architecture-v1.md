@@ -298,9 +298,497 @@ DMAF should be designed so that its methods, assets, metadata, and knowledge can
 
 ---
 
-# 8. Document Structure
+# 8. DMAF Guiding Principles
 
-The full Foundation Architecture will be organized as follows:
+The DMAF Guiding Principles define the decision rules that govern the framework.
+
+They are not slogans. They are architectural constraints for how DMAF assets, recommendations, methods, playbooks, diagrams, Workbench capabilities, and client-facing deliverables should be created and governed.
+
+Every significant DMAF artifact should be traceable to one or more guiding principles.
+
+---
+
+## 8.1 Principle 1 — Business Value Before Technology
+
+Modernization must begin with business value, not technology replacement.
+
+DMAF assumes that clients do not modernize legacy platforms simply to move from one tool to another. They modernize to improve business agility, reduce operational risk, increase trust in data, accelerate analytics, support AI adoption, improve platform economics, and create measurable enterprise value.
+
+Technology decisions should therefore be framed in terms of business outcomes, such as:
+
+* faster time to insight;
+* reduced migration and operational risk;
+* improved governance and compliance;
+* reduced technical debt;
+* improved data quality and trust;
+* faster delivery of data products;
+* better platform scalability;
+* improved ability to support AI and advanced analytics.
+
+A DMAF recommendation is incomplete if it explains only what technology should be used but does not explain why the decision matters to the business.
+
+---
+
+## 8.2 Principle 2 — Databricks by Design
+
+DMAF is Databricks-first by design.
+
+This does not mean every client workload must blindly move to Databricks. It means that DMAF evaluates modernization opportunities through a Databricks-centered target-state lens, using the lakehouse architecture as the preferred modernization direction for enterprise data engineering, analytics, governance, and AI readiness.
+
+DMAF recommendations should consider how Databricks capabilities such as Delta Lake, Unity Catalog, Workflows, Databricks SQL, governed data products, and AI-ready data foundations can support the modernization objective.
+
+DMAF is source-platform adaptive, but its architectural center of gravity is Databricks.
+
+---
+
+## 8.3 Principle 3 — Modernization Is an Operating Model
+
+Modernization is not only a migration project.
+
+DMAF treats modernization as the creation of a new operating model for how data platforms are assessed, migrated, validated, governed, operated, optimized, and extended.
+
+Successful modernization requires alignment across:
+
+* business sponsorship;
+* architecture;
+* delivery execution;
+* data governance;
+* security;
+* testing and validation;
+* platform operations;
+* FinOps;
+* change management;
+* adoption;
+* knowledge transfer.
+
+A migration that only converts code but does not improve operating model maturity has limited strategic value.
+
+---
+
+## 8.4 Principle 4 — Industrialize Delivery
+
+DMAF favors repeatable, factory-oriented delivery over ad hoc migration.
+
+Modernization programs often involve many applications, pipelines, workflows, data stores, dependencies, and stakeholder groups. Without industrialized delivery, migration becomes inconsistent, difficult to govern, and hard to scale.
+
+DMAF promotes migration factory practices such as:
+
+* standardized discovery;
+* complexity scoring;
+* application segmentation;
+* wave planning;
+* reusable patterns;
+* repeatable validation;
+* delivery metrics;
+* migration backlogs;
+* factory governance;
+* reusable templates and accelerators.
+
+Industrialization does not remove the need for expert judgment. It ensures that expert judgment is applied consistently.
+
+---
+
+## 8.5 Principle 5 — Coexistence Is Intentional
+
+Most enterprise modernization programs require a period of coexistence between legacy and modern platforms.
+
+DMAF treats coexistence as an intentional architecture and governance concern, not as an afterthought.
+
+Coexistence decisions should address:
+
+* which legacy and modern components operate in parallel;
+* how data flows between platforms;
+* whether parallel run is possible;
+* how outputs are reconciled;
+* how cutover risk is controlled;
+* how downstream systems are protected;
+* how business continuity is maintained;
+* how validation evidence is captured.
+
+If coexistence is not explicitly designed, it becomes an unmanaged source of risk.
+
+---
+
+## 8.6 Principle 6 — Trust Is Earned Through Validation
+
+Modernization outcomes must be validated before they are trusted.
+
+DMAF assumes that clients will not accept modernization claims based only on code completion, technical conversion, or platform deployment. They require evidence that the modernized solution produces accurate, complete, reconciled, governed, and business-acceptable outcomes.
+
+Validation should include:
+
+* record count checks;
+* hash total comparisons;
+* control total reconciliation;
+* business rule validation;
+* exception analysis;
+* data quality checks;
+* downstream output comparison;
+* user acceptance testing;
+* operational readiness validation;
+* cutover readiness checkpoints.
+
+Where full parallel run is not possible, DMAF should clearly state the validation limitations and recommend compensating controls.
+
+---
+
+## 8.7 Principle 7 — AI Accelerates, People Govern
+
+AI can accelerate modernization, but people remain accountable for governance and decisions.
+
+DMAF supports the use of AI and automation for tasks such as:
+
+* inventory analysis;
+* code interpretation;
+* mapping assistance;
+* documentation generation;
+* migration pattern identification;
+* test case suggestion;
+* risk detection;
+* executive summary generation;
+* knowledge retrieval;
+* recommendation drafting.
+
+However, AI-generated outputs must be reviewed, validated, and governed by qualified practitioners.
+
+DMAF does not treat AI as a replacement for architecture, engineering judgment, data governance, or client accountability.
+
+---
+
+## 8.8 Principle 8 — Executive Storytelling Matters
+
+Modernization must be understandable to both executives and delivery teams.
+
+DMAF assumes that technically correct modernization plans can still fail if they are not communicated clearly to decision-makers. Executive stakeholders need to understand the value, risks, sequencing, investment, trade-offs, and expected outcomes.
+
+DMAF assets should therefore support multiple levels of communication:
+
+* executive narratives;
+* architecture diagrams;
+* roadmap views;
+* capability views;
+* delivery plans;
+* risk summaries;
+* decision records;
+* technical implementation guidance.
+
+A strong DMAF artifact should be able to connect technical architecture to business meaning.
+
+---
+
+## 8.9 Principle 9 — Knowledge Compounds
+
+Every engagement should strengthen DMAF.
+
+DMAF is designed to become more valuable over time as patterns, lessons, assets, estimates, risks, architectures, and recommendations are reused and improved.
+
+Engagement outputs should be evaluated for reuse potential.
+
+Examples include:
+
+* reusable discovery questions;
+* migration patterns;
+* validation approaches;
+* architecture diagrams;
+* risk registers;
+* proposal language;
+* industry-specific insights;
+* capability models;
+* Workbench prompts;
+* reusable calculators;
+* reference architectures.
+
+DMAF should not allow knowledge to remain trapped in individual projects, documents, or practitioners.
+
+---
+
+## 8.10 Principle 10 — Platform Value Is the Destination
+
+The goal of modernization is not simply migration completion.
+
+The goal is sustained platform value.
+
+DMAF measures modernization success by whether the client can operate, govern, scale, optimize, and extend the modernized platform after migration.
+
+Platform value includes:
+
+* adoption of Databricks capabilities;
+* improved governance maturity;
+* reduced operational friction;
+* improved delivery velocity;
+* reliable data products;
+* better cost transparency;
+* improved AI readiness;
+* improved stakeholder confidence;
+* measurable business outcomes.
+
+A migration is successful only when the modernized platform becomes a trusted foundation for future business capability.
+
+---
+
+## 8.11 Principle 11 — Everything Is Traceable
+
+Every significant DMAF recommendation, artifact, method, diagram, assessment, proposal, and Workbench capability should be traceable.
+
+Traceability means that an asset should be connected to:
+
+* a guiding principle;
+* a practice domain;
+* one or more capabilities;
+* one or more lifecycle stages;
+* related methods;
+* supporting assets;
+* evidence or assumptions;
+* governance status;
+* release version.
+
+This principle ensures that DMAF does not become a loose collection of documents. It becomes a governed knowledge system.
+
+Traceability supports:
+
+* quality control;
+* reuse;
+* auditability;
+* faster onboarding;
+* better proposal development;
+* better Workbench automation;
+* improved practice governance;
+* clearer executive explanation.
+
+If an asset cannot be traced to the framework, it should be questioned before being added.
+
+---
+
+# 9. Practice Domains
+
+DMAF is organized into nine practice domains.
+
+A practice domain is a major area of advisory, architecture, delivery, or enablement capability required to plan and execute Databricks-led modernization.
+
+Practice domains are not the same as lifecycle stages. A lifecycle stage describes when work occurs. A practice domain describes what kind of capability is applied.
+
+The nine DMAF practice domains are:
+
+1. Strategy & Business Value
+2. Discovery & Assessment
+3. Modernization Architecture
+4. Migration Factory
+5. Coexistence & Validation
+6. AI & Automation
+7. Executive Advisory
+8. Platform Operations, Adoption & Value Realization
+9. Modernization Intelligence Workbench
+
+Each domain contains capabilities, methods, assets, governance expectations, and maturity indicators.
+
+---
+
+## 9.1 Strategy & Business Value
+
+The Strategy & Business Value domain defines the business rationale for modernization.
+
+It ensures that modernization is connected to executive priorities, measurable outcomes, funding logic, risk reduction, and long-term platform value.
+
+Typical concerns include:
+
+* modernization drivers;
+* business case development;
+* executive alignment;
+* value hypotheses;
+* investment rationale;
+* strategic sequencing;
+* opportunity qualification;
+* target outcomes;
+* sponsorship model.
+
+This domain is especially important during opportunity qualification, strategy development, and executive advisory conversations.
+
+---
+
+## 9.2 Discovery & Assessment
+
+The Discovery & Assessment domain defines how DMAF gathers, normalizes, interprets, and scores the current-state environment.
+
+It supports structured understanding of applications, workflows, data stores, dependencies, business rules, operational constraints, risks, and modernization complexity.
+
+Typical concerns include:
+
+* application inventory;
+* workflow inventory;
+* data source inventory;
+* dependency mapping;
+* business process context;
+* complexity scoring;
+* migration readiness;
+* technical debt analysis;
+* stakeholder interviews;
+* discovery evidence management.
+
+This domain creates the evidence base for modernization decisions.
+
+---
+
+## 9.3 Modernization Architecture
+
+The Modernization Architecture domain defines the target-state and transitional architecture models for Databricks-led modernization.
+
+It connects current-state assessment to future-state platform design.
+
+Typical concerns include:
+
+* Databricks target architecture;
+* lakehouse design;
+* Delta Lake patterns;
+* Unity Catalog governance;
+* orchestration patterns;
+* integration architecture;
+* security architecture;
+* data product design;
+* reference architectures;
+* transitional architecture;
+* architecture decision records.
+
+This domain ensures that modernization recommendations are architecturally coherent.
+
+---
+
+## 9.4 Migration Factory
+
+The Migration Factory domain defines how modernization is planned, sequenced, industrialized, executed, and measured at scale.
+
+It is the delivery centerpiece of DMAF.
+
+Typical concerns include:
+
+* migration wave planning;
+* complexity-based sequencing;
+* factory backlog management;
+* migration patterns;
+* repeatable conversion methods;
+* delivery roles;
+* productivity metrics;
+* reusable accelerators;
+* dependency management;
+* throughput planning;
+* delivery governance.
+
+This domain turns modernization strategy into executable delivery structure.
+
+---
+
+## 9.5 Coexistence & Validation
+
+The Coexistence & Validation domain defines how legacy and modern platforms operate during transition and how modernization outcomes are proven.
+
+Typical concerns include:
+
+* coexistence architecture;
+* parallel run strategy;
+* reconciliation design;
+* validation approach;
+* cutover readiness;
+* downstream impact;
+* control totals;
+* exception handling;
+* audit evidence;
+* operational acceptance;
+* production readiness.
+
+This domain is central to client trust and risk management.
+
+---
+
+## 9.6 AI & Automation
+
+The AI & Automation domain defines how automation and AI-assisted techniques accelerate modernization.
+
+Typical concerns include:
+
+* code interpretation assistance;
+* metadata extraction;
+* mapping acceleration;
+* documentation generation;
+* test case generation;
+* risk analysis;
+* recommendation drafting;
+* knowledge retrieval;
+* Workbench agents;
+* automation governance.
+
+This domain supports productivity improvement while maintaining human accountability.
+
+---
+
+## 9.7 Executive Advisory
+
+The Executive Advisory domain defines how modernization is communicated, positioned, and governed with senior stakeholders.
+
+Typical concerns include:
+
+* executive narratives;
+* board-level summaries;
+* transformation roadmaps;
+* investment cases;
+* risk and trade-off framing;
+* decision support;
+* sponsor alignment;
+* proposal messaging;
+* advisory workshops;
+* executive-ready visuals.
+
+This domain ensures that modernization is understandable, fundable, and governable.
+
+---
+
+## 9.8 Platform Operations, Adoption & Value Realization
+
+The Platform Operations, Adoption & Value Realization domain defines how the modernized Databricks platform is adopted, governed, operated, optimized, and measured after migration.
+
+Typical concerns include:
+
+* operating model;
+* platform ownership;
+* support model;
+* runbooks;
+* adoption roadmap;
+* enablement;
+* FinOps;
+* governance maturity;
+* platform KPIs;
+* value realization tracking;
+* continuous optimization.
+
+This domain ensures modernization produces durable enterprise value.
+
+---
+
+## 9.9 Modernization Intelligence Workbench
+
+The Modernization Intelligence Workbench domain defines the future software-enabled layer of DMAF.
+
+The Workbench is intended to operationalize the framework by helping practitioners ingest messy engagement inputs, interpret modernization context, generate recommendations, manage reusable assets, and produce consulting-grade outputs.
+
+Typical concerns include:
+
+* engagement workspace structure;
+* input normalization;
+* document interpretation;
+* inventory analysis;
+* recommendation generation;
+* artifact generation;
+* knowledge graph indexing;
+* asset retrieval;
+* AI agents;
+* modernization dashboards;
+* proposal acceleration.
+
+This domain represents the long-term platform direction of DMAF.
+
+---
+
+# 10. Document Structure
+
+The full Foundation Architecture is organized as follows:
 
 1. Purpose of This Document
 2. DMAF Definition
@@ -309,7 +797,7 @@ The full Foundation Architecture will be organized as follows:
 5. Intended Audiences
 6. Release 1.0 Foundation Scope
 7. Foundation Architecture Principles
-8. Guiding Principles
+8. DMAF Guiding Principles
 9. Practice Domains
 10. Cross-Cutting Capabilities
 11. DMAF Lifecycle
@@ -325,18 +813,16 @@ The full Foundation Architecture will be organized as follows:
 
 ---
 
-# 9. Current Status
+# 11. Current Status
 
-This document is currently in **Draft v0.1.0** status.
+This document is currently in **Draft v0.2.0** status.
 
-It represents the initial structure and opening foundation for the DMAF Foundation Architecture.
+This update adds the approved DMAF Guiding Principles and the nine DMAF Practice Domains.
 
-Subsequent updates will add the detailed approved framework content, including:
+Subsequent updates will add:
 
-* guiding principles;
-* practice domains;
-* lifecycle stages;
 * cross-cutting capabilities;
+* lifecycle stages;
 * meta model;
 * knowledge graph;
 * capability hierarchy;
