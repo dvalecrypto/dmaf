@@ -786,7 +786,1574 @@ This domain represents the long-term platform direction of DMAF.
 
 ---
 
-# 10. Document Structure
+# 10. Cross-Cutting Capabilities
+
+DMAF includes cross-cutting capabilities that apply across all practice domains and lifecycle stages.
+
+A cross-cutting capability is not owned by only one practice domain. Instead, it acts as a shared concern that must be considered throughout modernization strategy, discovery, architecture, delivery, validation, adoption, and continuous improvement.
+
+The DMAF cross-cutting capabilities are:
+
+1. Governance & Security
+2. Risk & Compliance
+3. FinOps & Cost Optimization
+4. AI Enablement
+5. Automation
+6. Knowledge Management
+7. Reusable Accelerators
+
+These capabilities ensure that DMAF does not treat modernization as a sequence of disconnected activities. They provide continuity across the entire framework.
+
+---
+
+## 10.1 Governance & Security
+
+Governance & Security defines how data, access, policies, standards, and controls are managed across the modernization lifecycle.
+
+In a Databricks-centered modernization program, this capability includes:
+
+* data access governance;
+* Unity Catalog alignment;
+* security model design;
+* data classification;
+* lineage expectations;
+* policy enforcement;
+* platform guardrails;
+* environment separation;
+* role-based access;
+* auditability;
+* operational controls.
+
+Governance & Security must be considered during discovery, architecture, migration planning, validation, production cutover, and platform adoption.
+
+A modernization program that migrates data pipelines without improving governance maturity creates long-term operational and compliance risk.
+
+---
+
+## 10.2 Risk & Compliance
+
+Risk & Compliance defines how modernization risk is identified, assessed, communicated, mitigated, and governed.
+
+This capability includes:
+
+* delivery risk;
+* architecture risk;
+* data quality risk;
+* downstream impact risk;
+* operational risk;
+* regulatory risk;
+* security risk;
+* coexistence risk;
+* cutover risk;
+* validation risk;
+* stakeholder adoption risk.
+
+Risk & Compliance is especially important in regulated industries such as banking, insurance, healthcare, government, and capital markets.
+
+DMAF should ensure that risk is not treated only as a project management artifact. Risk must influence modernization sequencing, validation approach, architecture decisions, coexistence planning, executive communication, and release readiness.
+
+---
+
+## 10.3 FinOps & Cost Optimization
+
+FinOps & Cost Optimization defines how modernization decisions consider cost transparency, platform efficiency, consumption management, and long-term financial sustainability.
+
+In a Databricks modernization context, this capability includes:
+
+* workload cost estimation;
+* cluster and compute cost considerations;
+* storage cost implications;
+* job scheduling efficiency;
+* environment sizing;
+* consumption visibility;
+* cost allocation;
+* chargeback or showback models;
+* optimization opportunities;
+* value realization tracking.
+
+FinOps should not be delayed until after migration. It should be considered during architecture, migration planning, workload design, platform operations, and value realization.
+
+DMAF treats FinOps as both a cross-cutting concern and an operating practice within the Platform Operations, Adoption & Value Realization domain.
+
+---
+
+## 10.4 AI Enablement
+
+AI Enablement defines how modernization prepares the client for AI adoption and how AI can accelerate modernization work.
+
+This capability includes two dimensions.
+
+The first dimension is **AI-ready modernization**. This means designing data platforms, governance models, lineage, quality controls, and data products so they can support analytics, machine learning, generative AI, and agentic use cases.
+
+The second dimension is **AI-assisted modernization**. This means using AI to accelerate tasks such as:
+
+* document analysis;
+* code interpretation;
+* metadata extraction;
+* mapping assistance;
+* test case generation;
+* recommendation drafting;
+* risk identification;
+* executive summary generation;
+* knowledge retrieval;
+* asset reuse.
+
+DMAF assumes that AI can accelerate work, but AI-generated outputs must remain governed by qualified practitioners.
+
+---
+
+## 10.5 Automation
+
+Automation defines how repeatable modernization activities can be standardized, scripted, templated, or eventually productized.
+
+Automation may apply to:
+
+* metadata extraction;
+* repository setup;
+* application inventory generation;
+* complexity scoring;
+* wave planning;
+* diagram generation;
+* document creation;
+* validation checks;
+* reconciliation reporting;
+* asset indexing;
+* Workbench workflows.
+
+Automation is central to DMAF because the framework is intended to scale beyond individual practitioners.
+
+The long-term goal is not only to document modernization methods but to increasingly operationalize them through reusable scripts, templates, workflows, and Workbench capabilities.
+
+---
+
+## 10.6 Knowledge Management
+
+Knowledge Management defines how engagement learning, patterns, decisions, assumptions, risks, and assets are captured and reused.
+
+DMAF should prevent modernization knowledge from remaining trapped in individual projects, client-specific folders, or practitioner memory.
+
+Knowledge Management includes:
+
+* asset metadata;
+* reusable templates;
+* decision records;
+* reference architectures;
+* pattern libraries;
+* lessons learned;
+* research notes;
+* proposal language;
+* industry observations;
+* modernization case examples;
+* Workbench knowledge repositories.
+
+Knowledge Management is essential to the principle that **knowledge compounds**.
+
+Each engagement should improve the DMAF knowledge base.
+
+---
+
+## 10.7 Reusable Accelerators
+
+Reusable Accelerators define the tools, templates, scripts, calculators, diagrams, prompts, and workbooks that improve modernization speed and quality.
+
+Examples include:
+
+* discovery questionnaires;
+* application inventory templates;
+* complexity scoring workbooks;
+* migration wave planning tools;
+* coexistence decision trees;
+* validation checklists;
+* architecture diagram templates;
+* executive presentation templates;
+* proposal accelerators;
+* industry pack templates;
+* Workbench prompts;
+* metadata extraction scripts.
+
+Reusable accelerators should be governed like product assets. They should have owners, versions, statuses, intended audiences, and traceability to DMAF domains and lifecycle stages.
+
+An accelerator should not be added simply because it exists. It should improve a defined capability.
+
+---
+
+# 11. DMAF Lifecycle
+
+The DMAF Lifecycle defines the major stages through which a Databricks-led modernization opportunity, engagement, delivery program, and platform adoption journey progress.
+
+The lifecycle is designed as a continuous cycle rather than a strictly linear sequence.
+
+This reflects the reality that modernization does not end at migration completion. Modernized platforms require continued adoption, optimization, governance improvement, and expansion.
+
+The DMAF lifecycle contains eleven stages:
+
+0. Opportunity Qualification & Modernization Strategy
+1. Strategy & Business Value
+2. Discovery & Assessment
+3. Modernization Architecture
+4. Migration Factory Planning
+5. Reference Implementation / Pilot
+6. Migration Factory Execution
+7. Coexistence & Validation
+8. Production Cutover
+9. Platform Operations, Adoption & Value Realization
+10. Continuous Optimization & Modernization Intelligence
+
+The Modernization Intelligence Workbench supports all stages as a horizontal enablement layer.
+
+---
+
+## 11.0 Stage 0 — Opportunity Qualification & Modernization Strategy
+
+Stage 0 occurs before formal delivery begins.
+
+Its purpose is to determine whether a modernization opportunity is real, valuable, actionable, and strategically aligned.
+
+Typical questions include:
+
+* What business problem is driving modernization?
+* Why now?
+* Why Databricks?
+* What legacy platforms or workloads are in scope?
+* Is the client seeking tool replacement, platform modernization, cost reduction, risk reduction, AI readiness, or operating model change?
+* Is there executive sponsorship?
+* What is the likely scale and complexity?
+* What constraints are already known?
+* Is there a compelling reason to engage?
+
+Typical outputs include:
+
+* opportunity qualification notes;
+* modernization hypothesis;
+* initial executive narrative;
+* high-level scope framing;
+* preliminary risk view;
+* initial value hypothesis;
+* recommended next step.
+
+This stage is important because DMAF begins before discovery. It begins when the opportunity is shaped.
+
+---
+
+## 11.1 Stage 1 — Strategy & Business Value
+
+Stage 1 defines the business rationale and strategic value of modernization.
+
+Its purpose is to connect modernization to executive priorities, business outcomes, risk reduction, platform value, and investment logic.
+
+Typical activities include:
+
+* stakeholder alignment;
+* business objective clarification;
+* modernization driver analysis;
+* value hypothesis development;
+* business case framing;
+* funding and sponsorship discussion;
+* strategic sequencing;
+* success metric identification.
+
+Typical outputs include:
+
+* business value narrative;
+* modernization strategy brief;
+* executive alignment summary;
+* value driver map;
+* initial roadmap themes;
+* success metric model.
+
+This stage ensures that modernization begins with business meaning rather than technology replacement.
+
+---
+
+## 11.2 Stage 2 — Discovery & Assessment
+
+Stage 2 establishes the evidence base for modernization decisions.
+
+Its purpose is to understand the current-state environment, including applications, workflows, data stores, dependencies, business rules, constraints, risks, and operating context.
+
+Typical activities include:
+
+* application inventory collection;
+* workflow and pipeline discovery;
+* source and target system analysis;
+* dependency mapping;
+* stakeholder interviews;
+* current-state architecture review;
+* complexity scoring;
+* risk assessment;
+* readiness assessment;
+* discovery evidence review.
+
+Typical outputs include:
+
+* discovery findings;
+* application inventory;
+* complexity scoring model;
+* dependency map;
+* current-state architecture summary;
+* risk register;
+* modernization readiness assessment;
+* candidate migration segments.
+
+This stage creates the factual foundation for architecture, planning, and executive recommendations.
+
+---
+
+## 11.3 Stage 3 — Modernization Architecture
+
+Stage 3 defines the target-state and transitional architecture.
+
+Its purpose is to translate discovery findings and business objectives into a coherent Databricks-centered architecture direction.
+
+Typical activities include:
+
+* target-state architecture design;
+* transitional architecture design;
+* Databricks capability mapping;
+* lakehouse pattern selection;
+* governance and security model alignment;
+* orchestration pattern definition;
+* data product strategy;
+* integration model design;
+* architecture decision documentation;
+* reference architecture selection.
+
+Typical outputs include:
+
+* target-state architecture;
+* transitional architecture;
+* architecture decision records;
+* Databricks capability map;
+* governance and security model;
+* integration model;
+* reference architecture alignment;
+* architecture roadmap.
+
+This stage ensures modernization has a clear architectural destination and transition path.
+
+---
+
+## 11.4 Stage 4 — Migration Factory Planning
+
+Stage 4 defines how modernization work will be sequenced, organized, governed, and measured.
+
+Its purpose is to turn modernization strategy and architecture into an executable migration factory model.
+
+Typical activities include:
+
+* migration wave planning;
+* factory backlog creation;
+* application segmentation;
+* complexity-based sequencing;
+* delivery capacity planning;
+* resource model definition;
+* migration pattern identification;
+* estimation;
+* dependency sequencing;
+* delivery governance design;
+* factory metrics definition.
+
+Typical outputs include:
+
+* migration factory plan;
+* migration waves;
+* delivery backlog;
+* estimation model;
+* resource plan;
+* migration roadmap;
+* factory operating model;
+* factory KPIs.
+
+This stage is the bridge between advisory planning and scalable execution.
+
+---
+
+## 11.5 Stage 5 — Reference Implementation / Pilot
+
+Stage 5 validates the modernization approach through a controlled implementation.
+
+Its purpose is to prove the architecture, migration approach, validation method, delivery model, and governance assumptions before scaling.
+
+Typical activities include:
+
+* pilot scope selection;
+* representative workload selection;
+* architecture validation;
+* conversion approach validation;
+* data reconciliation testing;
+* performance assessment;
+* operating model testing;
+* delivery pattern refinement;
+* lessons learned capture.
+
+Typical outputs include:
+
+* reference implementation;
+* pilot results;
+* validated migration pattern;
+* refined architecture decisions;
+* validation evidence;
+* updated estimates;
+* updated factory plan;
+* lessons learned.
+
+This stage reduces risk before full migration factory execution.
+
+---
+
+## 11.6 Stage 6 — Migration Factory Execution
+
+Stage 6 executes modernization at scale.
+
+Its purpose is to migrate, convert, rebuild, validate, and transition workloads through a repeatable factory model.
+
+Typical activities include:
+
+* wave execution;
+* backlog management;
+* code conversion or redevelopment;
+* data pipeline implementation;
+* unit testing;
+* system testing;
+* defect management;
+* pattern reuse;
+* progress tracking;
+* delivery governance;
+* knowledge transfer.
+
+Typical outputs include:
+
+* migrated workloads;
+* updated backlog;
+* test evidence;
+* defect reports;
+* delivery metrics;
+* migration status reports;
+* reusable patterns;
+* updated accelerators.
+
+This stage applies industrialized delivery to modernization execution.
+
+---
+
+## 11.7 Stage 7 — Coexistence & Validation
+
+Stage 7 ensures that legacy and modern platforms can safely coexist during transition and that modernized outcomes are trusted.
+
+Its purpose is to validate accuracy, completeness, reconciliation, downstream impact, operational readiness, and business acceptance.
+
+Typical activities include:
+
+* coexistence architecture implementation;
+* parallel run planning;
+* reconciliation testing;
+* record count comparison;
+* hash total comparison;
+* control total validation;
+* business rule validation;
+* downstream output comparison;
+* exception handling;
+* validation evidence management;
+* cutover readiness review.
+
+Typical outputs include:
+
+* validation strategy;
+* reconciliation results;
+* parallel run evidence;
+* exception reports;
+* validation sign-off;
+* cutover readiness assessment;
+* business acceptance evidence.
+
+This stage is central to trust, risk management, and production confidence.
+
+---
+
+## 11.8 Stage 8 — Production Cutover
+
+Stage 8 transitions the modernized workloads into production use.
+
+Its purpose is to execute the controlled movement from legacy operation to modernized operation.
+
+Typical activities include:
+
+* cutover planning;
+* deployment readiness review;
+* rollback planning;
+* operational handoff;
+* production scheduling;
+* final validation;
+* stakeholder communication;
+* go-live support;
+* incident response planning;
+* post-cutover verification.
+
+Typical outputs include:
+
+* cutover plan;
+* go-live checklist;
+* rollback plan;
+* production readiness approval;
+* operational handoff package;
+* go-live confirmation;
+* post-cutover validation report.
+
+This stage ensures that modernization reaches production in a controlled and supportable manner.
+
+---
+
+## 11.9 Stage 9 — Platform Operations, Adoption & Value Realization
+
+Stage 9 ensures the client can operate, adopt, govern, optimize, and derive value from the modernized platform.
+
+Its purpose is to move beyond migration completion toward sustained platform value.
+
+Typical activities include:
+
+* operating model implementation;
+* support model transition;
+* runbook creation;
+* platform monitoring;
+* enablement and training;
+* adoption tracking;
+* FinOps monitoring;
+* governance maturity improvement;
+* value realization tracking;
+* continuous improvement planning.
+
+Typical outputs include:
+
+* operating model;
+* support model;
+* runbooks;
+* adoption plan;
+* platform KPI dashboard;
+* FinOps dashboard;
+* value realization report;
+* continuous improvement backlog.
+
+This stage ensures modernization becomes a durable enterprise capability.
+
+---
+
+## 11.10 Stage 10 — Continuous Optimization & Modernization Intelligence
+
+Stage 10 converts modernization learning into ongoing optimization and reusable intelligence.
+
+Its purpose is to continuously improve DMAF, the client platform, reusable assets, and the Modernization Intelligence Workbench.
+
+Typical activities include:
+
+* lessons learned capture;
+* reusable asset updates;
+* pattern library refinement;
+* platform optimization;
+* knowledge graph updates;
+* Workbench improvement;
+* research updates;
+* capability maturity review;
+* roadmap refresh;
+* advisory insight generation.
+
+Typical outputs include:
+
+* lessons learned repository;
+* updated assets;
+* updated reference architectures;
+* updated capability models;
+* optimization backlog;
+* modernization intelligence insights;
+* future roadmap recommendations.
+
+This stage reflects the DMAF principle that knowledge compounds.
+
+---
+
+## 11.11 Lifecycle Operating View
+
+The DMAF lifecycle should be understood as a continuous loop:
+
+```text
+Opportunity Qualification
+        ↓
+Strategy & Business Value
+        ↓
+Discovery & Assessment
+        ↓
+Modernization Architecture
+        ↓
+Migration Factory Planning
+        ↓
+Reference Implementation / Pilot
+        ↓
+Migration Factory Execution
+        ↓
+Coexistence & Validation
+        ↓
+Production Cutover
+        ↓
+Platform Operations, Adoption & Value Realization
+        ↓
+Continuous Optimization & Modernization Intelligence
+        ↺
+```
+
+The output of each stage informs future modernization opportunities, updated assets, improved reference architectures, better proposals, and more intelligent Workbench capabilities.
+
+---
+
+# 12. DMAF Meta Model
+
+The DMAF Meta Model defines how the major components of the framework relate to each other.
+
+The purpose of the meta model is to prevent DMAF from becoming a loose collection of documents, templates, diagrams, and ideas. It provides the structural logic that connects strategy, methodology, delivery, reusable assets, governance, and future Workbench capabilities.
+
+The DMAF Meta Model is organized into five layers:
+
+1. Philosophy
+2. Framework
+3. Methods
+4. Assets
+5. Platform
+
+Each layer has a distinct role.
+
+---
+
+## 12.1 Layer 1 — Philosophy
+
+The Philosophy layer defines why DMAF exists and what beliefs govern it.
+
+This layer includes:
+
+* vision;
+* charter;
+* core belief;
+* guiding principles;
+* strategic positioning;
+* definition of what DMAF is and is not.
+
+The Philosophy layer ensures that DMAF does not become a purely mechanical delivery model. It anchors the framework in business value, Databricks-first modernization, operating model maturity, traceability, and reusable knowledge.
+
+Examples of Philosophy-layer artifacts include:
+
+* DMAF Charter;
+* DMAF Guiding Principles;
+* DMAF Foundation Architecture;
+* DMAF Strategic Positioning Statement;
+* DMAF Core Belief.
+
+The Philosophy layer answers the question:
+
+> Why does DMAF exist, and what principles guide it?
+
+---
+
+## 12.2 Layer 2 — Framework
+
+The Framework layer defines how DMAF is organized.
+
+This layer includes:
+
+* practice domains;
+* lifecycle stages;
+* cross-cutting capabilities;
+* capability model;
+* maturity model;
+* governance model;
+* taxonomy;
+* operating views.
+
+The Framework layer provides the structure that allows DMAF to be applied consistently across different modernization opportunities, clients, industries, and source platforms.
+
+Examples of Framework-layer artifacts include:
+
+* Practice Domain Model;
+* DMAF Lifecycle;
+* Cross-Cutting Capability Model;
+* Capability Catalogue;
+* DMAF Taxonomy;
+* Governance Model;
+* Maturity Model.
+
+The Framework layer answers the question:
+
+> How is DMAF organized?
+
+---
+
+## 12.3 Layer 3 — Methods
+
+The Methods layer defines how work is performed.
+
+This layer includes the repeatable approaches, processes, workshops, assessments, decision models, and delivery patterns used during modernization engagements.
+
+Methods translate the framework into action.
+
+Examples of Methods-layer content include:
+
+* opportunity qualification method;
+* discovery and assessment method;
+* application complexity scoring method;
+* migration wave planning method;
+* reference implementation method;
+* coexistence strategy method;
+* validation planning method;
+* executive advisory method;
+* platform adoption method;
+* value realization method.
+
+The Methods layer answers the question:
+
+> How is DMAF work performed?
+
+---
+
+## 12.4 Layer 4 — Assets
+
+The Assets layer contains reusable work products that support DMAF execution.
+
+Assets may be internal, client-facing, delivery-oriented, technical, advisory, or software-supporting.
+
+Examples of Assets-layer content include:
+
+* executive decks;
+* discovery questionnaires;
+* assessment templates;
+* architecture diagrams;
+* reference architectures;
+* complexity scoring workbooks;
+* migration planning workbooks;
+* validation checklists;
+* coexistence decision trees;
+* proposal templates;
+* SOW language;
+* industry packs;
+* research briefs;
+* reusable prompts;
+* Workbench design documents.
+
+The Assets layer answers the question:
+
+> What reusable materials does DMAF use to perform and scale the work?
+
+---
+
+## 12.5 Layer 5 — Platform
+
+The Platform layer defines how DMAF can be operationalized through software, automation, knowledge systems, and AI-assisted advisory capabilities.
+
+The primary future platform expression of DMAF is the **Modernization Intelligence Workbench**.
+
+The Platform layer includes:
+
+* engagement workspaces;
+* input ingestion;
+* document interpretation;
+* inventory analysis;
+* knowledge graph indexing;
+* recommendation generation;
+* artifact generation;
+* AI advisory agents;
+* asset search and retrieval;
+* dashboarding;
+* practice intelligence.
+
+The Platform layer answers the question:
+
+> How does DMAF scale beyond manual consulting effort?
+
+---
+
+## 12.6 Meta Model Relationship
+
+The five layers are connected as follows:
+
+```text
+Philosophy
+    ↓
+Framework
+    ↓
+Methods
+    ↓
+Assets
+    ↓
+Platform
+```
+
+This means:
+
+* Philosophy governs the Framework.
+* Framework organizes Methods.
+* Methods produce and consume Assets.
+* Assets are operationalized by the Platform.
+* Platform usage generates new learning that improves Assets, Methods, Framework, and Philosophy over time.
+
+DMAF is therefore not static. It is designed as a learning system.
+
+---
+
+## 12.7 Methodology vs. Reference Architecture
+
+DMAF distinguishes between the methodology and reference architectures.
+
+The methodology defines how modernization work is structured and governed.
+
+Reference architectures define recommended Databricks-centered architecture patterns for specific modernization scenarios.
+
+For example:
+
+* DMAF as methodology explains how to assess, plan, govern, validate, and execute modernization.
+* A Databricks reference architecture explains how a target-state lakehouse, governance model, orchestration model, or coexistence pattern may be designed.
+
+This distinction is important because DMAF must remain source-platform adaptive, while its reference architectures remain Databricks-first.
+
+---
+
+## 12.8 Framework vs. Playbook
+
+DMAF also distinguishes between the framework and the playbook.
+
+The framework defines the structure, principles, domains, lifecycle, and governance model.
+
+The playbook defines the practical steps, activities, workshops, templates, and execution guidance used to apply the framework.
+
+In simple terms:
+
+```text
+Framework = What DMAF is and how it is organized
+Playbook  = How practitioners apply DMAF in real engagements
+```
+
+This distinction allows DMAF to remain stable while playbooks evolve with engagement experience, industry needs, Databricks capabilities, and delivery practices.
+
+---
+
+## 12.9 Asset Library vs. Workbench
+
+The DMAF Asset Library and Modernization Intelligence Workbench are related but distinct.
+
+The Asset Library is the curated collection of reusable DMAF materials.
+
+The Workbench is the software-enabled environment that helps practitioners use, generate, interpret, retrieve, and improve those assets.
+
+In simple terms:
+
+```text
+Asset Library = Reusable intellectual property
+Workbench     = Platform for applying and scaling that intellectual property
+```
+
+The Workbench should not replace the Asset Library. It should make the Asset Library more usable, traceable, searchable, and intelligent.
+
+---
+
+# 13. DMAF Knowledge Graph
+
+The DMAF Knowledge Graph defines how framework objects relate to each other.
+
+Its purpose is to make DMAF traceable, governable, reusable, and eventually machine-readable.
+
+The knowledge graph is the conceptual foundation for future Workbench automation.
+
+---
+
+## 13.1 Knowledge Graph Object Types
+
+DMAF contains the following primary object types:
+
+1. Guiding Principles
+2. Practice Domains
+3. Capabilities
+4. Methods
+5. Assets
+6. Platform Services
+
+Each object type has a specific role.
+
+---
+
+## 13.2 Guiding Principles
+
+Guiding Principles define the decision rules that govern DMAF.
+
+They influence how capabilities are designed, how methods are applied, how assets are evaluated, and how Workbench services should behave.
+
+Examples include:
+
+* Business Value Before Technology;
+* Databricks by Design;
+* Modernization Is an Operating Model;
+* Industrialize Delivery;
+* Everything Is Traceable.
+
+Guiding Principles answer:
+
+> What rules govern DMAF decisions?
+
+---
+
+## 13.3 Practice Domains
+
+Practice Domains define the major areas of DMAF capability.
+
+Examples include:
+
+* Strategy & Business Value;
+* Discovery & Assessment;
+* Modernization Architecture;
+* Migration Factory;
+* Coexistence & Validation;
+* AI & Automation;
+* Executive Advisory;
+* Platform Operations, Adoption & Value Realization;
+* Modernization Intelligence Workbench.
+
+Practice Domains answer:
+
+> What major areas of practice capability does DMAF require?
+
+---
+
+## 13.4 Capabilities
+
+Capabilities define what DMAF must be able to do within each practice domain.
+
+A capability is more specific than a domain.
+
+For example, within the Migration Factory domain, capabilities may include:
+
+* migration wave planning;
+* factory backlog management;
+* migration complexity scoring;
+* dependency sequencing;
+* factory KPI tracking;
+* reusable migration pattern management.
+
+Capabilities answer:
+
+> What does this practice domain need to be able to perform?
+
+---
+
+## 13.5 Methods
+
+Methods define how capabilities are performed.
+
+A method may include a repeatable process, workshop, assessment model, scoring approach, decision tree, or delivery pattern.
+
+For example:
+
+* Application Complexity Scoring Method;
+* Migration Wave Planning Method;
+* Coexistence Strategy Method;
+* Validation Planning Method;
+* Executive Readiness Review Method.
+
+Methods answer:
+
+> How is the capability executed?
+
+---
+
+## 13.6 Assets
+
+Assets are reusable work products used to perform, explain, accelerate, or govern DMAF work.
+
+Examples include:
+
+* templates;
+* workbooks;
+* diagrams;
+* playbook chapters;
+* executive decks;
+* assessment forms;
+* reference architectures;
+* proposal language;
+* checklists;
+* scripts;
+* prompts;
+* industry packs.
+
+Assets answer:
+
+> What reusable materials support the method?
+
+---
+
+## 13.7 Platform Services
+
+Platform Services are software-enabled capabilities that operationalize DMAF through the Modernization Intelligence Workbench or related tooling.
+
+Examples include:
+
+* input ingestion;
+* engagement workspace creation;
+* inventory interpretation;
+* complexity scoring assistance;
+* recommendation generation;
+* architecture diagram generation;
+* artifact retrieval;
+* knowledge graph search;
+* proposal drafting;
+* modernization dashboarding.
+
+Platform Services answer:
+
+> What can be automated, assisted, or scaled through software?
+
+---
+
+## 13.8 Knowledge Graph Relationship Chain
+
+The approved DMAF relationship chain is:
+
+```text
+Guiding Principles
+        ↓
+Practice Domains
+        ↓
+Capabilities
+        ↓
+Methods
+        ↓
+Assets
+        ↓
+Platform Services
+```
+
+This relationship chain means:
+
+* Guiding Principles govern Practice Domains.
+* Practice Domains contain Capabilities.
+* Capabilities are executed through Methods.
+* Methods use and produce Assets.
+* Assets are operationalized through Platform Services.
+
+This chain supports the DMAF principle that **Everything Is Traceable**.
+
+---
+
+## 13.9 Example Knowledge Graph Trace
+
+An example trace for a Migration Factory asset may look like this:
+
+```text
+Guiding Principle:
+Industrialize Delivery
+
+Practice Domain:
+Migration Factory
+
+Capability:
+Migration Wave Planning
+
+Method:
+Complexity-Based Wave Sequencing
+
+Asset:
+Migration Factory Planning Workbook
+
+Platform Service:
+AI-Assisted Wave Planning Scenario Simulator
+```
+
+This trace shows how a practical asset connects back to framework principles and forward to possible Workbench automation.
+
+---
+
+## 13.10 Traceability Rules
+
+Every major DMAF artifact should be traceable to at least:
+
+* one guiding principle;
+* one practice domain;
+* one capability;
+* one lifecycle stage;
+* one asset type or method;
+* one release version.
+
+Where possible, artifacts should also identify:
+
+* owner;
+* status;
+* maturity level;
+* dependencies;
+* related assets;
+* intended audience;
+* automation potential.
+
+Traceability is required because DMAF is intended to become a governed body of intellectual property, not a folder of disconnected documents.
+
+---
+
+## 13.11 Knowledge Graph and the Workbench
+
+The DMAF Knowledge Graph will eventually support the Modernization Intelligence Workbench.
+
+Future Workbench capabilities may include:
+
+* finding all assets related to a practice domain;
+* identifying which lifecycle stage an asset supports;
+* recommending missing artifacts for an engagement;
+* generating proposal content from reusable patterns;
+* comparing client inputs against DMAF capability models;
+* surfacing contradictions or gaps in discovery evidence;
+* mapping messy engagement notes to framework concepts;
+* tracking which assets are reused across engagements;
+* identifying which capabilities require improvement.
+
+The Knowledge Graph is therefore both a governance construct and a future software architecture concept.
+
+---
+
+# 14. DMAF Capability Model
+
+The DMAF Capability Model defines what the practice must be able to do in order to deliver Databricks-led modernization consistently.
+
+A capability is a reusable practice competency. It is more specific than a practice domain and more stable than an individual asset, template, or deliverable.
+
+The capability model allows DMAF to organize methods, assets, maturity levels, ownership, KPIs, and future Workbench automation around clearly defined practice capabilities.
+
+---
+
+## 14.1 Capability Hierarchy
+
+The DMAF capability hierarchy is:
+
+```text
+DMAF
+├── Guiding Principles
+├── Practice Domains
+│   ├── Capabilities
+│   │   ├── Methods
+│   │   ├── Assets
+│   │   ├── Workbench Services
+│   │   └── KPIs
+│   └── Maturity Model
+└── Governance
+```
+
+This hierarchy ensures that capabilities are not created in isolation.
+
+Each capability should connect to:
+
+* one or more guiding principles;
+* one practice domain;
+* one or more lifecycle stages;
+* one or more methods;
+* one or more reusable assets;
+* one or more measurable outcomes;
+* future Workbench automation potential where applicable.
+
+---
+
+## 14.2 Capability Definition Standard
+
+Each DMAF capability should be defined using a common structure.
+
+The standard capability definition includes:
+
+| Field                | Description                                                |
+| -------------------- | ---------------------------------------------------------- |
+| Capability Name      | Name of the reusable practice capability                   |
+| Practice Domain      | Domain where the capability primarily belongs              |
+| Business Objective   | Why the capability matters                                 |
+| Inputs               | Information or artifacts required                          |
+| Outputs              | Work products produced                                     |
+| Methods              | Repeatable approaches used                                 |
+| Assets               | Templates, diagrams, workbooks, playbooks, or accelerators |
+| Workbench Automation | Future software or AI-assisted support                     |
+| Owner                | Role accountable for capability quality                    |
+| KPIs                 | Measures used to assess effectiveness                      |
+| Maturity             | Current maturity level                                     |
+| Dependencies         | Related capabilities, assets, or decisions                 |
+
+This standard ensures that DMAF capabilities are defined consistently and can be governed as reusable practice assets.
+
+---
+
+## 14.3 Example Capability — Migration Wave Planning
+
+| Field                | Description                                                                                                                                          |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability Name      | Migration Wave Planning                                                                                                                              |
+| Practice Domain      | Migration Factory                                                                                                                                    |
+| Business Objective   | Create a repeatable, risk-based migration sequence that balances business value, technical complexity, dependency constraints, and delivery capacity |
+| Inputs               | Application inventory, dependency map, complexity assessment, business priorities, resource availability                                             |
+| Outputs              | Migration waves, factory backlog, migration roadmap, executive roadmap view                                                                          |
+| Methods              | Complexity scoring, dependency analysis, risk assessment, wave sequencing workshop                                                                   |
+| Assets               | Migration Planning Workbook, Timeline Simulator, Wave Planning Template, Executive Roadmap                                                           |
+| Workbench Automation | AI-assisted wave optimizer, dependency visualizer, scenario simulator                                                                                |
+| Owner                | Migration Lead / Delivery Manager                                                                                                                    |
+| KPIs                 | Wave predictability, schedule adherence, migration velocity, risk reduction                                                                          |
+| Maturity             | Level 3 — Managed                                                                                                                                    |
+| Dependencies         | Discovery & Assessment, Modernization Architecture, Coexistence & Validation                                                                         |
+
+This example demonstrates how a capability connects practice intent, methods, assets, ownership, metrics, and automation potential.
+
+---
+
+## 14.4 Capability Maturity Model
+
+DMAF uses a five-level capability maturity model.
+
+| Level   | Name        | Description                                                                              |
+| ------- | ----------- | ---------------------------------------------------------------------------------------- |
+| Level 1 | Initial     | Capability is ad hoc, inconsistent, and dependent on individual practitioners            |
+| Level 2 | Repeatable  | Basic templates or repeatable activities exist, but governance and metrics are limited   |
+| Level 3 | Managed     | Capability is standardized, documented, governed, and measured                           |
+| Level 4 | Optimized   | Capability uses reusable assets, automation, feedback loops, and continuous improvement  |
+| Level 5 | Intelligent | Capability is AI-assisted, knowledge-driven, continuously learning, and highly automated |
+
+The maturity model helps DMAF assess both internal practice readiness and client modernization maturity.
+
+A capability does not need to begin at Level 5. The goal is to make capability maturity visible, intentional, and improvable.
+
+---
+
+## 14.5 Capability Ownership
+
+Each DMAF practice domain should have an accountable owner or role.
+
+The initial ownership model is:
+
+| Practice Domain                                   | Primary Owner                              |
+| ------------------------------------------------- | ------------------------------------------ |
+| Strategy & Business Value                         | Account Executive / Engagement Lead        |
+| Discovery & Assessment                            | Lead Business Analyst / Solution Architect |
+| Modernization Architecture                        | Enterprise Architect / Solution Architect  |
+| Migration Factory                                 | Delivery Manager / Migration Lead          |
+| Coexistence & Validation                          | Test Manager / Data Architect              |
+| AI & Automation                                   | AI Enablement Lead                         |
+| Executive Advisory                                | Engagement Lead / Practice Lead            |
+| Platform Operations, Adoption & Value Realization | Platform Lead / Customer Success Lead      |
+| Modernization Intelligence Workbench              | Practice Lead / Product Owner              |
+
+Ownership does not mean one role performs all work in the domain. It means that role is accountable for the quality, consistency, and evolution of the capability area.
+
+---
+
+## 14.6 Capability Lifecycle
+
+DMAF capabilities should evolve through a governed lifecycle:
+
+```text
+Defined
+   ↓
+Implemented
+   ↓
+Measured
+   ↓
+Improved
+   ↓
+Automated
+```
+
+### Defined
+
+The capability is named, described, mapped to a practice domain, and connected to business value.
+
+### Implemented
+
+The capability is supported by methods, templates, and reusable assets.
+
+### Measured
+
+The capability has KPIs, usage evidence, quality feedback, and delivery outcomes.
+
+### Improved
+
+The capability is refined based on engagement learning, delivery results, stakeholder feedback, and platform changes.
+
+### Automated
+
+The capability is partially or fully supported by scripts, templates, prompts, agents, dashboards, or Workbench services.
+
+This lifecycle reinforces the DMAF principle that knowledge compounds.
+
+---
+
+## 14.7 Capability Governance Rule
+
+Every new DMAF asset, method, diagram, template, script, Workbench feature, or playbook section should improve at least one defined capability.
+
+If a proposed artifact does not improve a capability, it should be reviewed before being added.
+
+This rule prevents DMAF from becoming a collection of disconnected content.
+
+---
+
+# 15. DMAF Governance Model
+
+The DMAF Governance Model defines how the framework, assets, decisions, releases, and future platform capabilities are controlled over time.
+
+Governance is required because DMAF is intended to become reusable intellectual property, not a one-time set of project documents.
+
+---
+
+## 15.1 Governance Objectives
+
+The objectives of DMAF governance are to:
+
+* maintain consistency across framework content;
+* preserve approved terminology;
+* manage changes through clear versioning;
+* ensure assets are reusable and traceable;
+* prevent duplication and uncontrolled content growth;
+* support quality review before baselining;
+* align new assets to practice domains and lifecycle stages;
+* enable future Workbench indexing and automation;
+* protect consulting intellectual property;
+* support release-based evolution.
+
+Governance should be lightweight enough to enable progress, but strong enough to protect quality.
+
+---
+
+## 15.2 Governance Objects
+
+The following DMAF objects should be governed:
+
+* guiding principles;
+* practice domains;
+* lifecycle stages;
+* cross-cutting capabilities;
+* capability definitions;
+* methods;
+* playbook chapters;
+* reusable assets;
+* templates;
+* workbooks;
+* diagrams;
+* reference architectures;
+* industry packs;
+* proposal accelerators;
+* Workbench modules;
+* AI prompts and agents;
+* release notes;
+* baseline registers.
+
+Any item that may be reused across engagements should be governed.
+
+---
+
+## 15.3 Asset Status Model
+
+DMAF assets should use a standard status model.
+
+| Status     | Meaning                                           |
+| ---------- | ------------------------------------------------- |
+| Proposed   | Idea identified, not yet approved for development |
+| Draft      | Content is being created or revised               |
+| Review     | Content is ready for structured review            |
+| Approved   | Content is approved for use                       |
+| Baselined  | Content is part of an official DMAF release       |
+| Deprecated | Content should no longer be used for new work     |
+| Archived   | Content retained for history only                 |
+
+This status model should be applied consistently across major DMAF artifacts.
+
+---
+
+## 15.4 Versioning Standard
+
+DMAF should use semantic versioning where practical.
+
+The recommended versioning model is:
+
+| Version Type | Meaning                                                                       |
+| ------------ | ----------------------------------------------------------------------------- |
+| Major        | Significant structural change to the framework, methodology, or product model |
+| Minor        | New capability, asset class, domain extension, or significant enhancement     |
+| Patch        | Correction, clarification, formatting update, or minor improvement            |
+
+Example:
+
+```text
+1.0.0 = Release 1 Foundation baseline
+1.1.0 = New approved capability model section
+1.1.1 = Typo or formatting correction
+2.0.0 = Major AI-assisted modernization expansion
+```
+
+At the framework level, the long-term version strategy is:
+
+| Version Family | Focus                                   |
+| -------------- | --------------------------------------- |
+| DMAF 1.x       | Methodology foundation                  |
+| DMAF 2.x       | AI-assisted modernization               |
+| DMAF 3.x       | Autonomous advisory capabilities        |
+| DMAF 4.x       | Industry-specific capability extensions |
+
+---
+
+## 15.5 Baseline Register
+
+DMAF should maintain a baseline register for approved framework decisions and release artifacts.
+
+The baseline register should track:
+
+* decision or artifact name;
+* version;
+* status;
+* approval date;
+* owner;
+* related sprint;
+* related release;
+* summary of decision;
+* affected assets;
+* change history.
+
+The baseline register should live in:
+
+```text
+00-Governance/Baseline-Register/
+```
+
+The purpose of the baseline register is to create a traceable record of what has been approved and when.
+
+---
+
+## 15.6 Decision Gates
+
+DMAF should use gates to control major decisions.
+
+Recommended gates include:
+
+| Gate    | Purpose                          |
+| ------- | -------------------------------- |
+| Gate 1  | Charter approval                 |
+| Gate 2  | Practice domain approval         |
+| Gate 3  | Lifecycle approval               |
+| Gate 4  | Foundation architecture approval |
+| Gate 5  | Capability model approval        |
+| Gate 6  | Asset library approval           |
+| Gate 7  | Playbook approval                |
+| Gate 8  | Reference architecture approval  |
+| Gate 9  | Workbench blueprint approval     |
+| Gate 10 | Release baseline approval        |
+
+Each gate should record:
+
+* decision made;
+* options considered;
+* approval status;
+* open issues;
+* owner;
+* date;
+* affected artifacts.
+
+---
+
+## 15.7 Sprint Governance
+
+DMAF should be built through controlled sprints.
+
+Each sprint should have:
+
+* sprint objective;
+* primary artifact;
+* expected outputs;
+* acceptance criteria;
+* completion notes;
+* status;
+* commit references where applicable.
+
+A sprint should not be marked complete until its primary artifact is drafted, reviewed, committed, and accepted for the intended level of maturity.
+
+Sprint completion should be tracked in:
+
+```text
+00-Governance/Roadmap/dmaf-sprint-roadmap.md
+```
+
+---
+
+## 15.8 Review Criteria
+
+Before a major DMAF artifact is approved or baselined, it should be reviewed against the following criteria:
+
+1. Does it align to the DMAF guiding principles?
+2. Does it map to a practice domain?
+3. Does it support one or more lifecycle stages?
+4. Does it improve a defined capability?
+5. Is it reusable across engagements?
+6. Is it clear enough for its intended audience?
+7. Is it free of unnecessary client-specific assumptions?
+8. Does it avoid unsupported claims?
+9. Does it use approved terminology?
+10. Can it be indexed or reused by the future Workbench?
+
+These review criteria support the principle that Everything Is Traceable.
+
+---
+
+## 15.9 Change Control
+
+DMAF should treat significant framework changes as controlled changes.
+
+Examples of significant changes include:
+
+* adding or removing a guiding principle;
+* renaming a practice domain;
+* changing lifecycle stages;
+* modifying the capability hierarchy;
+* changing asset metadata standards;
+* redefining release scope;
+* changing governance rules;
+* adding a major new Workbench module.
+
+Significant changes should be captured in the baseline register and release notes.
+
+Minor changes, such as wording improvements or formatting corrections, may be handled as patch updates.
+
+---
+
+## 15.10 Repository Governance
+
+The GitHub repository is the source of truth for DMAF.
+
+Repository governance should follow these rules:
+
+* Markdown is the preferred authoring format for framework documents.
+* Major assets should include metadata.
+* Folder-level README files should describe purpose and expected contents.
+* Drafts should remain clearly marked until approved.
+* Deprecated assets should not be deleted unless there is a specific reason.
+* Client-specific confidential content should not be committed to the core DMAF repository.
+* Major releases should be tagged.
+* Release notes should summarize what changed.
+* Git commit history should provide a basic audit trail.
+
+The repository should be managed as a long-lived product repository.
+
+---
+
+## 15.11 Governance and the Workbench
+
+The Modernization Intelligence Workbench will eventually depend on strong governance.
+
+Workbench features may rely on:
+
+* consistent metadata;
+* standard naming conventions;
+* approved taxonomy;
+* capability mappings;
+* lifecycle mappings;
+* asset status;
+* versioning;
+* reusable prompts;
+* knowledge graph relationships.
+
+Weak governance will make automation unreliable.
+
+Strong governance will allow the Workbench to reason over DMAF assets, recommend content, identify gaps, and generate higher-quality advisory outputs.
+
+---
+
+# 16. Document Structure
 
 The full Foundation Architecture is organized as follows:
 
@@ -813,19 +2380,33 @@ The full Foundation Architecture is organized as follows:
 
 ---
 
-# 11. Current Status
+# 17. Current Status
 
-This document is currently in **Draft v0.2.0** status.
+This document is currently in **Draft v0.5.0** status.
 
-This update adds the approved DMAF Guiding Principles and the nine DMAF Practice Domains.
+This update adds:
+
+* DMAF Capability Model;
+* capability hierarchy;
+* capability definition standard;
+* capability maturity model;
+* capability ownership model;
+* capability lifecycle;
+* governance model;
+* asset status model;
+* versioning standard;
+* baseline register concept;
+* sprint governance;
+* change control;
+* repository governance.
 
 Subsequent updates will add:
 
-* cross-cutting capabilities;
-* lifecycle stages;
-* meta model;
-* knowledge graph;
-* capability hierarchy;
-* governance model;
-* release baseline criteria.
+* product roadmap alignment;
+* repository and asset governance;
+* Release 1.0 baseline definition;
+* open decisions and future enhancements;
+* approval and baseline status.
+
+
 
