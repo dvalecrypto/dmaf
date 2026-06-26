@@ -81,6 +81,46 @@ DMAF terminology should follow these rules:
 
 ---
 
+## 3.1 Metadata Usage Rule
+
+DMAF metadata must use approved taxonomy values consistently.
+
+The `practice_domain` field should contain only approved DMAF practice domains.
+
+The approved practice domains are:
+
+1. Strategy & Business Value
+2. Discovery & Assessment
+3. Modernization Architecture
+4. Migration Factory
+5. Coexistence & Validation
+6. AI & Automation
+7. Executive Advisory
+8. Platform Operations, Adoption & Value Realization
+9. Modernization Intelligence Workbench
+
+The term `Governance` should not be used as a practice domain unless a future governed change explicitly adds it as one.
+
+Governance-related assets should instead use one or more of the following approaches:
+
+* place the asset in the appropriate governance repository folder;
+* map the asset to a relevant approved practice domain;
+* use `Governance & Security` under `cross_cutting_capabilities`;
+* identify governance relevance in the asset purpose or review criteria.
+
+Similarly, the following are cross-cutting capabilities, not practice domains:
+
+* Governance & Security
+* Risk & Compliance
+* FinOps & Cost Optimization
+* AI Enablement
+* Automation
+* Knowledge Management
+* Reusable Accelerators
+
+Repository areas, folder names, and cross-cutting capabilities should not be confused with practice domains.
+
+---
 ## 4. Approved Framework Name
 
 | Term                                        | Definition                                                               | Status   |
