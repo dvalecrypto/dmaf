@@ -2,8 +2,8 @@
 
 asset_id: DMAF-GOV-001
 title: DMAF Foundation Architecture
-status: Draft
-version: 0.6.1
+status: Baselined
+version: 1.0.0
 owner: DMAF Practice Lead
 release: Release-1.0
 
@@ -38,8 +38,8 @@ last_updated: 2026-06-26
 | Short Name          | DMAF                                                                                           |
 | Document Type       | Foundation Architecture                                                                        |
 | Release             | Release 1.0 Foundation                                                                         |
-| Version             | 0.6.1                                                                                          |
-| Status              | Reviewed                                                                                          |
+| Version             | 1.0.0                                                                                          |
+| Status              | Baselined                                                                                          |
 | Owner               | DMAF Practice Lead                                                                             |
 | Primary Audience    | Practice leadership, engagement leads, solution architects, delivery leads, executive sponsors |
 | Repository Location | `00-Governance/Charter/dmaf-foundation-architecture-v1.md`                                     |
@@ -2908,29 +2908,29 @@ These risks should be reviewed at major release checkpoints.
 
 # 20. Approval and Baseline Status
 
-This document is currently in **Review v0.6.1** status.
+This document is currently in **Baselined v1.0.0** status.
 
-It is not yet baselined.
+It is approved as the foundation reference for Release 1.0 of the Databricks Modernization Advisory Framework.
 
 ---
 
 ## 20.1 Current Approval Status
 
-| Component                       | Status      |
-| ------------------------------- | ----------- |
-| Repository Foundation           | Complete    |
-| Foundation Architecture Draft   | In Progress |
-| Guiding Principles              | Drafted     |
-| Practice Domains                | Drafted     |
-| Cross-Cutting Capabilities      | Drafted     |
-| Lifecycle Model                 | Drafted     |
-| Meta Model                      | Drafted     |
-| Knowledge Graph                 | Drafted     |
-| Capability Model                | Drafted     |
-| Governance Model                | Drafted     |
-| Product Roadmap Alignment       | Drafted     |
-| Repository and Asset Governance | Drafted     |
-| Release 1.0 Baseline Definition | Drafted     |
+| Component | Status |
+|---|---|
+| Repository Foundation | Complete |
+| Foundation Architecture Draft | Baselined |
+| Guiding Principles | Baselined |
+| Practice Domains | Baselined |
+| Cross-Cutting Capabilities | Baselined |
+| Lifecycle Model | Baselined |
+| Meta Model | Baselined |
+| Knowledge Graph | Baselined |
+| Capability Model | Baselined |
+| Governance Model | Baselined |
+| Product Roadmap Alignment | Baselined |
+| Repository and Asset Governance | Baselined |
+| Release 1.0 Baseline Definition | Baselined |
 
 ---
 
