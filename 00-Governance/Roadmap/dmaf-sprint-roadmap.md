@@ -81,40 +81,88 @@ Future DMAF assets, playbooks, reference architectures, industry packs, Workbenc
 
 ## Sprint 2 — Framework Core
 
-**Status:** In Progress
+**Status:** Complete
 **Release:** Release 1.0 Foundation / Release 1.5 Practice Architecture
 **Primary Folder:** `01-Framework/`
-**Start Date:** 2026-06-26
+**Completion Date:** 2026-06-26
 
 ### Objective
 
 Extract the approved concepts from the DMAF Foundation Architecture into modular framework artifacts under `01-Framework/`.
 
-The purpose of this sprint is to make the framework easier to maintain, reference, extend, and reuse. The Foundation Architecture remains the constitutional source of truth, while Sprint 2 creates focused framework files for day-to-day practice use.
+The purpose of this sprint was to make the framework easier to maintain, reference, extend, and reuse. The Foundation Architecture remains the constitutional source of truth, while Sprint 2 created focused framework files for day-to-day practice use.
+
+### Completed Outputs
+
+* Framework Core README updated
+* DMAF Taxonomy and Glossary created
+* Practice Domain Model created
+* Lifecycle Model created
+* Cross-Cutting Capabilities Model created
+* Meta Model created
+* Knowledge Graph created
+* Capability Model created
+* Sprint 2 QA cleanup completed
+* Metadata taxonomy correction applied
+* Governance / practice domain distinction clarified
+
+### Completion Notes
+
+Sprint 2 successfully modularized the Foundation Architecture into reusable framework components.
+
+The Framework Core now provides standalone reference files that support future playbook development, asset governance, capability catalogue development, Workbench design, and practice onboarding.
+
+### Sprint 2 Outcome
+
+**Complete — Framework Core extraction completed and pushed to GitHub.**
+
+---
+
+## Sprint 3 — Practice Capability Catalogue
+
+**Status:** In Progress
+**Release:** Release 1.5 Practice Architecture
+**Primary Folder:** `01-Framework/Capability-Model/`
+**Start Date:** 2026-06-26
+
+### Objective
+
+Create the first detailed Practice Capability Catalogue for DMAF.
+
+The purpose of this sprint is to define the reusable capabilities within each approved practice domain and establish the structure for future methods, assets, KPIs, maturity assessment, ownership, and Workbench automation.
 
 ### Planned Outputs
 
-* Framework Core README
-* DMAF taxonomy and glossary
-* Practice domain model
-* Lifecycle model
-* Cross-cutting capability model
-* Meta model
-* Knowledge graph model
-* Initial framework navigation structure
+* Practice Capability Catalogue
+* Capability definition template refinement
+* Capability-to-domain mapping
+* Capability-to-lifecycle mapping
+* Initial capability maturity targets
+* Capability ownership model refinement
+* Capability-to-asset planning structure
+* Capability-to-Workbench automation potential
 
 ### Acceptance Criteria
 
-Sprint 2 may be considered complete when:
+Sprint 3 may be considered complete when:
 
-1. `01-Framework/README.md` has been updated as the Framework Core index.
-2. Core framework concepts have been extracted from the Foundation Architecture into dedicated files.
-3. Terminology is consistent with the baselined Foundation Architecture.
-4. Framework files reference the Foundation Architecture as the source of truth.
-5. No new framework concepts are introduced without being clearly marked as future enhancements.
-6. All Sprint 2 files are committed and pushed to GitHub.
+1. Each of the nine practice domains has an initial set of defined capabilities.
+2. Each capability has a clear business objective.
+3. Each capability is mapped to a practice domain.
+4. Each capability is mapped to relevant lifecycle stages.
+5. Initial owners are identified.
+6. Initial maturity targets are documented.
+7. Future methods and assets can be derived from the catalogue.
+8. Workbench automation potential is identified where relevant.
+9. Terminology remains consistent with the DMAF Taxonomy and Glossary.
+10. All Sprint 3 files are committed and pushed to GitHub.
 
-### Sprint 2 Outcome
+### Sprint 3 Outcome
+
+**In Progress — Practice Capability Catalogue development started.**
+
+---
+
 
 **In Progress — Framework Core extraction underway.**
 
