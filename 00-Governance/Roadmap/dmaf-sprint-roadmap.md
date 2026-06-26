@@ -35,3 +35,46 @@ Recommended sprint structure:
 - DMAF is now ready for Foundation Architecture development
 
 ---
+
+## Sprint 1 — Foundation Architecture
+
+**Status:** Complete
+**Release:** Release 1.0 Foundation
+**Primary Artifact:** `00-Governance/Charter/dmaf-foundation-architecture-v1.md`
+**Completion Date:** 2026-06-26
+
+### Objective
+
+Create the foundational architecture document for the Databricks Modernization Advisory Framework.
+
+The purpose of this sprint was to establish DMAF as a coherent, governed, Databricks-first modernization framework with clear principles, domains, lifecycle stages, governance rules, release structure, and baseline criteria.
+
+### Completed Outputs
+
+* DMAF Foundation Architecture v1.0 drafted
+* Guiding principles documented
+* Practice domains documented
+* Cross-cutting capabilities documented
+* DMAF lifecycle documented
+* DMAF meta model documented
+* DMAF knowledge graph documented
+* DMAF capability model documented
+* DMAF governance model documented
+* Product roadmap alignment documented
+* Repository and asset governance documented
+* Release 1.0 baseline criteria documented
+* QA review completed
+* Baseline register created
+* Release 1.0 release notes created
+
+### Completion Notes
+
+Sprint 1 establishes the constitutional foundation for DMAF.
+
+Future DMAF assets, playbooks, reference architectures, industry packs, Workbench modules, consulting templates, and delivery accelerators should align to the Foundation Architecture unless a governed change is approved.
+
+### Sprint 1 Outcome
+
+**Complete — Ready for Release 1.0 baseline.**
+
+---
