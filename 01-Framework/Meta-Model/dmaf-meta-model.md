@@ -8,11 +8,15 @@ owner: DMAF Practice Lead
 release: Release-1.0
 
 practice_domain:
-- Governance
 - Executive Advisory
 - Modernization Architecture
 - Modernization Intelligence Workbench
 
+cross_cutting_capabilities:
+  - Governance & Security
+  - Knowledge Management
+  - Reusable Accelerators
+    
 lifecycle_stage:
 - Opportunity Qualification & Modernization Strategy
 - Strategy & Business Value
