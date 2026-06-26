@@ -78,3 +78,45 @@ Future DMAF assets, playbooks, reference architectures, industry packs, Workbenc
 **Complete — Ready for Release 1.0 baseline.**
 
 ---
+
+## Sprint 2 — Framework Core
+
+**Status:** In Progress
+**Release:** Release 1.0 Foundation / Release 1.5 Practice Architecture
+**Primary Folder:** `01-Framework/`
+**Start Date:** 2026-06-26
+
+### Objective
+
+Extract the approved concepts from the DMAF Foundation Architecture into modular framework artifacts under `01-Framework/`.
+
+The purpose of this sprint is to make the framework easier to maintain, reference, extend, and reuse. The Foundation Architecture remains the constitutional source of truth, while Sprint 2 creates focused framework files for day-to-day practice use.
+
+### Planned Outputs
+
+* Framework Core README
+* DMAF taxonomy and glossary
+* Practice domain model
+* Lifecycle model
+* Cross-cutting capability model
+* Meta model
+* Knowledge graph model
+* Initial framework navigation structure
+
+### Acceptance Criteria
+
+Sprint 2 may be considered complete when:
+
+1. `01-Framework/README.md` has been updated as the Framework Core index.
+2. Core framework concepts have been extracted from the Foundation Architecture into dedicated files.
+3. Terminology is consistent with the baselined Foundation Architecture.
+4. Framework files reference the Foundation Architecture as the source of truth.
+5. No new framework concepts are introduced without being clearly marked as future enhancements.
+6. All Sprint 2 files are committed and pushed to GitHub.
+
+### Sprint 2 Outcome
+
+**In Progress — Framework Core extraction underway.**
+
+---
+
