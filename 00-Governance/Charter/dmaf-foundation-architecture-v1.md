@@ -3,7 +3,7 @@
 asset_id: DMAF-GOV-001
 title: DMAF Foundation Architecture
 status: Draft
-version: 0.1.0
+version: 0.6.1
 owner: DMAF Practice Lead
 release: Release-1.0
 
@@ -24,7 +24,7 @@ guiding_principles:
   - Modernization Is an Operating Model
   - Everything Is Traceable
 
-last_updated: YYYY-MM-DD
+last_updated: 2026-06-26
 
 ---
 
@@ -38,8 +38,8 @@ last_updated: YYYY-MM-DD
 | Short Name          | DMAF                                                                                           |
 | Document Type       | Foundation Architecture                                                                        |
 | Release             | Release 1.0 Foundation                                                                         |
-| Version             | 0.1.0                                                                                          |
-| Status              | Draft                                                                                          |
+| Version             | 0.6.1                                                                                          |
+| Status              | Reviewed                                                                                          |
 | Owner               | DMAF Practice Lead                                                                             |
 | Primary Audience    | Practice leadership, engagement leads, solution architects, delivery leads, executive sponsors |
 | Repository Location | `00-Governance/Charter/dmaf-foundation-architecture-v1.md`                                     |
@@ -1929,7 +1929,7 @@ DMAF
 │   ├── Capabilities
 │   │   ├── Methods
 │   │   ├── Assets
-│   │   ├── Workbench Services
+│   │   ├── Platform Services
 │   │   └── KPIs
 │   └── Maturity Model
 └── Governance
@@ -2908,7 +2908,7 @@ These risks should be reviewed at major release checkpoints.
 
 # 20. Approval and Baseline Status
 
-This document is currently in **Draft v0.6.0** status.
+This document is currently in **Review v0.6.1** status.
 
 It is not yet baselined.
 
