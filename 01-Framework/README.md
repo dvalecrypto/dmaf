@@ -6,18 +6,21 @@ status: Draft
 version: 0.1.0
 owner: DMAF Practice Lead
 release: Release-1.0
-practice_domain:
 
-* Governance
-* Executive Advisory
-* Modernization Architecture
-  lifecycle_stage:
-* Opportunity Qualification & Modernization Strategy
-* Strategy & Business Value
-  guiding_principles:
-* Everything Is Traceable
-* Knowledge Compounds
-  last_updated: 2026-06-26
+practice_domain:
+- Governance
+- Executive Advisory
+- Modernization Architecture
+
+lifecycle_stage:
+- Opportunity Qualification & Modernization Strategy
+- Strategy & Business Value
+
+guiding_principles:
+- Everything Is Traceable
+- Knowledge Compounds
+
+last_updated: 2026-06-26
 
 ---
 
