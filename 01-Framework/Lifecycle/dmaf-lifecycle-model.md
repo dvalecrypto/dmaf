@@ -635,12 +635,19 @@ Its purpose is to move beyond migration completion toward sustained platform val
 * value realization report;
 * continuous improvement backlog.
 
-## 15.4 Primary Practice Domains
+## 15.4 Primary Practice Domains and Cross-Cutting Capabilities
+
+Primary practice domains:
 
 * Platform Operations, Adoption & Value Realization
+* Executive Advisory
+* Modernization Intelligence Workbench
+
+Relevant cross-cutting capabilities:
+
 * Governance & Security
 * FinOps & Cost Optimization
-* Executive Advisory
+* Knowledge Management
 
 ## 15.5 Exit Criteria
 
@@ -755,7 +762,7 @@ The output of each stage informs future modernization opportunities, updated ass
 | Stage 6 — Migration Factory Execution                           | Migration Factory; AI & Automation; Coexistence & Validation; Platform Operations, Adoption & Value Realization                                         |
 | Stage 7 — Coexistence & Validation                              | Coexistence & Validation; Migration Factory; Modernization Architecture; Executive Advisory                                                             |
 | Stage 8 — Production Cutover                                    | Coexistence & Validation; Migration Factory; Platform Operations, Adoption & Value Realization; Executive Advisory                                      |
-| Stage 9 — Platform Operations, Adoption & Value Realization     | Platform Operations, Adoption & Value Realization; Governance & Security; FinOps & Cost Optimization; Executive Advisory                                |
+| Stage 9 — Platform Operations, Adoption & Value Realization | Platform Operations, Adoption & Value Realization; Executive Advisory; Modernization Intelligence Workbench. Cross-cutting: Governance & Security; FinOps & Cost Optimization; Knowledge Management |
 | Stage 10 — Continuous Optimization & Modernization Intelligence | Modernization Intelligence Workbench; Platform Operations, Adoption & Value Realization; AI & Automation; Strategy & Business Value; Executive Advisory |
 
 ---
