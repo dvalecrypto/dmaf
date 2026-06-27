@@ -205,7 +205,7 @@ Each domain section will define an initial set of capabilities.
 |---|---:|---|
 | Strategy & Business Value | 7 | Drafted |
 | Discovery & Assessment | 8 | Drafted |
-| Modernization Architecture | Pending | Not Started |
+| Modernization Architecture | 8 | Drafted |
 | Migration Factory | Pending | Not Started |
 | Coexistence & Validation | Pending | Not Started |
 | AI & Automation | Pending | Not Started |
@@ -771,13 +771,289 @@ Future versions of this domain section may include:
 
 ---
 
-# 18. Status
+# 18. Practice Domain 3 — Modernization Architecture
 
-This Practice Capability Catalogue is currently in **Draft v0.3.0** status.
+## 18.1 Domain Purpose
+
+The Modernization Architecture domain defines the target-state and transitional architecture models for Databricks-led modernization.
+
+This domain connects discovery findings, business objectives, platform constraints, governance expectations, integration requirements, and migration strategy into a coherent architecture direction.
+
+Modernization Architecture ensures that DMAF does not treat migration as a mechanical workload movement exercise. It defines the architectural foundation required for scalable, governed, validated, and value-oriented modernization.
+
+---
+
+## 18.2 Capability Summary
+
+| Capability ID    | Capability Name                  | Primary Lifecycle Stages   | Maturity Target   |
+| ---------------- | -------------------------------- | -------------------------- | ----------------- |
+| DMAF-CAP-MAR-001 | Target-State Architecture Design | Stage 3, Stage 5           | Level 3 — Managed |
+| DMAF-CAP-MAR-002 | Transitional Architecture Design | Stage 3, Stage 4, Stage 7  | Level 3 — Managed |
+| DMAF-CAP-MAR-003 | Databricks Capability Mapping    | Stage 1, Stage 3, Stage 4  | Level 3 — Managed |
+| DMAF-CAP-MAR-004 | Lakehouse Pattern Selection      | Stage 3, Stage 5, Stage 6  | Level 3 — Managed |
+| DMAF-CAP-MAR-005 | Governance Architecture Design   | Stage 3, Stage 7, Stage 9  | Level 3 — Managed |
+| DMAF-CAP-MAR-006 | Integration Architecture Design  | Stage 3, Stage 4, Stage 7  | Level 3 — Managed |
+| DMAF-CAP-MAR-007 | Architecture Decision Management | Stage 3, Stage 4, Stage 5  | Level 3 — Managed |
+| DMAF-CAP-MAR-008 | Reference Architecture Selection | Stage 3, Stage 5, Stage 10 | Level 3 — Managed |
+
+---
+
+## 18.3 Capability — DMAF-CAP-MAR-001 — Target-State Architecture Design
+
+| Field                          | Description                                                                                                                                                                            |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MAR-001                                                                                                                                                                       |
+| Capability Name                | Target-State Architecture Design                                                                                                                                                       |
+| Practice Domain                | Modernization Architecture                                                                                                                                                             |
+| Business Objective             | Define the future Databricks-centered architecture required to support business value, governed data delivery, scalable engineering, analytics, AI readiness, and platform operations. |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 5 — Reference Implementation / Pilot                                                                                                       |
+| Inputs                         | Business objectives, discovery findings, current-state architecture, application inventory, dependency map, governance requirements, platform constraints                              |
+| Outputs                        | Target-state architecture, architecture principles, platform capability view, architecture roadmap, design assumptions                                                                 |
+| Methods                        | Target-state architecture method, architecture capability mapping, platform pattern alignment, architecture review workshop                                                            |
+| Assets                         | Target-state architecture template, Databricks architecture diagram template, architecture principles checklist, platform capability map                                               |
+| Owner                          | Enterprise Architect / Solution Architect                                                                                                                                              |
+| KPIs                           | Architecture approval, target-state clarity, stakeholder alignment, number of unresolved architecture decisions                                                                        |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                      |
+| Dependencies                   | Discovery & Assessment, Strategy & Business Value, Governance & Security, Platform Operations, Adoption & Value Realization                                                            |
+| Workbench Automation Potential | AI-assisted architecture draft generation, capability-to-architecture mapping, architecture gap detection, diagram generation support                                                  |
+
+### Notes
+
+This capability establishes the future-state direction for modernization. It should be tied to business value and platform outcomes, not simply to tool replacement.
+
+---
+
+## 18.4 Capability — DMAF-CAP-MAR-002 — Transitional Architecture Design
+
+| Field                          | Description                                                                                                                                                        |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-MAR-002                                                                                                                                                   |
+| Capability Name                | Transitional Architecture Design                                                                                                                                   |
+| Practice Domain                | Modernization Architecture                                                                                                                                         |
+| Business Objective             | Define how legacy and modern platforms will coexist during modernization while controlling risk, integration complexity, validation needs, and operational impact. |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning; Stage 7 — Coexistence & Validation                                                     |
+| Inputs                         | Current-state architecture, target-state architecture, dependency map, migration roadmap, coexistence requirements, downstream impacts, cutover constraints        |
+| Outputs                        | Transitional architecture, coexistence view, migration transition states, interim integration model, transition risk notes                                         |
+| Methods                        | Transitional architecture planning, coexistence pattern assessment, transition-state mapping, dependency-aware architecture sequencing                             |
+| Assets                         | Transitional architecture template, coexistence architecture pattern, transition-state diagram, interim integration checklist                                      |
+| Owner                          | Solution Architect / Data Architect                                                                                                                                |
+| KPIs                           | Transition-state clarity, coexistence risk reduction, unresolved transition dependencies, architecture readiness for migration planning                            |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                  |
+| Dependencies                   | Target-State Architecture Design, Data Source & Dependency Mapping, Coexistence & Validation, Migration Factory                                                    |
+| Workbench Automation Potential | Transition-state recommendation, coexistence pattern matching, dependency-to-transition mapping, transition risk detection                                         |
+
+### Notes
+
+This capability is essential when modernization cannot occur as a clean cutover. It makes coexistence intentional rather than accidental.
+
+---
+
+## 18.5 Capability — DMAF-CAP-MAR-003 — Databricks Capability Mapping
+
+| Field                          | Description                                                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MAR-003                                                                                                                                          |
+| Capability Name                | Databricks Capability Mapping                                                                                                                             |
+| Practice Domain                | Modernization Architecture                                                                                                                                |
+| Business Objective             | Map modernization needs to relevant Databricks capabilities so that architecture decisions are aligned with platform strengths and business objectives.   |
+| Lifecycle Stages               | Stage 1 — Strategy & Business Value; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning                                           |
+| Inputs                         | Business value themes, current-state pain points, workload characteristics, governance needs, data engineering needs, analytics needs, AI-readiness goals |
+| Outputs                        | Databricks capability map, platform fit summary, capability-to-use-case alignment, platform adoption implications                                         |
+| Methods                        | Capability mapping, use-case alignment, platform fit assessment, capability gap analysis                                                                  |
+| Assets                         | Databricks capability map template, platform fit assessment checklist, use-case alignment worksheet                                                       |
+| Owner                          | Solution Architect / Databricks Practice Lead                                                                                                             |
+| KPIs                           | Capability alignment clarity, number of mapped use cases, platform fit confidence, unresolved capability gaps                                             |
+| Maturity Target                | Level 3 — Managed                                                                                                                                         |
+| Dependencies                   | Strategy & Business Value, Target-State Architecture Design, Platform Operations, Adoption & Value Realization                                            |
+| Workbench Automation Potential | Capability recommendation, use-case-to-platform mapping, capability gap detection, platform positioning summary generation                                |
+
+### Notes
+
+This capability reinforces the principle **Databricks by Design**. It ensures Databricks capabilities are positioned intentionally, not generically.
+
+---
+
+## 18.6 Capability — DMAF-CAP-MAR-004 — Lakehouse Pattern Selection
+
+| Field                          | Description                                                                                                                                                     |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MAR-004                                                                                                                                                |
+| Capability Name                | Lakehouse Pattern Selection                                                                                                                                     |
+| Practice Domain                | Modernization Architecture                                                                                                                                      |
+| Business Objective             | Select appropriate lakehouse architecture patterns for data ingestion, transformation, governance, serving, analytics, AI readiness, and operational use cases. |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 5 — Reference Implementation / Pilot; Stage 6 — Migration Factory Execution                                         |
+| Inputs                         | Workload inventory, data characteristics, latency requirements, governance requirements, transformation patterns, target-state architecture, platform standards |
+| Outputs                        | Selected lakehouse patterns, architecture pattern rationale, implementation guidance, reusable reference pattern mapping                                        |
+| Methods                        | Pattern selection method, workload-to-pattern mapping, data architecture review, architecture pattern fit assessment                                            |
+| Assets                         | Lakehouse pattern catalogue, workload-to-pattern matrix, reference architecture diagrams, architecture pattern decision guide                                   |
+| Owner                          | Data Architect / Solution Architect                                                                                                                             |
+| KPIs                           | Pattern reuse rate, pattern fit confidence, number of workloads mapped to approved patterns, reduction in custom one-off designs                                |
+| Maturity Target                | Level 3 — Managed                                                                                                                                               |
+| Dependencies                   | Target-State Architecture Design, Reference Architecture Selection, Migration Factory, Governance & Security                                                    |
+| Workbench Automation Potential | Pattern recommendation, workload-to-pattern mapping, reusable architecture diagram generation, pattern gap detection                                            |
+
+### Notes
+
+This capability supports standardization. It reduces the risk of every engagement creating a unique architecture for common modernization scenarios.
+
+---
+
+## 18.7 Capability — DMAF-CAP-MAR-005 — Governance Architecture Design
+
+| Field                          | Description                                                                                                                                                        |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-MAR-005                                                                                                                                                   |
+| Capability Name                | Governance Architecture Design                                                                                                                                     |
+| Practice Domain                | Modernization Architecture                                                                                                                                         |
+| Business Objective             | Define how governance, access control, security, lineage, policy enforcement, and data management expectations will be represented in the modernized architecture. |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 7 — Coexistence & Validation; Stage 9 — Platform Operations, Adoption & Value Realization                              |
+| Inputs                         | Enterprise governance requirements, security standards, data classification needs, access model, compliance expectations, current-state control model              |
+| Outputs                        | Governance architecture view, access control model, policy alignment notes, data management considerations, governance implementation assumptions                  |
+| Methods                        | Governance architecture assessment, access model design, policy mapping, control alignment review                                                                  |
+| Assets                         | Governance architecture template, access control checklist, Unity Catalog readiness checklist, policy mapping worksheet                                            |
+| Owner                          | Solution Architect / Governance Lead                                                                                                                               |
+| KPIs                           | Governance requirement coverage, access model clarity, control alignment, unresolved governance gaps                                                               |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                  |
+| Dependencies                   | Governance & Security, Risk & Compliance, Target-State Architecture Design, Platform Operations, Adoption & Value Realization                                      |
+| Workbench Automation Potential | Governance gap detection, access model recommendation, policy-to-architecture mapping, governance checklist generation                                             |
+
+### Notes
+
+This capability ensures that governance is designed into modernization architecture rather than added after implementation.
+
+---
+
+## 18.8 Capability — DMAF-CAP-MAR-006 — Integration Architecture Design
+
+| Field                          | Description                                                                                                                                                                   |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MAR-006                                                                                                                                                              |
+| Capability Name                | Integration Architecture Design                                                                                                                                               |
+| Practice Domain                | Modernization Architecture                                                                                                                                                    |
+| Business Objective             | Define how modernized workloads will integrate with upstream systems, downstream consumers, orchestration tools, data platforms, reporting layers, and operational processes. |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning; Stage 7 — Coexistence & Validation                                                                |
+| Inputs                         | Dependency map, source-to-target relationships, interface inventory, downstream file requirements, orchestration schedules, target-state architecture                         |
+| Outputs                        | Integration architecture, interface model, upstream/downstream impact view, orchestration considerations, integration risks                                                   |
+| Methods                        | Integration architecture review, interface mapping, orchestration pattern assessment, downstream impact analysis                                                              |
+| Assets                         | Integration architecture template, interface inventory template, orchestration pattern guide, downstream impact checklist                                                     |
+| Owner                          | Solution Architect / Integration Architect                                                                                                                                    |
+| KPIs                           | Interface coverage, downstream impact clarity, integration risk visibility, unresolved integration dependencies                                                               |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                             |
+| Dependencies                   | Data Source & Dependency Mapping, Transitional Architecture Design, Coexistence & Validation, Migration Factory                                                               |
+| Workbench Automation Potential | Interface extraction, integration map generation, downstream impact summarization, orchestration pattern recommendation                                                       |
+
+### Notes
+
+This capability is important for enterprise modernization where data pipelines rarely operate in isolation. Integration design directly affects validation, cutover, and operations.
+
+---
+
+## 18.9 Capability — DMAF-CAP-MAR-007 — Architecture Decision Management
+
+| Field                          | Description                                                                                                                                                      |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MAR-007                                                                                                                                                 |
+| Capability Name                | Architecture Decision Management                                                                                                                                 |
+| Practice Domain                | Modernization Architecture                                                                                                                                       |
+| Business Objective             | Capture, govern, and communicate key architecture decisions so modernization teams understand design rationale, trade-offs, constraints, and downstream impacts. |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning; Stage 5 — Reference Implementation / Pilot                                           |
+| Inputs                         | Architecture options, constraints, risks, decision points, stakeholder feedback, platform standards, pilot findings                                              |
+| Outputs                        | Architecture decision records, decision log, open decision list, decision rationale, architecture trade-off summary                                              |
+| Methods                        | Architecture decision record method, decision review, trade-off analysis, architecture governance review                                                         |
+| Assets                         | Architecture decision record template, decision log, architecture trade-off worksheet, review checklist                                                          |
+| Owner                          | Enterprise Architect / Solution Architect                                                                                                                        |
+| KPIs                           | Decision traceability, open decision aging, decision approval rate, number of decisions with documented rationale                                                |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                |
+| Dependencies                   | Target-State Architecture Design, Transitional Architecture Design, Governance & Security, Executive Advisory                                                    |
+| Workbench Automation Potential | ADR drafting support, decision extraction from notes, open decision tracking, decision impact analysis                                                           |
+
+### Notes
+
+This capability supports traceability and governance. It helps prevent architecture choices from being lost in meeting notes or informal discussions.
+
+---
+
+## 18.10 Capability — DMAF-CAP-MAR-008 — Reference Architecture Selection
+
+| Field                          | Description                                                                                                                                       |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MAR-008                                                                                                                                  |
+| Capability Name                | Reference Architecture Selection                                                                                                                  |
+| Practice Domain                | Modernization Architecture                                                                                                                        |
+| Business Objective             | Select and adapt reusable Databricks-centered reference architectures to accelerate modernization design while preserving fit to client context.  |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 5 — Reference Implementation / Pilot; Stage 10 — Continuous Optimization & Modernization Intelligence |
+| Inputs                         | Current-state architecture, target-state objectives, workload patterns, platform standards, industry requirements, reusable architecture library  |
+| Outputs                        | Selected reference architecture, fit-gap notes, adaptation guidance, reusable pattern feedback                                                    |
+| Methods                        | Reference architecture fit assessment, pattern selection, fit-gap analysis, architecture reuse review                                             |
+| Assets                         | Reference architecture catalogue, architecture fit-gap worksheet, reference architecture selection checklist, reusable diagram library            |
+| Owner                          | Solution Architect / Practice Lead                                                                                                                |
+| KPIs                           | Reference architecture reuse rate, fit-gap clarity, reduction in custom architecture effort, reusable pattern improvement rate                    |
+| Maturity Target                | Level 3 — Managed                                                                                                                                 |
+| Dependencies                   | Lakehouse Pattern Selection, Target-State Architecture Design, Knowledge Management, Reusable Accelerators                                        |
+| Workbench Automation Potential | Reference architecture recommendation, pattern matching, fit-gap detection, diagram retrieval, architecture package generation                    |
+
+### Notes
+
+This capability keeps DMAF reusable and scalable. Reference architectures should accelerate design but should not replace client-specific architecture judgment.
+
+---
+
+# 19. Modernization Architecture Capability Map
+
+| Capability ID    | Capability                       | Supports Target State | Supports Transition | Supports Governance | Supports Workbench |
+| ---------------- | -------------------------------- | --------------------- | ------------------- | ------------------- | ------------------ |
+| DMAF-CAP-MAR-001 | Target-State Architecture Design | Yes                   | Yes                 | Yes                 | Yes                |
+| DMAF-CAP-MAR-002 | Transitional Architecture Design | Yes                   | Yes                 | Yes                 | Yes                |
+| DMAF-CAP-MAR-003 | Databricks Capability Mapping    | Yes                   | Yes                 | Yes                 | Yes                |
+| DMAF-CAP-MAR-004 | Lakehouse Pattern Selection      | Yes                   | Yes                 | Yes                 | Yes                |
+| DMAF-CAP-MAR-005 | Governance Architecture Design   | Yes                   | Yes                 | Yes                 | Yes                |
+| DMAF-CAP-MAR-006 | Integration Architecture Design  | Yes                   | Yes                 | Yes                 | Yes                |
+| DMAF-CAP-MAR-007 | Architecture Decision Management | Yes                   | Yes                 | Yes                 | Yes                |
+| DMAF-CAP-MAR-008 | Reference Architecture Selection | Yes                   | Yes                 | Yes                 | Yes                |
+
+---
+
+# 20. Modernization Architecture Capability Governance
+
+The Modernization Architecture capabilities should be governed according to the following rules:
+
+1. Do not define target-state architecture without reference to business value.
+2. Do not define architecture without using discovery evidence.
+3. Do not skip transitional architecture when coexistence or phased migration is required.
+4. Do not treat governance and security as post-implementation concerns.
+5. Do not create one-off architecture patterns when reusable reference architectures exist.
+6. Do not make major architecture decisions without documenting rationale.
+7. Do not proceed to migration planning without identifying major architecture dependencies.
+8. Ensure architecture outputs are usable by Migration Factory, Coexistence & Validation, and Platform Operations.
+
+---
+
+# 21. Future Enhancements
+
+Future versions of this domain section may include:
+
+* target-state architecture template;
+* transitional architecture template;
+* Databricks capability map;
+* lakehouse pattern catalogue;
+* Unity Catalog governance architecture checklist;
+* integration architecture checklist;
+* architecture decision record template;
+* reference architecture selection guide;
+* architecture package generator concept;
+* Workbench architecture recommendation agent.
+
+---
+
+# 22. Status
+
+This Practice Capability Catalogue is currently in **Draft v0.4.0** status.
 
 The following practice domains have been drafted:
 
 * Strategy & Business Value
 * Discovery & Assessment
+* Modernization Architecture
 
 Remaining capability domains are pending.
+
