@@ -537,20 +537,300 @@ This domain should also influence the future Workbench build because many Workbe
 
 ---
 
-# 14. Status
+# 14. Domain 7 — Executive Advisory
 
-This Capability Method Asset Map is currently in Draft v0.6.0 status.
+## 14.1 Method and Asset Map
 
-The following domains have been mapped:
+| Capability ID    | Capability                              | Candidate Method                    | Candidate Asset                        | Asset Type | Priority | Workbench Potential |
+| ---------------- | --------------------------------------- | ----------------------------------- | -------------------------------------- | ---------- | -------- | ------------------- |
+| DMAF-CAP-EXA-001 | Executive Narrative Development         | Executive Story Framing             | Executive Narrative Template           | Template   | High     | Yes                 |
+| DMAF-CAP-EXA-001 | Executive Narrative Development         | Modernization Message Structuring   | Modernization Story Arc Template       | Template   | High     | Yes                 |
+| DMAF-CAP-EXA-002 | Advisory Workshop Facilitation          | Advisory Workshop Design            | Advisory Workshop Agenda Template      | Template   | High     | Yes                 |
+| DMAF-CAP-EXA-002 | Advisory Workshop Facilitation          | Decision Capture Method             | Workshop Decision Capture Template     | Template   | High     | Yes                 |
+| DMAF-CAP-EXA-003 | Decision Framing & Options Analysis     | Options Analysis Method             | Executive Decision Brief Template      | Template   | High     | Yes                 |
+| DMAF-CAP-EXA-003 | Decision Framing & Options Analysis     | Trade-Off Analysis                  | Options and Trade-Off Matrix           | Worksheet  | High     | Yes                 |
+| DMAF-CAP-EXA-004 | Modernization Roadmap Storytelling      | Roadmap Storytelling Method         | Executive Roadmap Briefing Template    | Template   | High     | Yes                 |
+| DMAF-CAP-EXA-004 | Modernization Roadmap Storytelling      | Modernization Journey Visualization | Modernization Journey Diagram          | Diagram    | High     | Yes                 |
+| DMAF-CAP-EXA-005 | Proposal Positioning & Pursuit Support  | Pursuit Positioning Method          | Modernization Proposal Outline         | Template   | High     | Yes                 |
+| DMAF-CAP-EXA-005 | Proposal Positioning & Pursuit Support  | Value Proposition Framing           | Proposal Positioning Statement Library | Library    | High     | Yes                 |
+| DMAF-CAP-EXA-006 | Executive Visual Design                 | Executive Visual Storytelling       | Executive One-Page Template            | Template   | High     | Yes                 |
+| DMAF-CAP-EXA-006 | Executive Visual Design                 | Before-and-After Framing            | Modernization Before-and-After Diagram | Diagram    | High     | Yes                 |
+| DMAF-CAP-EXA-007 | Transformation Value Communication      | Value Realization Communication     | Executive Value Update Template        | Template   | Medium   | Yes                 |
+| DMAF-CAP-EXA-007 | Transformation Value Communication      | KPI-to-Narrative Method             | KPI Interpretation Guide               | Guide      | Medium   | Yes                 |
+| DMAF-CAP-EXA-008 | Executive Governance & Steering Support | Executive Steering Support Method   | Steering Committee Deck Template       | Deck       | High     | Yes                 |
+| DMAF-CAP-EXA-008 | Executive Governance & Steering Support | Executive Status Synthesis          | Executive Status Report Template       | Template   | High     | Yes                 |
 
-* Strategy & Business Value
-* Discovery & Assessment
-* Modernization Architecture
-* Migration Factory
-* Coexistence & Validation
-* AI & Automation
+---
 
-Remaining domains are pending.
+## 14.2 Priority Asset Candidates
+
+The highest priority Executive Advisory assets are:
+
+1. Executive Narrative Template
+2. Modernization Story Arc Template
+3. Advisory Workshop Agenda Template
+4. Workshop Decision Capture Template
+5. Executive Decision Brief Template
+6. Options and Trade-Off Matrix
+7. Executive Roadmap Briefing Template
+8. Modernization Journey Diagram
+9. Modernization Proposal Outline
+10. Proposal Positioning Statement Library
+11. Executive One-Page Template
+12. Modernization Before-and-After Diagram
+13. Steering Committee Deck Template
+14. Executive Status Report Template
+
+---
+
+## 14.3 Notes
+
+Executive Advisory assets should be prioritized because they help translate DMAF into language that executives, sponsors, and decision-makers can act on.
+
+The most important Sprint 4 build candidates from this domain are:
+
+* Executive Narrative Template
+* Executive One-Page Template
+* Executive Decision Brief Template
+* Modernization Proposal Outline
+* Modernization Before-and-After Diagram
+* Steering Committee Deck Template
+
+Executive Advisory assets should be concise, visual, decision-oriented, and traceable to evidence.
+
+These assets should avoid overly technical language unless the intended audience is technical leadership. They should help explain:
+
+* why modernization matters;
+* why Databricks is relevant;
+* what decision is required;
+* what options exist;
+* what risks or constraints apply;
+* what value is expected;
+* what happens next.
+
+---
+
+# 15. Domain 8 — Platform Operations, Adoption & Value Realization
+
+## 15.1 Method and Asset Map
+
+| Capability ID    | Capability                                 | Candidate Method                | Candidate Asset                        | Asset Type | Priority | Workbench Potential |
+| ---------------- | ------------------------------------------ | ------------------------------- | -------------------------------------- | ---------- | -------- | ------------------- |
+| DMAF-CAP-POV-001 | Platform Operating Model Design            | Platform Operating Model Method | Platform Operating Model Template      | Template   | High     | Yes                 |
+| DMAF-CAP-POV-001 | Platform Operating Model Design            | Role and Responsibility Mapping | Platform RACI Template                 | Template   | High     | Yes                 |
+| DMAF-CAP-POV-002 | Adoption & Enablement Planning             | Adoption Planning Method        | Adoption and Enablement Plan Template  | Template   | High     | Yes                 |
+| DMAF-CAP-POV-002 | Adoption & Enablement Planning             | Stakeholder Enablement Mapping  | Stakeholder Adoption Matrix            | Worksheet  | Medium   | Yes                 |
+| DMAF-CAP-POV-003 | Support Model Transition                   | Support Transition Planning     | Support Model Template                 | Template   | High     | Yes                 |
+| DMAF-CAP-POV-003 | Support Model Transition                   | Escalation Path Mapping         | Support Escalation Matrix              | Template   | High     | Yes                 |
+| DMAF-CAP-POV-004 | Runbook & Operational Readiness Management | Runbook Development Method      | Operational Runbook Template           | Template   | High     | Yes                 |
+| DMAF-CAP-POV-004 | Runbook & Operational Readiness Management | Operational Readiness Review    | Operational Readiness Checklist        | Checklist  | High     | Yes                 |
+| DMAF-CAP-POV-005 | FinOps & Consumption Management            | Cost Driver Analysis            | FinOps Cost Driver Worksheet           | Worksheet  | High     | Yes                 |
+| DMAF-CAP-POV-005 | FinOps & Consumption Management            | Consumption Review Method       | Platform Consumption Dashboard Concept | Dashboard  | Medium   | Yes                 |
+| DMAF-CAP-POV-006 | Platform KPI & Value Realization Tracking  | Platform KPI Definition         | Platform KPI Library                   | Guide      | High     | Yes                 |
+| DMAF-CAP-POV-006 | Platform KPI & Value Realization Tracking  | Value Realization Tracking      | Value Realization Tracker              | Workbook   | High     | Yes                 |
+| DMAF-CAP-POV-007 | Governance Maturity Improvement            | Governance Maturity Review      | Governance Maturity Assessment         | Assessment | High     | Yes                 |
+| DMAF-CAP-POV-007 | Governance Maturity Improvement            | Policy and Control Gap Review   | Governance Improvement Backlog         | Template   | Medium   | Yes                 |
+| DMAF-CAP-POV-008 | Continuous Optimization Management         | Optimization Backlog Management | Continuous Optimization Backlog        | Template   | High     | Yes                 |
+| DMAF-CAP-POV-008 | Continuous Optimization Management         | Continuous Improvement Cadence  | Continuous Improvement Review Template | Template   | Medium   | Yes                 |
+
+---
+
+## 15.2 Priority Asset Candidates
+
+The highest priority Platform Operations, Adoption & Value Realization assets are:
+
+1. Platform Operating Model Template
+2. Platform RACI Template
+3. Adoption and Enablement Plan Template
+4. Support Model Template
+5. Support Escalation Matrix
+6. Operational Runbook Template
+7. Operational Readiness Checklist
+8. FinOps Cost Driver Worksheet
+9. Platform KPI Library
+10. Value Realization Tracker
+11. Governance Maturity Assessment
+12. Continuous Optimization Backlog
+
+---
+
+## 15.3 Notes
+
+Platform Operations, Adoption & Value Realization assets should be prioritized because they prevent modernization from ending at technical cutover.
+
+The most important Sprint 4 build candidates from this domain are:
+
+* Platform Operating Model Template
+* Operational Readiness Checklist
+* Support Model Template
+* Platform KPI Library
+* Value Realization Tracker
+* Continuous Optimization Backlog
+
+These assets should help answer whether the modernized Databricks platform is:
+
+* owned;
+* governed;
+* supportable;
+* adopted;
+* cost-aware;
+* measurable;
+* continuously improving.
+
+This domain should also feed future executive value reporting and Workbench practice intelligence.
+
+---
+
+# 16. Domain 9 — Modernization Intelligence Workbench
+
+## 16.1 Method and Asset Map
+
+| Capability ID    | Capability                             | Candidate Method                  | Candidate Asset                                     | Asset Type     | Priority | Workbench Potential |
+| ---------------- | -------------------------------------- | --------------------------------- | --------------------------------------------------- | -------------- | -------- | ------------------- |
+| DMAF-CAP-MIW-001 | Engagement Workspace Management        | Engagement Workspace Setup Method | Engagement Workspace Template                       | Template       | High     | Yes                 |
+| DMAF-CAP-MIW-001 | Engagement Workspace Management        | Input and Output Registering      | Engagement Input and Output Register                | Template       | High     | Yes                 |
+| DMAF-CAP-MIW-002 | Input Ingestion & Normalization        | Input Ingestion Method            | Input Ingestion Standard                            | Standard       | High     | Yes                 |
+| DMAF-CAP-MIW-002 | Input Ingestion & Normalization        | Evidence Normalization Method     | Normalized Input Schema                             | Schema         | High     | Yes                 |
+| DMAF-CAP-MIW-003 | Modernization Context Interpretation   | Context Interpretation Method     | Modernization Context Interpretation Prompt Library | Prompt Library | High     | Yes                 |
+| DMAF-CAP-MIW-003 | Modernization Context Interpretation   | Lifecycle and Domain Mapping      | Lifecycle and Domain Mapping Guide                  | Guide          | High     | Yes                 |
+| DMAF-CAP-MIW-004 | Asset Retrieval & Recommendation       | Asset Recommendation Method       | Capability-to-Asset Recommendation Rules            | Guide          | High     | Yes                 |
+| DMAF-CAP-MIW-004 | Asset Retrieval & Recommendation       | Engagement Asset Packaging        | Engagement Asset Pack Template                      | Template       | Medium   | Yes                 |
+| DMAF-CAP-MIW-005 | Knowledge Graph Indexing               | Knowledge Graph Indexing Method   | Knowledge Graph Schema                              | Schema         | High     | Yes                 |
+| DMAF-CAP-MIW-005 | Knowledge Graph Indexing               | Metadata Validation Method        | Metadata Validation Checklist                       | Checklist      | High     | Yes                 |
+| DMAF-CAP-MIW-006 | Advisory Output Generation             | Advisory Output Generation Method | Advisory Output Generation Prompt Library           | Prompt Library | High     | Yes                 |
+| DMAF-CAP-MIW-006 | Advisory Output Generation             | Output Quality Review             | Advisory Output Review Checklist                    | Checklist      | High     | Yes                 |
+| DMAF-CAP-MIW-007 | Practice Intelligence Dashboarding     | Practice Metrics Definition       | Practice Intelligence Dashboard Concept             | Dashboard      | Medium   | Yes                 |
+| DMAF-CAP-MIW-007 | Practice Intelligence Dashboarding     | Asset Reuse Tracking              | Asset Reuse Tracker                                 | Workbook       | Medium   | Yes                 |
+| DMAF-CAP-MIW-008 | Workbench Governance & Quality Control | Workbench Quality Control Method  | Workbench Quality Checklist                         | Checklist      | High     | Yes                 |
+| DMAF-CAP-MIW-008 | Workbench Governance & Quality Control | Workbench Review Workflow         | Workbench Review Queue Model                        | Workflow       | High     | Yes                 |
+
+---
+
+## 16.2 Priority Asset Candidates
+
+The highest priority Modernization Intelligence Workbench assets are:
+
+1. Engagement Workspace Template
+2. Engagement Input and Output Register
+3. Input Ingestion Standard
+4. Normalized Input Schema
+5. Modernization Context Interpretation Prompt Library
+6. Lifecycle and Domain Mapping Guide
+7. Capability-to-Asset Recommendation Rules
+8. Knowledge Graph Schema
+9. Metadata Validation Checklist
+10. Advisory Output Generation Prompt Library
+11. Advisory Output Review Checklist
+12. Workbench Quality Checklist
+13. Workbench Review Queue Model
+
+---
+
+## 16.3 Notes
+
+Modernization Intelligence Workbench assets should be treated as future product-enablement assets.
+
+The most important Sprint 4 build candidates from this domain are:
+
+* Engagement Workspace Template
+* Input Ingestion Standard
+* Normalized Input Schema
+* Knowledge Graph Schema
+* Metadata Validation Checklist
+* Workbench Quality Checklist
+
+These assets should not be built as standalone software requirements too early. They should first define how DMAF knowledge, inputs, assets, outputs, metadata, and review workflows should behave.
+
+The Workbench should operationalize DMAF. It should not replace:
+
+* the Foundation Architecture;
+* the Framework Core;
+* the Practice Capability Catalogue;
+* human review;
+* governance;
+* asset ownership;
+* quality gates.
+
+---
+
+# 17. Sprint 4 Mapping Summary
+
+## 17.1 Domain Mapping Completion
+
+All nine approved DMAF practice domains have now been mapped to candidate methods and assets.
+
+| Practice Domain                                   | Status |
+| ------------------------------------------------- | ------ |
+| Strategy & Business Value                         | Mapped |
+| Discovery & Assessment                            | Mapped |
+| Modernization Architecture                        | Mapped |
+| Migration Factory                                 | Mapped |
+| Coexistence & Validation                          | Mapped |
+| AI & Automation                                   | Mapped |
+| Executive Advisory                                | Mapped |
+| Platform Operations, Adoption & Value Realization | Mapped |
+| Modernization Intelligence Workbench              | Mapped |
+
+---
+
+## 17.2 Initial Mapping Counts
+
+Each domain includes 16 method-to-asset mapping rows.
+
+| Practice Domain                                   | Mapping Rows |
+| ------------------------------------------------- | -----------: |
+| Strategy & Business Value                         |           14 |
+| Discovery & Assessment                            |           16 |
+| Modernization Architecture                        |           16 |
+| Migration Factory                                 |           16 |
+| Coexistence & Validation                          |           16 |
+| AI & Automation                                   |           16 |
+| Executive Advisory                                |           16 |
+| Platform Operations, Adoption & Value Realization |           16 |
+| Modernization Intelligence Workbench              |           16 |
+| **Total**                                         |      **142** |
+
+---
+
+## 17.3 Recommended Priority Build List
+
+The following assets should be considered the first high-value build candidates for future sprints:
+
+| Priority | Asset                                     | Related Domain                                    |
+| -------- | ----------------------------------------- | ------------------------------------------------- |
+| 1        | Opportunity Qualification Checklist       | Strategy & Business Value                         |
+| 2        | Business Value Framing Worksheet          | Strategy & Business Value                         |
+| 3        | Application Inventory Workbook            | Discovery & Assessment                            |
+| 4        | Workflow Inventory Workbook               | Discovery & Assessment                            |
+| 5        | Modernization Complexity Scoring Workbook | Discovery & Assessment                            |
+| 6        | Target-State Architecture Template        | Modernization Architecture                        |
+| 7        | Databricks Platform Capability Map        | Modernization Architecture                        |
+| 8        | Migration Wave Planning Workbook          | Migration Factory                                 |
+| 9        | Migration Estimation Workbook             | Migration Factory                                 |
+| 10       | Coexistence Strategy Template             | Coexistence & Validation                          |
+| 11       | Validation Strategy Template              | Coexistence & Validation                          |
+| 12       | AI Output Review Checklist                | AI & Automation                                   |
+| 13       | Prompt Quality Standard                   | AI & Automation                                   |
+| 14       | Executive One-Page Template               | Executive Advisory                                |
+| 15       | Modernization Proposal Outline            | Executive Advisory                                |
+| 16       | Platform Operating Model Template         | Platform Operations, Adoption & Value Realization |
+| 17       | Value Realization Tracker                 | Platform Operations, Adoption & Value Realization |
+| 18       | Engagement Workspace Template             | Modernization Intelligence Workbench              |
+| 19       | Knowledge Graph Schema                    | Modernization Intelligence Workbench              |
+| 20       | Workbench Quality Checklist               | Modernization Intelligence Workbench              |
+
+---
+
+# 18. Status
+
+This Capability Method Asset Map is currently in Draft v0.9.0 status.
+
+All nine approved DMAF practice domains have been mapped to candidate methods and reusable assets.
+
+The document is ready for Sprint 4 QA review.
+
+
+
 
 
 
