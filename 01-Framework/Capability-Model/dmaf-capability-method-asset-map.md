@@ -3,7 +3,7 @@
 asset_id: DMAF-FWK-010
 title: DMAF Capability Method Asset Map
 status: Draft
-version: 0.1.0
+version: 1.0.0
 owner: DMAF Practice Lead
 release: Release-1.5
 
@@ -775,7 +775,7 @@ All nine approved DMAF practice domains have now been mapped to candidate method
 
 ## 17.2 Initial Mapping Counts
 
-Each domain includes 16 method-to-asset mapping rows.
+Most domains include 16 method-to-asset mapping rows. Strategy & Business Value includes 14 rows because it contains seven initial capabilities, while the remaining domains contain eight capabilities each.
 
 | Practice Domain                                   | Mapping Rows |
 | ------------------------------------------------- | -----------: |
@@ -821,13 +821,166 @@ The following assets should be considered the first high-value build candidates 
 
 ---
 
-# 18. Status
+# 18. Sprint 4 QA Review
 
-This Capability Method Asset Map is currently in Draft v0.9.0 status.
+## 18.1 QA Verdict
+
+The DMAF Capability Method Asset Map is structurally complete at draft level.
 
 All nine approved DMAF practice domains have been mapped to candidate methods and reusable assets.
 
-The document is ready for Sprint 4 QA review.
+The map is ready to support future development of:
+
+* reusable methods;
+* templates;
+* workbooks;
+* checklists;
+* diagrams;
+* prompt libraries;
+* dashboards;
+* Workbench specifications;
+* asset backlog prioritization.
+
+Sprint 4 confirms that DMAF is now traceable from framework concepts to capabilities, methods, and candidate assets.
+
+---
+
+## 18.2 Mapping Count Summary
+
+| Practice Domain                                   | Mapping Rows | Status     |
+| ------------------------------------------------- | -----------: | ---------- |
+| Strategy & Business Value                         |           14 | Mapped     |
+| Discovery & Assessment                            |           16 | Mapped     |
+| Modernization Architecture                        |           16 | Mapped     |
+| Migration Factory                                 |           16 | Mapped     |
+| Coexistence & Validation                          |           16 | Mapped     |
+| AI & Automation                                   |           16 | Mapped     |
+| Executive Advisory                                |           16 | Mapped     |
+| Platform Operations, Adoption & Value Realization |           16 | Mapped     |
+| Modernization Intelligence Workbench              |           16 | Mapped     |
+| **Total**                                         |      **142** | **Mapped** |
+
+---
+
+## 18.3 QA Results
+
+| QA Area                               | Result | Notes                                                                                                                                                                 |
+| ------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Approved practice domains represented | Pass   | All nine approved DMAF practice domains are included.                                                                                                                 |
+| Capability coverage                   | Pass   | All 71 initial capabilities are represented through candidate method and asset mappings.                                                                              |
+| Method mapping                        | Pass   | Each capability has at least one candidate method.                                                                                                                    |
+| Asset mapping                         | Pass   | Each capability has at least one candidate reusable asset.                                                                                                            |
+| Asset type classification             | Pass   | Candidate assets are identified as templates, workbooks, checklists, diagrams, guides, prompt libraries, dashboards, schemas, workflows, or related reusable formats. |
+| Priority classification               | Pass   | Each mapping includes a priority level.                                                                                                                               |
+| Workbench potential                   | Pass   | Each mapping identifies whether future Workbench support is possible.                                                                                                 |
+| Traceability                          | Pass   | Mappings trace from capability to method to asset.                                                                                                                    |
+| Terminology consistency               | Pass   | Practice domain and capability terminology align to the Practice Capability Catalogue.                                                                                |
+| Sprint 4 control rule                 | Pass   | No methods or assets were introduced without being mapped to approved capabilities.                                                                                   |
+
+---
+
+## 18.4 Integration Result
+
+Sprint 4 extends the DMAF traceability chain as follows:
+
+```text
+Foundation Architecture
+        ↓
+Framework Core
+        ↓
+Practice Capability Catalogue
+        ↓
+Capability Method Asset Map
+        ↓
+Future Methods
+        ↓
+Future Assets
+        ↓
+Future Workbench Services
+```
+
+This confirms that DMAF is no longer only a conceptual framework.
+
+It now has a controlled path toward reusable consulting assets and future Workbench automation.
+
+---
+
+## 18.5 Priority Build Observations
+
+The first reusable assets should focus on the highest leverage areas:
+
+1. opportunity qualification;
+2. discovery intake;
+3. application and workflow inventory;
+4. complexity scoring;
+5. target-state architecture;
+6. migration wave planning;
+7. validation strategy;
+8. AI output review;
+9. executive one-page storytelling;
+10. platform operating model;
+11. Workbench metadata and quality control.
+
+These assets will provide the strongest foundation for repeatable advisory and delivery work.
+
+---
+
+## 18.6 Recommended Next Sprint
+
+The recommended next sprint is:
+
+```text
+Sprint 5 — Priority Asset Build Pack
+```
+
+Sprint 5 should not attempt to build all mapped assets.
+
+It should select a small, high-value starter pack of reusable assets that can be used in real client-facing or internal practice scenarios.
+
+Recommended Sprint 5 starter assets:
+
+| Priority | Asset                                     | Domain                                            |
+| -------- | ----------------------------------------- | ------------------------------------------------- |
+| 1        | Opportunity Qualification Checklist       | Strategy & Business Value                         |
+| 2        | Application Inventory Workbook            | Discovery & Assessment                            |
+| 3        | Modernization Complexity Scoring Workbook | Discovery & Assessment                            |
+| 4        | Target-State Architecture Template        | Modernization Architecture                        |
+| 5        | Migration Wave Planning Workbook          | Migration Factory                                 |
+| 6        | Validation Strategy Template              | Coexistence & Validation                          |
+| 7        | AI Output Review Checklist                | AI & Automation                                   |
+| 8        | Executive One-Page Template               | Executive Advisory                                |
+| 9        | Platform Operating Model Template         | Platform Operations, Adoption & Value Realization |
+| 10       | Workbench Quality Checklist               | Modernization Intelligence Workbench              |
+
+---
+
+## 18.7 Sprint 5 Entry Criteria
+
+Sprint 5 may begin when the following conditions are true:
+
+| Entry Criterion                          | Status   |
+| ---------------------------------------- | -------- |
+| All nine practice domains mapped         | Complete |
+| Capabilities mapped to candidate methods | Complete |
+| Capabilities mapped to candidate assets  | Complete |
+| Candidate asset types identified         | Complete |
+| Priority levels assigned                 | Complete |
+| Workbench potential identified           | Complete |
+| Priority build list created              | Complete |
+| Sprint 4 QA review completed             | Complete |
+
+---
+
+# 19. Status
+
+This Capability Method Asset Map is currently in Draft v1.0.0 status.
+
+Sprint 4 has passed QA review.
+
+All nine approved DMAF practice domains have been mapped to candidate methods and reusable assets, producing **142 initial method-to-asset mapping rows**.
+
+The document is ready for Sprint 4 closure after commit.
+
 
 
 
