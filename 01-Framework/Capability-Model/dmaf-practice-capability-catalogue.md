@@ -3,7 +3,7 @@
 asset_id: DMAF-FWK-009
 title: DMAF Practice Capability Catalogue
 status: Draft
-version: 0.1.0
+version: 0.6.0
 owner: DMAF Practice Lead
 release: Release-1.5
 
@@ -207,7 +207,7 @@ Each domain section will define an initial set of capabilities.
 | Discovery & Assessment | 8 | Drafted |
 | Modernization Architecture | 8 | Drafted |
 | Migration Factory | 8 | Drafted |
-| Coexistence & Validation | Pending | Not Started |
+| Coexistence & Validation | 8 | Drafted |
 | AI & Automation | Pending | Not Started |
 | Executive Advisory | Pending | Not Started |
 | Platform Operations, Adoption & Value Realization | Pending | Not Started |
@@ -1319,9 +1319,283 @@ Future versions of this domain section may include:
 
 ---
 
-# 26. Status
+# 26. Practice Domain 5 — Coexistence & Validation
 
-This Practice Capability Catalogue is currently in **Draft v0.5.0** status.
+## 26.1 Domain Purpose
+
+The Coexistence & Validation domain defines how legacy and modernized platforms operate during transition and how modernization outcomes are proven.
+
+This domain is central to trust. It ensures that modernized workloads are accurate, complete, reconciled, explainable, supportable, and ready for production use.
+
+Coexistence & Validation is especially important in enterprise modernization because migration rarely happens as a single clean replacement. Legacy and modern platforms may need to operate together while workloads are migrated, validated, compared, reconciled, and accepted.
+
+---
+
+## 26.2 Capability Summary
+
+| Capability ID    | Capability Name                       | Primary Lifecycle Stages  | Maturity Target   |
+| ---------------- | ------------------------------------- | ------------------------- | ----------------- |
+| DMAF-CAP-COV-001 | Coexistence Strategy Design           | Stage 3, Stage 4, Stage 7 | Level 3 — Managed |
+| DMAF-CAP-COV-002 | Parallel Run Planning                 | Stage 5, Stage 7, Stage 8 | Level 3 — Managed |
+| DMAF-CAP-COV-003 | Reconciliation Design                 | Stage 5, Stage 7, Stage 8 | Level 3 — Managed |
+| DMAF-CAP-COV-004 | Validation Strategy Design            | Stage 4, Stage 5, Stage 7 | Level 3 — Managed |
+| DMAF-CAP-COV-005 | Exception Handling & Resolution Model | Stage 7, Stage 8          | Level 3 — Managed |
+| DMAF-CAP-COV-006 | Cutover Readiness Assessment          | Stage 7, Stage 8          | Level 3 — Managed |
+| DMAF-CAP-COV-007 | Validation Evidence Management        | Stage 5, Stage 7, Stage 8 | Level 3 — Managed |
+| DMAF-CAP-COV-008 | Production Readiness Support          | Stage 8, Stage 9          | Level 3 — Managed |
+
+---
+
+## 26.3 Capability — DMAF-CAP-COV-001 — Coexistence Strategy Design
+
+| Field                          | Description                                                                                                                                                                                |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-COV-001                                                                                                                                                                           |
+| Capability Name                | Coexistence Strategy Design                                                                                                                                                                |
+| Practice Domain                | Coexistence & Validation                                                                                                                                                                   |
+| Business Objective             | Define how legacy and modernized platforms will operate together during transition while managing risk, data consistency, downstream impact, validation needs, and operational complexity. |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning; Stage 7 — Coexistence & Validation                                                                             |
+| Inputs                         | Current-state architecture, transitional architecture, dependency map, downstream consumer list, migration waves, validation requirements, cutover constraints                             |
+| Outputs                        | Coexistence strategy, coexistence architecture view, transition-state model, coexistence risks, operational considerations                                                                 |
+| Methods                        | Coexistence pattern assessment, transition-state mapping, downstream impact analysis, coexistence risk review                                                                              |
+| Assets                         | Coexistence strategy template, coexistence decision tree, transition-state diagram, coexistence risk checklist                                                                             |
+| Owner                          | Solution Architect / Data Architect                                                                                                                                                        |
+| KPIs                           | Coexistence risk visibility, transition-state clarity, downstream impact coverage, unresolved coexistence dependencies                                                                     |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                          |
+| Dependencies                   | Transitional Architecture Design, Integration Architecture Design, Migration Wave Planning, Risk & Compliance                                                                              |
+| Workbench Automation Potential | Coexistence pattern recommendation, transition-state mapping, dependency-to-coexistence risk detection, coexistence summary drafting                                                       |
+
+### Notes
+
+This capability supports the DMAF principle **Coexistence Is Intentional**. Coexistence should be designed explicitly rather than discovered during testing or cutover.
+
+---
+
+## 26.4 Capability — DMAF-CAP-COV-002 — Parallel Run Planning
+
+| Field                          | Description                                                                                                                                                  |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-COV-002                                                                                                                                             |
+| Capability Name                | Parallel Run Planning                                                                                                                                        |
+| Practice Domain                | Coexistence & Validation                                                                                                                                     |
+| Business Objective             | Define when, how, and under what constraints legacy and modernized workloads will run in parallel to compare outputs and build stakeholder confidence.       |
+| Lifecycle Stages               | Stage 5 — Reference Implementation / Pilot; Stage 7 — Coexistence & Validation; Stage 8 — Production Cutover                                                 |
+| Inputs                         | Coexistence strategy, migration wave plan, validation requirements, source and target outputs, test environments, data availability, operational constraints |
+| Outputs                        | Parallel run plan, comparison approach, test window schedule, parallel run constraints, acceptance criteria                                                  |
+| Methods                        | Parallel run planning, output comparison design, test window planning, acceptance criteria definition                                                        |
+| Assets                         | Parallel run planning template, output comparison checklist, test window planner, parallel run acceptance criteria template                                  |
+| Owner                          | Test Manager / Data Architect                                                                                                                                |
+| KPIs                           | Parallel run coverage, comparison success rate, number of unresolved differences, stakeholder confidence level                                               |
+| Maturity Target                | Level 3 — Managed                                                                                                                                            |
+| Dependencies                   | Coexistence Strategy Design, Reconciliation Design, Validation Strategy Design, Migration Factory                                                            |
+| Workbench Automation Potential | Parallel run schedule generation, output comparison summary, unresolved difference tracking, acceptance evidence packaging                                   |
+
+### Notes
+
+Parallel run may not always be possible due to environment, data, platform, or cost constraints. When parallel run is limited, those constraints must be documented and alternative validation approaches must be defined.
+
+---
+
+## 26.5 Capability — DMAF-CAP-COV-003 — Reconciliation Design
+
+| Field                          | Description                                                                                                                                                                                       |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-COV-003                                                                                                                                                                                  |
+| Capability Name                | Reconciliation Design                                                                                                                                                                             |
+| Practice Domain                | Coexistence & Validation                                                                                                                                                                          |
+| Business Objective             | Define how legacy and modernized outputs will be compared, reconciled, explained, and accepted using appropriate control totals, record counts, hashes, business rules, and exception thresholds. |
+| Lifecycle Stages               | Stage 5 — Reference Implementation / Pilot; Stage 7 — Coexistence & Validation; Stage 8 — Production Cutover                                                                                      |
+| Inputs                         | Source outputs, target outputs, business rules, control totals, data quality expectations, transformation logic, downstream acceptance criteria                                                   |
+| Outputs                        | Reconciliation approach, control framework, comparison rules, exception thresholds, reconciliation evidence                                                                                       |
+| Methods                        | Reconciliation rule design, control total comparison, record count comparison, hash total comparison, business rule validation                                                                    |
+| Assets                         | Reconciliation design template, control totals checklist, exception threshold worksheet, validation comparison matrix                                                                             |
+| Owner                          | Data Architect / Test Manager                                                                                                                                                                     |
+| KPIs                           | Reconciliation pass rate, unresolved exception count, exception aging, control coverage, acceptance threshold clarity                                                                             |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                 |
+| Dependencies                   | Validation Strategy Design, Parallel Run Planning, Data Source & Dependency Mapping, Business Rule Analysis                                                                                       |
+| Workbench Automation Potential | Reconciliation rule suggestion, control comparison automation, exception clustering, discrepancy summary generation                                                                               |
+
+### Notes
+
+Reconciliation should be designed before validation execution begins. It should define what must match, what differences are acceptable, how differences are explained, and who can approve exceptions.
+
+---
+
+## 26.6 Capability — DMAF-CAP-COV-004 — Validation Strategy Design
+
+| Field                          | Description                                                                                                                                                 |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-COV-004                                                                                                                                            |
+| Capability Name                | Validation Strategy Design                                                                                                                                  |
+| Practice Domain                | Coexistence & Validation                                                                                                                                    |
+| Business Objective             | Define the overall validation approach required to prove that modernized workloads are accurate, complete, reliable, supportable, and fit for business use. |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 5 — Reference Implementation / Pilot; Stage 7 — Coexistence & Validation                                        |
+| Inputs                         | Migration scope, target-state architecture, coexistence strategy, reconciliation needs, business rules, test strategy, risk profile, acceptance criteria    |
+| Outputs                        | Validation strategy, validation scope, validation levels, acceptance criteria, validation roles, evidence requirements                                      |
+| Methods                        | Validation planning, risk-based test design, acceptance criteria definition, evidence planning                                                              |
+| Assets                         | Validation strategy template, validation planning checklist, acceptance criteria template, evidence requirement checklist                                   |
+| Owner                          | Test Manager / Data Architect                                                                                                                               |
+| KPIs                           | Validation coverage, acceptance criteria completeness, evidence completeness, defect leakage, stakeholder acceptance                                        |
+| Maturity Target                | Level 3 — Managed                                                                                                                                           |
+| Dependencies                   | Migration Factory Planning, Coexistence Strategy Design, Reconciliation Design, Risk & Compliance                                                           |
+| Workbench Automation Potential | Validation strategy drafting, test coverage gap detection, acceptance criteria recommendation, evidence checklist generation                                |
+
+### Notes
+
+This capability supports the DMAF principle **Trust Is Earned Through Validation**. Validation should be treated as a design concern, not merely a test execution activity.
+
+---
+
+## 26.7 Capability — DMAF-CAP-COV-005 — Exception Handling & Resolution Model
+
+| Field                          | Description                                                                                                                                                                      |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-COV-005                                                                                                                                                                 |
+| Capability Name                | Exception Handling & Resolution Model                                                                                                                                            |
+| Practice Domain                | Coexistence & Validation                                                                                                                                                         |
+| Business Objective             | Define how validation exceptions, reconciliation differences, data quality issues, defects, and accepted variances will be triaged, explained, resolved, escalated, or approved. |
+| Lifecycle Stages               | Stage 7 — Coexistence & Validation; Stage 8 — Production Cutover                                                                                                                 |
+| Inputs                         | Reconciliation results, validation defects, exception reports, business rules, data quality findings, acceptance thresholds, stakeholder decisions                               |
+| Outputs                        | Exception handling model, triage process, exception log, resolution status, approved variance list, escalation path                                                              |
+| Methods                        | Exception triage, root cause analysis, variance classification, issue escalation, approval workflow                                                                              |
+| Assets                         | Exception log template, triage decision tree, approved variance register, escalation checklist                                                                                   |
+| Owner                          | Test Manager / Data Architect                                                                                                                                                    |
+| KPIs                           | Exception closure rate, exception aging, approved variance count, unresolved critical exception count, escalation turnaround time                                                |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                |
+| Dependencies                   | Reconciliation Design, Validation Strategy Design, Factory Execution Governance, Executive Advisory                                                                              |
+| Workbench Automation Potential | Exception classification, root cause suggestion, variance clustering, executive exception summary generation                                                                     |
+
+### Notes
+
+Not all differences indicate failure. This capability ensures exceptions are classified, explained, and governed rather than treated as undifferentiated defects.
+
+---
+
+## 26.8 Capability — DMAF-CAP-COV-006 — Cutover Readiness Assessment
+
+| Field                          | Description                                                                                                                                                                                                |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-COV-006                                                                                                                                                                                           |
+| Capability Name                | Cutover Readiness Assessment                                                                                                                                                                               |
+| Practice Domain                | Coexistence & Validation                                                                                                                                                                                   |
+| Business Objective             | Determine whether modernized workloads are ready to transition into production based on validation evidence, operational readiness, unresolved risks, stakeholder acceptance, and rollback considerations. |
+| Lifecycle Stages               | Stage 7 — Coexistence & Validation; Stage 8 — Production Cutover                                                                                                                                           |
+| Inputs                         | Validation evidence, reconciliation results, exception log, operational readiness checklist, support model, rollback plan, deployment plan, stakeholder approvals                                          |
+| Outputs                        | Cutover readiness assessment, go/no-go recommendation, readiness gaps, cutover risks, approval record                                                                                                      |
+| Methods                        | Readiness review, go/no-go assessment, risk-based cutover review, stakeholder sign-off review                                                                                                              |
+| Assets                         | Cutover readiness checklist, go/no-go decision template, cutover risk summary, stakeholder approval template                                                                                               |
+| Owner                          | Delivery Manager / Test Manager                                                                                                                                                                            |
+| KPIs                           | Readiness gate pass rate, unresolved critical risks, open severity defects, approval completeness, rollback readiness                                                                                      |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                          |
+| Dependencies                   | Validation Evidence Management, Exception Handling & Resolution Model, Production Readiness Support, Executive Advisory                                                                                    |
+| Workbench Automation Potential | Cutover readiness scoring, go/no-go summary generation, open risk detection, approval checklist tracking                                                                                                   |
+
+### Notes
+
+Cutover readiness should be evidence-based. It should not be driven only by schedule pressure.
+
+---
+
+## 26.9 Capability — DMAF-CAP-COV-007 — Validation Evidence Management
+
+| Field                          | Description                                                                                                                                           |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-COV-007                                                                                                                                      |
+| Capability Name                | Validation Evidence Management                                                                                                                        |
+| Practice Domain                | Coexistence & Validation                                                                                                                              |
+| Business Objective             | Capture, organize, retain, and communicate the evidence required to prove that validation activities were performed and that outcomes are acceptable. |
+| Lifecycle Stages               | Stage 5 — Reference Implementation / Pilot; Stage 7 — Coexistence & Validation; Stage 8 — Production Cutover                                          |
+| Inputs                         | Test results, reconciliation reports, exception logs, approvals, screenshots, comparison outputs, control totals, business sign-offs                  |
+| Outputs                        | Validation evidence repository, evidence index, validation summary, approval evidence, audit support package                                          |
+| Methods                        | Evidence capture, evidence indexing, validation traceability, approval documentation                                                                  |
+| Assets                         | Validation evidence register, evidence folder structure, validation summary template, sign-off evidence checklist                                     |
+| Owner                          | Test Manager / Lead Business Analyst                                                                                                                  |
+| KPIs                           | Evidence completeness, evidence traceability, missing approval count, audit readiness, validation package quality                                     |
+| Maturity Target                | Level 3 — Managed                                                                                                                                     |
+| Dependencies                   | Validation Strategy Design, Reconciliation Design, Cutover Readiness Assessment, Knowledge Management                                                 |
+| Workbench Automation Potential | Evidence indexing, validation package generation, missing evidence detection, audit-ready summary drafting                                            |
+
+### Notes
+
+Validation evidence is what turns testing activity into trust. This capability ensures acceptance can be supported after the fact.
+
+---
+
+## 26.10 Capability — DMAF-CAP-COV-008 — Production Readiness Support
+
+| Field                          | Description                                                                                                                                                                        |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-COV-008                                                                                                                                                                   |
+| Capability Name                | Production Readiness Support                                                                                                                                                       |
+| Practice Domain                | Coexistence & Validation                                                                                                                                                           |
+| Business Objective             | Support the transition from validated workload to production operation by ensuring support, monitoring, incident response, runbooks, ownership, and operational handoff are ready. |
+| Lifecycle Stages               | Stage 8 — Production Cutover; Stage 9 — Platform Operations, Adoption & Value Realization                                                                                          |
+| Inputs                         | Cutover readiness assessment, operational runbooks, support model, monitoring requirements, incident response plan, ownership model, platform operations requirements              |
+| Outputs                        | Production readiness checklist, operational handoff package, support readiness notes, runbook gaps, post-cutover validation needs                                                  |
+| Methods                        | Production readiness review, operational handoff planning, support model review, post-cutover verification planning                                                                |
+| Assets                         | Production readiness checklist, operational handoff template, runbook checklist, post-cutover validation template                                                                  |
+| Owner                          | Delivery Manager / Platform Lead                                                                                                                                                   |
+| KPIs                           | Production readiness completion, support ownership clarity, runbook completeness, post-cutover incident count, handoff acceptance                                                  |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                  |
+| Dependencies                   | Cutover Readiness Assessment, Platform Operations, Adoption & Value Realization, Governance & Security                                                                             |
+| Workbench Automation Potential | Production readiness checklist generation, handoff package drafting, runbook gap detection, post-cutover issue summary                                                             |
+
+### Notes
+
+This capability connects Coexistence & Validation to Platform Operations. Modernization is not complete until the workload can be operated reliably.
+
+---
+
+# 27. Coexistence & Validation Capability Map
+
+| Capability ID    | Capability                            | Supports Trust | Supports Cutover | Supports Governance | Supports Workbench |
+| ---------------- | ------------------------------------- | -------------- | ---------------- | ------------------- | ------------------ |
+| DMAF-CAP-COV-001 | Coexistence Strategy Design           | Yes            | Yes              | Yes                 | Yes                |
+| DMAF-CAP-COV-002 | Parallel Run Planning                 | Yes            | Yes              | Yes                 | Yes                |
+| DMAF-CAP-COV-003 | Reconciliation Design                 | Yes            | Yes              | Yes                 | Yes                |
+| DMAF-CAP-COV-004 | Validation Strategy Design            | Yes            | Yes              | Yes                 | Yes                |
+| DMAF-CAP-COV-005 | Exception Handling & Resolution Model | Yes            | Yes              | Yes                 | Yes                |
+| DMAF-CAP-COV-006 | Cutover Readiness Assessment          | Yes            | Yes              | Yes                 | Yes                |
+| DMAF-CAP-COV-007 | Validation Evidence Management        | Yes            | Yes              | Yes                 | Yes                |
+| DMAF-CAP-COV-008 | Production Readiness Support          | Yes            | Yes              | Yes                 | Yes                |
+
+---
+
+# 28. Coexistence & Validation Capability Governance
+
+The Coexistence & Validation capabilities should be governed according to the following rules:
+
+1. Do not treat coexistence as an informal transition state.
+2. Do not proceed to validation without defined acceptance criteria.
+3. Do not rely on parallel run assumptions without confirming environment and data feasibility.
+4. Do not treat reconciliation exceptions as defects until they are triaged.
+5. Do not approve cutover without validation evidence.
+6. Do not mark validation complete without documenting unresolved exceptions and accepted variances.
+7. Do not transition to production without operational handoff readiness.
+8. Ensure validation evidence can support executive, business, technical, and audit review.
+
+---
+
+# 29. Future Enhancements
+
+Future versions of this domain section may include:
+
+* coexistence strategy template;
+* coexistence decision tree;
+* parallel run planning template;
+* reconciliation design workbook;
+* validation strategy template;
+* exception handling model;
+* cutover readiness checklist;
+* validation evidence register;
+* production readiness checklist;
+* Workbench validation gap analyzer.
+
+---
+
+# 30. Status
+
+This Practice Capability Catalogue is currently in **Draft v0.6.0** status.
 
 The following practice domains have been drafted:
 
@@ -1329,6 +1603,7 @@ The following practice domains have been drafted:
 * Discovery & Assessment
 * Modernization Architecture
 * Migration Factory
+* Coexistence & Validation
 
 Remaining capability domains are pending.
 
