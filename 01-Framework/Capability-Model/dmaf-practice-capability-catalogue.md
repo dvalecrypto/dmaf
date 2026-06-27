@@ -206,7 +206,7 @@ Each domain section will define an initial set of capabilities.
 | Strategy & Business Value | 7 | Drafted |
 | Discovery & Assessment | 8 | Drafted |
 | Modernization Architecture | 8 | Drafted |
-| Migration Factory | Pending | Not Started |
+| Migration Factory | 8 | Drafted |
 | Coexistence & Validation | Pending | Not Started |
 | AI & Automation | Pending | Not Started |
 | Executive Advisory | Pending | Not Started |
@@ -1045,15 +1045,290 @@ Future versions of this domain section may include:
 
 ---
 
-# 22. Status
+# 22. Practice Domain 4 — Migration Factory
 
-This Practice Capability Catalogue is currently in **Draft v0.4.0** status.
+## 22.1 Domain Purpose
+
+The Migration Factory domain defines how modernization is planned, sequenced, industrialized, executed, governed, and measured at scale.
+
+This domain turns modernization strategy, discovery evidence, and architecture direction into a repeatable delivery model.
+
+Migration Factory is central to DMAF because it moves modernization beyond one-off project execution. It provides the structure for wave planning, backlog management, delivery capacity, reusable migration patterns, execution governance, and delivery metrics.
+
+---
+
+## 22.2 Capability Summary
+
+| Capability ID    | Capability Name                         | Primary Lifecycle Stages            | Maturity Target   |
+| ---------------- | --------------------------------------- | ----------------------------------- | ----------------- |
+| DMAF-CAP-MGF-001 | Migration Wave Planning                 | Stage 4, Stage 5, Stage 6           | Level 3 — Managed |
+| DMAF-CAP-MGF-002 | Factory Backlog Management              | Stage 4, Stage 6                    | Level 3 — Managed |
+| DMAF-CAP-MGF-003 | Migration Pattern Management            | Stage 4, Stage 5, Stage 6, Stage 10 | Level 3 — Managed |
+| DMAF-CAP-MGF-004 | Delivery Capacity & Throughput Planning | Stage 4, Stage 6                    | Level 3 — Managed |
+| DMAF-CAP-MGF-005 | Migration Estimation & Sizing           | Stage 2, Stage 4, Stage 6           | Level 3 — Managed |
+| DMAF-CAP-MGF-006 | Dependency-Based Sequencing             | Stage 4, Stage 5, Stage 6           | Level 3 — Managed |
+| DMAF-CAP-MGF-007 | Factory Execution Governance            | Stage 4, Stage 6, Stage 7           | Level 3 — Managed |
+| DMAF-CAP-MGF-008 | Migration Metrics & Reporting           | Stage 4, Stage 6, Stage 10          | Level 3 — Managed |
+
+---
+
+## 22.3 Capability — DMAF-CAP-MGF-001 — Migration Wave Planning
+
+| Field                          | Description                                                                                                                                                             |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MGF-001                                                                                                                                                        |
+| Capability Name                | Migration Wave Planning                                                                                                                                                 |
+| Practice Domain                | Migration Factory                                                                                                                                                       |
+| Business Objective             | Create a repeatable, risk-aware migration sequence that balances business value, technical complexity, dependency constraints, validation needs, and delivery capacity. |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 5 — Reference Implementation / Pilot; Stage 6 — Migration Factory Execution                                                 |
+| Inputs                         | Application inventory, workflow inventory, complexity scores, dependency map, business priorities, architecture decisions, resource capacity, validation requirements   |
+| Outputs                        | Migration wave plan, wave sequencing rationale, wave backlog, roadmap view, pilot candidate recommendations                                                             |
+| Methods                        | Complexity-based wave sequencing, dependency-aware planning, migration segmentation, wave planning workshop                                                             |
+| Assets                         | Migration wave planning workbook, timeline simulator, wave planning template, executive migration roadmap                                                               |
+| Owner                          | Migration Lead / Delivery Manager                                                                                                                                       |
+| KPIs                           | Wave predictability, wave completion rate, schedule adherence, percentage of dependencies resolved before wave start                                                    |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                       |
+| Dependencies                   | Discovery & Assessment, Modernization Architecture, Coexistence & Validation, Executive Advisory                                                                        |
+| Workbench Automation Potential | AI-assisted wave planning, scenario simulation, dependency-aware sequencing suggestions, wave risk detection                                                            |
+
+### Notes
+
+This capability is distinct from strategic roadmap framing. Strategic roadmap framing creates the executive journey. Migration Wave Planning creates the execution sequence.
+
+---
+
+## 22.4 Capability — DMAF-CAP-MGF-002 — Factory Backlog Management
+
+| Field                          | Description                                                                                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MGF-002                                                                                                                                |
+| Capability Name                | Factory Backlog Management                                                                                                                      |
+| Practice Domain                | Migration Factory                                                                                                                               |
+| Business Objective             | Maintain a governed backlog of modernization work items so migration execution can be planned, prioritized, tracked, and adjusted across waves. |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 6 — Migration Factory Execution                                                                     |
+| Inputs                         | Migration scope, application inventory, workflow inventory, wave plan, architecture decisions, defects, risks, dependencies, change requests    |
+| Outputs                        | Factory backlog, prioritized work items, backlog status, blockers, change log, backlog health summary                                           |
+| Methods                        | Backlog structuring, prioritization, delivery planning, blocker management, change control                                                      |
+| Assets                         | Factory backlog template, backlog health dashboard, prioritization guide, delivery tracker                                                      |
+| Owner                          | Delivery Manager / Migration Lead                                                                                                               |
+| KPIs                           | Backlog readiness, blocked item count, backlog aging, work item completion rate, change request impact                                          |
+| Maturity Target                | Level 3 — Managed                                                                                                                               |
+| Dependencies                   | Migration Wave Planning, Migration Estimation & Sizing, Factory Execution Governance                                                            |
+| Workbench Automation Potential | Backlog generation from inventory, backlog health analysis, blocker summarization, change impact detection                                      |
+
+### Notes
+
+This capability ensures migration work is managed as a factory backlog rather than as scattered tasks across documents, spreadsheets, and meeting notes.
+
+---
+
+## 22.5 Capability — DMAF-CAP-MGF-003 — Migration Pattern Management
+
+| Field                          | Description                                                                                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MGF-003                                                                                                                                                                         |
+| Capability Name                | Migration Pattern Management                                                                                                                                                             |
+| Practice Domain                | Migration Factory                                                                                                                                                                        |
+| Business Objective             | Identify, define, reuse, and improve repeatable migration patterns so modernization delivery becomes faster, more consistent, and less dependent on one-off decisions.                   |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 5 — Reference Implementation / Pilot; Stage 6 — Migration Factory Execution; Stage 10 — Continuous Optimization & Modernization Intelligence |
+| Inputs                         | Current-state technologies, workload types, transformation patterns, architecture decisions, pilot findings, delivery lessons learned                                                    |
+| Outputs                        | Migration pattern catalogue, pattern selection guidance, reusable implementation guidance, pattern improvement notes                                                                     |
+| Methods                        | Pattern identification, pattern fit assessment, pilot pattern validation, lessons learned capture                                                                                        |
+| Assets                         | Migration pattern catalogue, pattern selection matrix, pattern documentation template, lessons learned template                                                                          |
+| Owner                          | Solution Architect / Migration Lead                                                                                                                                                      |
+| KPIs                           | Pattern reuse rate, reduction in one-off delivery decisions, pattern quality feedback, number of validated patterns                                                                      |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                        |
+| Dependencies                   | Modernization Architecture, Reference Implementation / Pilot, Knowledge Management, Reusable Accelerators                                                                                |
+| Workbench Automation Potential | Pattern recommendation, pattern matching from workload metadata, pattern reuse tracking, pattern gap detection                                                                           |
+
+### Notes
+
+This capability helps DMAF industrialize delivery. Migration patterns should become reusable practice assets, not only informal project knowledge.
+
+---
+
+## 22.6 Capability — DMAF-CAP-MGF-004 — Delivery Capacity & Throughput Planning
+
+| Field                          | Description                                                                                                                                                                                         |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MGF-004                                                                                                                                                                                    |
+| Capability Name                | Delivery Capacity & Throughput Planning                                                                                                                                                             |
+| Practice Domain                | Migration Factory                                                                                                                                                                                   |
+| Business Objective             | Estimate and manage how much modernization work the delivery team can realistically complete across waves, given resources, complexity, dependencies, validation needs, and governance constraints. |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 6 — Migration Factory Execution                                                                                                                         |
+| Inputs                         | Resource model, team roles, complexity scores, wave plan, backlog, delivery calendar, SME availability, environment constraints                                                                     |
+| Outputs                        | Capacity plan, throughput assumptions, staffing model, delivery velocity expectations, capacity risks                                                                                               |
+| Methods                        | Capacity planning, throughput estimation, velocity modeling, staffing analysis, constraint-based delivery planning                                                                                  |
+| Assets                         | Capacity planning worksheet, velocity model, staffing plan template, throughput dashboard                                                                                                           |
+| Owner                          | Delivery Manager / Migration Lead                                                                                                                                                                   |
+| KPIs                           | Planned vs. actual throughput, resource utilization, capacity constraint count, delivery velocity trend                                                                                             |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                   |
+| Dependencies                   | Migration Wave Planning, Factory Backlog Management, Migration Estimation & Sizing, Executive Advisory                                                                                              |
+| Workbench Automation Potential | Throughput simulation, capacity risk detection, staffing scenario generation, velocity dashboarding                                                                                                 |
+
+### Notes
+
+This capability prevents migration plans from being built only around desired deadlines. It grounds execution in realistic team capacity and delivery constraints.
+
+---
+
+## 22.7 Capability — DMAF-CAP-MGF-005 — Migration Estimation & Sizing
+
+| Field                          | Description                                                                                                                                                        |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-MGF-005                                                                                                                                                   |
+| Capability Name                | Migration Estimation & Sizing                                                                                                                                      |
+| Practice Domain                | Migration Factory                                                                                                                                                  |
+| Business Objective             | Estimate modernization effort, sizing, and delivery complexity so scope, timelines, resource needs, and investment decisions are based on transparent assumptions. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 4 — Migration Factory Planning; Stage 6 — Migration Factory Execution                                                      |
+| Inputs                         | Application inventory, workflow inventory, complexity scoring, migration patterns, delivery history, architecture assumptions, validation requirements             |
+| Outputs                        | Estimation model, sizing assumptions, effort estimate, estimate confidence level, estimation risk notes                                                            |
+| Methods                        | Complexity-based estimation, pattern-based sizing, delivery calibration, estimation confidence assessment                                                          |
+| Assets                         | Estimation workbook, sizing model, estimation assumption log, complexity-to-effort mapping guide                                                                   |
+| Owner                          | Delivery Manager / Solution Architect                                                                                                                              |
+| KPIs                           | Estimate accuracy, estimate confidence, variance between estimated and actual effort, assumption closure rate                                                      |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                  |
+| Dependencies                   | Modernization Complexity Scoring, Migration Pattern Management, Delivery Capacity & Throughput Planning                                                            |
+| Workbench Automation Potential | AI-assisted effort estimation, assumption extraction, estimate confidence scoring, actual-vs-estimate analysis                                                     |
+
+### Notes
+
+This capability should make assumptions visible. Estimates should not be presented as certainty when discovery evidence is incomplete.
+
+---
+
+## 22.8 Capability — DMAF-CAP-MGF-006 — Dependency-Based Sequencing
+
+| Field                          | Description                                                                                                                                                          |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MGF-006                                                                                                                                                     |
+| Capability Name                | Dependency-Based Sequencing                                                                                                                                          |
+| Practice Domain                | Migration Factory                                                                                                                                                    |
+| Business Objective             | Sequence migration work based on upstream dependencies, downstream impacts, shared data structures, platform constraints, business priorities, and validation needs. |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 5 — Reference Implementation / Pilot; Stage 6 — Migration Factory Execution                                              |
+| Inputs                         | Dependency map, source-to-target matrix, interface inventory, architecture decisions, downstream consumer list, business criticality, validation constraints         |
+| Outputs                        | Dependency-aware sequence, sequencing rationale, dependency blockers, sequencing risk summary                                                                        |
+| Methods                        | Dependency analysis, sequencing workshop, blocker assessment, impact-based prioritization                                                                            |
+| Assets                         | Dependency sequencing worksheet, dependency map, sequencing decision log, blocker tracker                                                                            |
+| Owner                          | Migration Lead / Data Architect                                                                                                                                      |
+| KPIs                           | Dependency blockers resolved before wave start, sequencing stability, downstream impact incidents, rework caused by missed dependencies                              |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                    |
+| Dependencies                   | Data Source & Dependency Mapping, Integration Architecture Design, Coexistence & Validation                                                                          |
+| Workbench Automation Potential | Dependency graph analysis, sequencing recommendation, blocker detection, downstream impact alerting                                                                  |
+
+### Notes
+
+This capability ensures migration is sequenced according to real technical and business dependencies, not only by application count or perceived simplicity.
+
+---
+
+## 22.9 Capability — DMAF-CAP-MGF-007 — Factory Execution Governance
+
+| Field                          | Description                                                                                                                                                 |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MGF-007                                                                                                                                            |
+| Capability Name                | Factory Execution Governance                                                                                                                                |
+| Practice Domain                | Migration Factory                                                                                                                                           |
+| Business Objective             | Provide the governance routines, decision checkpoints, escalation paths, quality gates, and progress controls needed to manage migration factory execution. |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 6 — Migration Factory Execution; Stage 7 — Coexistence & Validation                                             |
+| Inputs                         | Factory plan, backlog, wave plan, risks, issues, defects, validation status, architecture decisions, delivery metrics                                       |
+| Outputs                        | Governance cadence, status reports, issue and risk escalations, quality gate outcomes, decision log, delivery control summary                               |
+| Methods                        | Factory governance cadence, quality gate review, risk and issue management, delivery checkpoint review, escalation management                               |
+| Assets                         | Factory governance model, status report template, quality gate checklist, decision log, risk and issue tracker                                              |
+| Owner                          | Delivery Manager / Engagement Lead                                                                                                                          |
+| KPIs                           | Quality gate pass rate, unresolved blocker aging, decision turnaround time, escalation closure rate, delivery status accuracy                               |
+| Maturity Target                | Level 3 — Managed                                                                                                                                           |
+| Dependencies                   | Factory Backlog Management, Migration Metrics & Reporting, Coexistence & Validation, Executive Advisory                                                     |
+| Workbench Automation Potential | Status summary generation, risk and issue trend analysis, quality gate tracking, escalation recommendation                                                  |
+
+### Notes
+
+This capability prevents the migration factory from becoming only a delivery engine. It ensures execution remains governed, transparent, and decision-ready.
+
+---
+
+## 22.10 Capability — DMAF-CAP-MGF-008 — Migration Metrics & Reporting
+
+| Field                          | Description                                                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MGF-008                                                                                                                                          |
+| Capability Name                | Migration Metrics & Reporting                                                                                                                             |
+| Practice Domain                | Migration Factory                                                                                                                                         |
+| Business Objective             | Measure and communicate migration factory progress, throughput, quality, risk, predictability, and readiness so stakeholders can make informed decisions. |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 6 — Migration Factory Execution; Stage 10 — Continuous Optimization & Modernization Intelligence              |
+| Inputs                         | Wave plan, backlog, status updates, defects, validation results, risks, issues, estimates, actual effort, delivery milestones                             |
+| Outputs                        | Migration dashboard, executive status summary, factory KPI report, delivery trend analysis, lessons learned input                                         |
+| Methods                        | KPI definition, delivery reporting, trend analysis, executive status reporting, performance review                                                        |
+| Assets                         | Migration dashboard template, factory KPI library, executive status template, delivery metrics workbook                                                   |
+| Owner                          | Delivery Manager / Practice Lead                                                                                                                          |
+| KPIs                           | Migration velocity, wave completion rate, defect trend, estimate variance, quality gate pass rate, schedule adherence                                     |
+| Maturity Target                | Level 3 — Managed                                                                                                                                         |
+| Dependencies                   | Factory Backlog Management, Delivery Capacity & Throughput Planning, Factory Execution Governance, Knowledge Management                                   |
+| Workbench Automation Potential | Dashboard generation, executive status drafting, KPI trend analysis, lessons learned extraction                                                           |
+
+### Notes
+
+This capability supports visibility and continuous improvement. Reporting should measure more than activity; it should show delivery health, risk, quality, and predictability.
+
+---
+
+# 23. Migration Factory Capability Map
+
+| Capability ID    | Capability                              | Supports Planning | Supports Execution | Supports Governance | Supports Workbench |
+| ---------------- | --------------------------------------- | ----------------- | ------------------ | ------------------- | ------------------ |
+| DMAF-CAP-MGF-001 | Migration Wave Planning                 | Yes               | Yes                | Yes                 | Yes                |
+| DMAF-CAP-MGF-002 | Factory Backlog Management              | Yes               | Yes                | Yes                 | Yes                |
+| DMAF-CAP-MGF-003 | Migration Pattern Management            | Yes               | Yes                | Yes                 | Yes                |
+| DMAF-CAP-MGF-004 | Delivery Capacity & Throughput Planning | Yes               | Yes                | Yes                 | Yes                |
+| DMAF-CAP-MGF-005 | Migration Estimation & Sizing           | Yes               | Yes                | Yes                 | Yes                |
+| DMAF-CAP-MGF-006 | Dependency-Based Sequencing             | Yes               | Yes                | Yes                 | Yes                |
+| DMAF-CAP-MGF-007 | Factory Execution Governance            | Yes               | Yes                | Yes                 | Yes                |
+| DMAF-CAP-MGF-008 | Migration Metrics & Reporting           | Yes               | Yes                | Yes                 | Yes                |
+
+---
+
+# 24. Migration Factory Capability Governance
+
+The Migration Factory capabilities should be governed according to the following rules:
+
+1. Do not start factory execution without a defined wave plan.
+2. Do not build migration waves without considering dependencies.
+3. Do not use complexity scoring without documenting assumptions.
+4. Do not treat estimates as fixed when discovery confidence is low.
+5. Do not run migration execution without backlog governance.
+6. Do not scale migration without reusable migration patterns where practical.
+7. Do not report only activity; report progress, quality, risk, and predictability.
+8. Ensure factory lessons learned improve future patterns, estimates, assets, and Workbench intelligence.
+
+---
+
+# 25. Future Enhancements
+
+Future versions of this domain section may include:
+
+* migration factory planning workbook;
+* wave planning scenario simulator;
+* dependency-based sequencing model;
+* migration estimation workbook;
+* migration pattern catalogue;
+* factory backlog dashboard;
+* delivery capacity model;
+* factory governance checklist;
+* migration KPI dashboard;
+* Workbench migration factory planner.
+
+---
+
+# 26. Status
+
+This Practice Capability Catalogue is currently in **Draft v0.5.0** status.
 
 The following practice domains have been drafted:
 
 * Strategy & Business Value
 * Discovery & Assessment
 * Modernization Architecture
+* Migration Factory
 
 Remaining capability domains are pending.
 
