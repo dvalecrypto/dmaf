@@ -226,12 +226,14 @@ Recommended sequence:
 3. Modernization Architecture
 4. Migration Factory
 5. Coexistence & Validation
-6. Executive Advisory
-7. Platform Operations, Adoption & Value Realization
-8. AI & Automation
+6. AI & Automation
+7. Executive Advisory
+8. Platform Operations, Adoption & Value Realization
 9. Modernization Intelligence Workbench
 
-This sequence starts with advisory and discovery capabilities before moving into execution, operations, automation, and platform intelligence.
+This sequence starts with business strategy and discovery, moves through architecture, delivery, validation, automation, executive advisory, platform operations, and concludes with the Workbench as the future software-enabled operating layer.
+
+The catalogue should continue to evolve through governed increments. Future versions may expand each capability with detailed methods, assets, KPIs, maturity scoring, ownership, and Workbench automation specifications.
 
 ---
 
@@ -2697,21 +2699,110 @@ Future versions of this domain section may include:
 
 ---
 
-# 46. Status
+# 46. Sprint 3 QA Review
 
-This Practice Capability Catalogue is currently in **Draft v1.0.0** status.
+## 46.1 QA Verdict
 
-All nine approved DMAF practice domains have now been drafted:
+The initial DMAF Practice Capability Catalogue is structurally complete at draft level.
 
-* Strategy & Business Value
-* Discovery & Assessment
-* Modernization Architecture
-* Migration Factory
-* Coexistence & Validation
-* AI & Automation
-* Executive Advisory
-* Platform Operations, Adoption & Value Realization
-* Modernization Intelligence Workbench
+All nine approved DMAF practice domains are represented, and each domain includes an initial capability set.
 
-The initial Practice Capability Catalogue is ready for Sprint 3 QA review.
+The catalogue is ready to support future development of:
+
+* detailed methods;
+* reusable assets;
+* capability ownership;
+* capability maturity assessment;
+* KPI models;
+* Workbench automation design;
+* playbook development;
+* practice onboarding.
+
+---
+
+## 46.2 Capability Count Summary
+
+| Practice Domain                                   | Capability Count | Status      |
+| ------------------------------------------------- | ---------------: | ----------- |
+| Strategy & Business Value                         |                7 | Drafted     |
+| Discovery & Assessment                            |                8 | Drafted     |
+| Modernization Architecture                        |                8 | Drafted     |
+| Migration Factory                                 |                8 | Drafted     |
+| Coexistence & Validation                          |                8 | Drafted     |
+| AI & Automation                                   |                8 | Drafted     |
+| Executive Advisory                                |                8 | Drafted     |
+| Platform Operations, Adoption & Value Realization |                8 | Drafted     |
+| Modernization Intelligence Workbench              |                8 | Drafted     |
+| **Total**                                         |           **71** | **Drafted** |
+
+---
+
+## 46.3 QA Results
+
+| QA Area                               | Result             | Notes                                                                                          |
+| ------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
+| Approved practice domains represented | Pass               | All nine approved practice domains are included.                                               |
+| Capability ID convention              | Pass               | Capability IDs follow the `DMAF-CAP-[DOMAIN]-[NUMBER]` pattern.                                |
+| Domain sequencing                     | Pass after cleanup | Section 8 has been updated to reflect the approved domain order.                               |
+| Capability definition structure       | Pass               | Each capability uses the standard field structure.                                             |
+| Lifecycle mapping                     | Pass               | Each capability identifies relevant lifecycle stages.                                          |
+| Ownership model                       | Pass               | Each capability identifies an accountable owner role.                                          |
+| Maturity target                       | Pass               | Each capability includes a maturity target.                                                    |
+| Workbench automation potential        | Pass               | Each capability identifies future automation or Workbench support potential.                   |
+| Terminology consistency               | Pass               | Practice domain names align to the DMAF taxonomy.                                              |
+| Cross-cutting capability separation   | Pass               | Cross-cutting concepts are referenced appropriately without being treated as practice domains. |
+
+---
+
+## 46.4 QA Observations
+
+The catalogue is intentionally broad at this stage.
+
+It defines the initial practice capability architecture, not the full method or asset library.
+
+The next major development step should be to turn selected capabilities into deeper practice assets, including:
+
+* methods;
+* templates;
+* workbooks;
+* checklists;
+* diagrams;
+* executive artifacts;
+* Workbench specifications.
+
+The catalogue should not be overloaded with implementation detail too early. It should remain the organizing model for future capability development.
+
+---
+
+## 46.5 Recommended Next Sprint
+
+The recommended next sprint is:
+
+```text id="wcc15x"
+Sprint 4 — Methods and Asset Mapping
+```
+
+Sprint 4 should map capabilities to the first set of reusable DMAF methods and assets.
+
+Candidate Sprint 4 outputs:
+
+* capability-to-method matrix;
+* capability-to-asset matrix;
+* initial asset backlog;
+* method definition standard;
+* asset metadata standard;
+* priority asset build list;
+* Sprint 4 roadmap update.
+
+---
+
+# 47. Status
+
+This Practice Capability Catalogue is currently in **Draft v1.0.1** status.
+
+The initial capability catalogue has passed Sprint 3 QA review.
+
+All nine practice domains have been drafted, with **71 initial DMAF capabilities** defined.
+
+The catalogue is ready for Sprint 3 closure after commit.
 
