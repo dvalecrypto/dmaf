@@ -11,9 +11,9 @@ Recommended sprint structure:
 | Sprint    | Focus                            | Primary Outcome                                               |
 | --------- | -------------------------------- | ------------------------------------------------------------- |
 | Sprint 0  | Environment & Repo Setup         | Completed — GitHub repo initialized                           |
-| Sprint 1  | Foundation Architecture          | DMAF constitutional document                                  |
-| Sprint 2  | Framework Core                   | Charter, principles, domains, lifecycle, taxonomy             |
-| Sprint 3  | Capability Model                 | Practice domains, capabilities, maturity model                |
+| Sprint 1  | Foundation Architecture          | Completed - DMAF constitutional document                                  |
+| Sprint 2  | Framework Core                   | Completed - Charter, principles, domains, lifecycle, taxonomy             |
+| Sprint 3  | Capability Model                 | Completed - Practice domains, capabilities, maturity model                |
 | Sprint 4  | Asset Architecture               | Asset catalog and metadata standards                          |
 | Sprint 5  | Migration Factory Toolkit        | Scoring, waves, factory model                                 |
 | Sprint 6  | Coexistence & Validation Toolkit | Validation and cutover framework                              |
