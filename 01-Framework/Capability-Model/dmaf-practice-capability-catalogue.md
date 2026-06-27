@@ -3,7 +3,7 @@
 asset_id: DMAF-FWK-009
 title: DMAF Practice Capability Catalogue
 status: Draft
-version: 0.9.0
+version: 1.0.0
 owner: DMAF Practice Lead
 release: Release-1.5
 
@@ -211,7 +211,7 @@ Each domain section will define an initial set of capabilities.
 | AI & Automation | 8 | Drafted |
 | Executive Advisory | 8 | Drafted |
 | Platform Operations, Adoption & Value Realization | 8 | Drafted |
-| Modernization Intelligence Workbench | Pending | Not Started |
+| Modernization Intelligence Workbench | 8 | Drafted |
 
 ---
 
@@ -2420,11 +2420,288 @@ Future versions of this domain section may include:
 
 ---
 
-# 42. Status
+# 42. Practice Domain 9 — Modernization Intelligence Workbench
 
-This Practice Capability Catalogue is currently in **Draft v0.9.0** status.
+## 42.1 Domain Purpose
 
-The following practice domains have been drafted:
+The Modernization Intelligence Workbench domain defines the future software-enabled layer of DMAF.
+
+The Workbench is intended to operationalize the framework by helping practitioners ingest engagement inputs, interpret modernization context, retrieve reusable assets, identify gaps and contradictions, generate recommendations, assemble advisory outputs, and improve DMAF knowledge over time.
+
+This domain is different from the other practice domains because it represents both a practice capability area and a future platform expression of DMAF.
+
+The Workbench should not replace the framework, asset library, governance model, or practitioner judgment. It should make them easier to apply, reuse, scale, and improve.
+
+---
+
+## 42.2 Capability Summary
+
+| Capability ID    | Capability Name                        | Primary Lifecycle Stages                    | Maturity Target   |
+| ---------------- | -------------------------------------- | ------------------------------------------- | ----------------- |
+| DMAF-CAP-MIW-001 | Engagement Workspace Management        | All stages                                  | Level 3 — Managed |
+| DMAF-CAP-MIW-002 | Input Ingestion & Normalization        | Stage 0, Stage 2, Stage 4                   | Level 3 — Managed |
+| DMAF-CAP-MIW-003 | Modernization Context Interpretation   | Stage 0, Stage 2, Stage 3, Stage 4          | Level 3 — Managed |
+| DMAF-CAP-MIW-004 | Asset Retrieval & Recommendation       | All stages                                  | Level 3 — Managed |
+| DMAF-CAP-MIW-005 | Knowledge Graph Indexing               | Stage 2, Stage 3, Stage 10                  | Level 3 — Managed |
+| DMAF-CAP-MIW-006 | Advisory Output Generation             | Stage 0, Stage 1, Stage 2, Stage 3, Stage 4 | Level 3 — Managed |
+| DMAF-CAP-MIW-007 | Practice Intelligence Dashboarding     | Stage 6, Stage 9, Stage 10                  | Level 3 — Managed |
+| DMAF-CAP-MIW-008 | Workbench Governance & Quality Control | All stages                                  | Level 3 — Managed |
+
+---
+
+## 42.3 Capability — DMAF-CAP-MIW-001 — Engagement Workspace Management
+
+| Field                          | Description                                                                                                                                                                                |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-MIW-001                                                                                                                                                                           |
+| Capability Name                | Engagement Workspace Management                                                                                                                                                            |
+| Practice Domain                | Modernization Intelligence Workbench                                                                                                                                                       |
+| Business Objective             | Provide a structured workspace for each modernization opportunity or engagement so inputs, outputs, decisions, risks, assumptions, assets, and recommendations are organized consistently. |
+| Lifecycle Stages               | All stages                                                                                                                                                                                 |
+| Inputs                         | Opportunity notes, client context, discovery documents, inventories, diagrams, working files, risks, decisions, generated outputs                                                          |
+| Outputs                        | Engagement workspace, structured folders, input register, output register, decision log, evidence index                                                                                    |
+| Methods                        | Workspace setup, file organization, evidence indexing, output management, engagement knowledge capture                                                                                     |
+| Assets                         | Engagement workspace template, folder structure standard, input register template, output register template                                                                                |
+| Owner                          | Practice Lead / Product Owner                                                                                                                                                              |
+| KPIs                           | Workspace completeness, input traceability, output traceability, reuse readiness, engagement organization quality                                                                          |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                          |
+| Dependencies                   | Discovery Intake & Evidence Management, Knowledge Management, Reusable Accelerators                                                                                                        |
+| Workbench Automation Potential | Workspace creation wizard, automatic folder setup, file registry, engagement output packaging                                                                                              |
+
+### Notes
+
+This capability gives DMAF a repeatable operating container for each opportunity or engagement. It supports traceability from initial input through final output.
+
+---
+
+## 42.4 Capability — DMAF-CAP-MIW-002 — Input Ingestion & Normalization
+
+| Field                          | Description                                                                                                                                                                         |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MIW-002                                                                                                                                                                    |
+| Capability Name                | Input Ingestion & Normalization                                                                                                                                                     |
+| Practice Domain                | Modernization Intelligence Workbench                                                                                                                                                |
+| Business Objective             | Ingest messy, inconsistent, or incomplete engagement inputs and normalize them into usable structures for discovery, assessment, planning, recommendation, and artifact generation. |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 2 — Discovery & Assessment; Stage 4 — Migration Factory Planning                                                |
+| Inputs                         | PDFs, spreadsheets, notes, diagrams, screenshots, inventories, code snippets, source exports, meeting notes, client statements                                                      |
+| Outputs                        | Normalized input register, extracted facts, structured metadata, source classification, evidence gaps, contradiction notes                                                          |
+| Methods                        | File intake, classification, normalization, metadata extraction, evidence quality review, practitioner validation                                                                   |
+| Assets                         | Input ingestion standard, normalized input schema, evidence quality checklist, file classification guide                                                                            |
+| Owner                          | Product Owner / AI Enablement Lead                                                                                                                                                  |
+| KPIs                           | Input processing time, normalization accuracy, evidence gap detection, duplicate detection rate, reviewer correction rate                                                           |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                   |
+| Dependencies                   | Metadata Extraction Automation, AI-Assisted Discovery Interpretation, Discovery Intake & Evidence Management                                                                        |
+| Workbench Automation Potential | Document ingestion service, spreadsheet parser, screenshot interpretation support, evidence normalizer, input quality analyzer                                                      |
+
+### Notes
+
+This capability is central to the Workbench vision. It allows DMAF to handle the real-world messiness of early modernization conversations and discovery inputs.
+
+---
+
+## 42.5 Capability — DMAF-CAP-MIW-003 — Modernization Context Interpretation
+
+| Field                          | Description                                                                                                                                                                                                        |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-MIW-003                                                                                                                                                                                                   |
+| Capability Name                | Modernization Context Interpretation                                                                                                                                                                               |
+| Practice Domain                | Modernization Intelligence Workbench                                                                                                                                                                               |
+| Business Objective             | Interpret engagement inputs to identify modernization drivers, source platforms, target-state signals, risks, constraints, dependencies, lifecycle stage, relevant practice domains, and recommended next actions. |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning                                         |
+| Inputs                         | Normalized inputs, discovery evidence, client objectives, inventories, architecture notes, business drivers, risk notes, dependency data                                                                           |
+| Outputs                        | Modernization context summary, inferred lifecycle stage, relevant domain mapping, risk and gap summary, recommended analysis path                                                                                  |
+| Methods                        | Context interpretation, framework mapping, risk and gap identification, lifecycle stage mapping, practitioner review                                                                                               |
+| Assets                         | Context interpretation prompt library, framework mapping checklist, lifecycle mapping guide, modernization signal library                                                                                          |
+| Owner                          | Practice Lead / AI Enablement Lead                                                                                                                                                                                 |
+| KPIs                           | Context interpretation accuracy, reviewer acceptance rate, number of useful signals detected, number of unsupported interpretations removed                                                                        |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                                  |
+| Dependencies                   | AI-Assisted Discovery Interpretation, Discovery Findings Synthesis, Knowledge Graph Indexing                                                                                                                       |
+| Workbench Automation Potential | Modernization context interpreter, lifecycle stage classifier, domain mapper, risk and gap detector                                                                                                                |
+
+### Notes
+
+This capability turns raw input into modernization intelligence. It should distinguish confirmed facts from assumptions, inferred signals, and open questions.
+
+---
+
+## 42.6 Capability — DMAF-CAP-MIW-004 — Asset Retrieval & Recommendation
+
+| Field                          | Description                                                                                                                                                                                        |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MIW-004                                                                                                                                                                                   |
+| Capability Name                | Asset Retrieval & Recommendation                                                                                                                                                                   |
+| Practice Domain                | Modernization Intelligence Workbench                                                                                                                                                               |
+| Business Objective             | Recommend relevant DMAF assets, methods, templates, diagrams, prompts, workbooks, and reference architectures based on engagement context, lifecycle stage, practice domain, and capability needs. |
+| Lifecycle Stages               | All stages                                                                                                                                                                                         |
+| Inputs                         | Engagement context, lifecycle stage, practice domains, capability needs, source platform, target architecture direction, industry context, user request                                            |
+| Outputs                        | Recommended assets, relevant methods, missing asset suggestions, asset package, reuse rationale                                                                                                    |
+| Methods                        | Asset matching, capability-to-asset mapping, lifecycle-to-asset mapping, recommendation review                                                                                                     |
+| Assets                         | Asset catalogue, metadata standard, asset recommendation rules, capability-to-asset matrix                                                                                                         |
+| Owner                          | Practice Lead / Product Owner                                                                                                                                                                      |
+| KPIs                           | Asset recommendation relevance, asset reuse rate, missing asset identification, practitioner acceptance rate                                                                                       |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                  |
+| Dependencies                   | Knowledge Graph Indexing, Reusable Accelerators, Knowledge Management, Capability Model                                                                                                            |
+| Workbench Automation Potential | Asset recommender, playbook navigator, reference architecture matcher, engagement asset pack generator                                                                                             |
+
+### Notes
+
+This capability ensures the Workbench helps practitioners reuse the right assets at the right time rather than searching manually through the repository.
+
+---
+
+## 42.7 Capability — DMAF-CAP-MIW-005 — Knowledge Graph Indexing
+
+| Field                          | Description                                                                                                                                                                                       |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MIW-005                                                                                                                                                                                  |
+| Capability Name                | Knowledge Graph Indexing                                                                                                                                                                          |
+| Practice Domain                | Modernization Intelligence Workbench                                                                                                                                                              |
+| Business Objective             | Index DMAF objects and relationships so principles, domains, capabilities, methods, assets, lifecycle stages, releases, and platform services can be searched, traced, recommended, and governed. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 10 — Continuous Optimization & Modernization Intelligence                                                           |
+| Inputs                         | Asset metadata, capability catalogue, taxonomy, lifecycle model, practice domain model, methods, templates, release notes, baseline register                                                      |
+| Outputs                        | Indexed knowledge graph, object relationships, traceability map, dependency view, missing metadata report                                                                                         |
+| Methods                        | Metadata indexing, relationship mapping, traceability validation, graph quality review                                                                                                            |
+| Assets                         | Knowledge graph schema, metadata standard, relationship rules, graph quality checklist                                                                                                            |
+| Owner                          | Product Owner / Practice Lead                                                                                                                                                                     |
+| KPIs                           | Metadata completeness, graph coverage, relationship accuracy, missing metadata count, traceability quality                                                                                        |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                 |
+| Dependencies                   | DMAF Knowledge Graph, Capability Model, Taxonomy and Glossary, Asset Metadata Standard                                                                                                            |
+| Workbench Automation Potential | Knowledge graph indexer, metadata validator, relationship mapper, traceability dashboard                                                                                                          |
+
+### Notes
+
+This capability operationalizes the principle **Everything Is Traceable**. It is foundational for intelligent search, recommendation, governance, and automation.
+
+---
+
+## 42.8 Capability — DMAF-CAP-MIW-006 — Advisory Output Generation
+
+| Field                          | Description                                                                                                                                                                                                     |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MIW-006                                                                                                                                                                                                |
+| Capability Name                | Advisory Output Generation                                                                                                                                                                                      |
+| Practice Domain                | Modernization Intelligence Workbench                                                                                                                                                                            |
+| Business Objective             | Generate first-draft advisory outputs such as summaries, briefs, assessments, roadmaps, recommendation memos, executive narratives, and artifact shells using approved DMAF structures.                         |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 1 — Strategy & Business Value; Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning |
+| Inputs                         | Engagement context, normalized evidence, selected assets, capability mappings, value drivers, discovery findings, architecture notes, risks, decisions                                                          |
+| Outputs                        | Draft advisory briefs, executive summaries, discovery findings, roadmap narratives, recommendation drafts, artifact shells                                                                                      |
+| Methods                        | Template-based generation, evidence-to-output mapping, human review, quality control, unsupported claim removal                                                                                                 |
+| Assets                         | Advisory output templates, generation prompt library, output review checklist, executive summary template                                                                                                       |
+| Owner                          | Practice Lead / Engagement Lead                                                                                                                                                                                 |
+| KPIs                           | Drafting cycle time, reviewer acceptance rate, unsupported claim count, output reuse rate, quality gate pass rate                                                                                               |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                               |
+| Dependencies                   | Automated Artifact Generation, Executive Advisory, Discovery Findings Synthesis, AI Governance & Human Review Model                                                                                             |
+| Workbench Automation Potential | Advisory brief generator, executive summary generator, roadmap narrative generator, artifact shell generator                                                                                                    |
+
+### Notes
+
+This capability should accelerate the creation of consulting-grade outputs while preserving human review and source traceability.
+
+---
+
+## 42.9 Capability — DMAF-CAP-MIW-007 — Practice Intelligence Dashboarding
+
+| Field                          | Description                                                                                                                                                                 |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MIW-007                                                                                                                                                            |
+| Capability Name                | Practice Intelligence Dashboarding                                                                                                                                          |
+| Practice Domain                | Modernization Intelligence Workbench                                                                                                                                        |
+| Business Objective             | Provide visibility into practice performance, asset reuse, capability maturity, engagement patterns, delivery metrics, modernization themes, and improvement opportunities. |
+| Lifecycle Stages               | Stage 6 — Migration Factory Execution; Stage 9 — Platform Operations, Adoption & Value Realization; Stage 10 — Continuous Optimization & Modernization Intelligence         |
+| Inputs                         | Asset metadata, engagement outputs, usage logs, capability catalogue, delivery metrics, lessons learned, optimization backlog, practice roadmap                             |
+| Outputs                        | Practice dashboard, asset reuse metrics, capability maturity view, engagement pattern insights, improvement backlog                                                         |
+| Methods                        | Practice metric definition, dashboard design, asset reuse tracking, capability maturity reporting, trend analysis                                                           |
+| Assets                         | Practice dashboard concept, capability maturity heatmap, asset reuse tracker, improvement backlog template                                                                  |
+| Owner                          | Practice Lead / Product Owner                                                                                                                                               |
+| KPIs                           | Asset reuse rate, capability maturity progress, dashboard usage, number of improvement actions identified, practice insight quality                                         |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                           |
+| Dependencies                   | Migration Metrics & Reporting, Platform KPI & Value Realization Tracking, Knowledge Management                                                                              |
+| Workbench Automation Potential | Practice dashboard, asset reuse analytics, capability maturity dashboard, engagement pattern detection                                                                      |
+
+### Notes
+
+This capability helps DMAF learn as a practice. It turns engagement activity into reusable practice intelligence.
+
+---
+
+## 42.10 Capability — DMAF-CAP-MIW-008 — Workbench Governance & Quality Control
+
+| Field                          | Description                                                                                                                                                                                                          |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-MIW-008                                                                                                                                                                                                     |
+| Capability Name                | Workbench Governance & Quality Control                                                                                                                                                                               |
+| Practice Domain                | Modernization Intelligence Workbench                                                                                                                                                                                 |
+| Business Objective             | Ensure Workbench outputs, recommendations, asset retrieval, AI-generated content, metadata, and automation workflows remain aligned to DMAF governance, taxonomy, evidence standards, and human review expectations. |
+| Lifecycle Stages               | All stages                                                                                                                                                                                                           |
+| Inputs                         | Generated outputs, asset recommendations, metadata, prompts, AI responses, user feedback, review decisions, governance standards                                                                                     |
+| Outputs                        | Quality review results, rejected or corrected outputs, governance exceptions, prompt improvement backlog, metadata correction backlog                                                                                |
+| Methods                        | Quality review, human-in-the-loop validation, metadata validation, prompt review, output approval workflow                                                                                                           |
+| Assets                         | Workbench quality checklist, AI output review log, metadata validation checklist, prompt review standard                                                                                                             |
+| Owner                          | Practice Lead / Product Owner                                                                                                                                                                                        |
+| KPIs                           | Quality gate pass rate, AI output correction rate, metadata error count, unsupported claim count, governance exception closure                                                                                       |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                                    |
+| Dependencies                   | AI Governance & Human Review Model, Knowledge Graph Indexing, Taxonomy and Glossary, Governance & Security                                                                                                           |
+| Workbench Automation Potential | Quality gate workflow, metadata validator, unsupported claim detector, prompt governance dashboard, review queue                                                                                                     |
+
+### Notes
+
+This capability ensures the Workbench does not become an ungoverned content generator. It protects DMAF quality, traceability, and trust.
+
+---
+
+# 43. Modernization Intelligence Workbench Capability Map
+
+| Capability ID    | Capability                             | Supports Scale | Supports Traceability | Supports Automation | Supports Governance |
+| ---------------- | -------------------------------------- | -------------- | --------------------- | ------------------- | ------------------- |
+| DMAF-CAP-MIW-001 | Engagement Workspace Management        | Yes            | Yes                   | Yes                 | Yes                 |
+| DMAF-CAP-MIW-002 | Input Ingestion & Normalization        | Yes            | Yes                   | Yes                 | Yes                 |
+| DMAF-CAP-MIW-003 | Modernization Context Interpretation   | Yes            | Yes                   | Yes                 | Yes                 |
+| DMAF-CAP-MIW-004 | Asset Retrieval & Recommendation       | Yes            | Yes                   | Yes                 | Yes                 |
+| DMAF-CAP-MIW-005 | Knowledge Graph Indexing               | Yes            | Yes                   | Yes                 | Yes                 |
+| DMAF-CAP-MIW-006 | Advisory Output Generation             | Yes            | Yes                   | Yes                 | Yes                 |
+| DMAF-CAP-MIW-007 | Practice Intelligence Dashboarding     | Yes            | Yes                   | Yes                 | Yes                 |
+| DMAF-CAP-MIW-008 | Workbench Governance & Quality Control | Yes            | Yes                   | Yes                 | Yes                 |
+
+---
+
+# 44. Modernization Intelligence Workbench Capability Governance
+
+The Modernization Intelligence Workbench capabilities should be governed according to the following rules:
+
+1. Do not treat the Workbench as the source of truth.
+2. Do not allow Workbench outputs to bypass human review.
+3. Do not generate recommendations that cannot be traced to evidence or approved DMAF concepts.
+4. Do not retrieve or recommend assets without considering lifecycle stage and practice context.
+5. Do not index assets without minimum metadata.
+6. Do not allow generated outputs to introduce unsupported framework terminology.
+7. Do not use AI or automation to obscure uncertainty, assumptions, gaps, or risks.
+8. Ensure the Workbench operationalizes DMAF rather than replacing DMAF.
+
+---
+
+# 45. Future Enhancements
+
+Future versions of this domain section may include:
+
+* Workbench product blueprint;
+* engagement workspace template;
+* input ingestion schema;
+* modernization context interpreter specification;
+* asset recommendation engine specification;
+* knowledge graph schema;
+* advisory output generation workflow;
+* practice intelligence dashboard;
+* Workbench quality control workflow;
+* AI agent catalogue;
+* governance and human review workflow.
+
+---
+
+# 46. Status
+
+This Practice Capability Catalogue is currently in **Draft v1.0.0** status.
+
+All nine approved DMAF practice domains have now been drafted:
 
 * Strategy & Business Value
 * Discovery & Assessment
@@ -2434,8 +2711,7 @@ The following practice domains have been drafted:
 * AI & Automation
 * Executive Advisory
 * Platform Operations, Adoption & Value Realization
-
-Remaining capability domain:
-
 * Modernization Intelligence Workbench
+
+The initial Practice Capability Catalogue is ready for Sprint 3 QA review.
 
