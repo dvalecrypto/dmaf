@@ -3,7 +3,7 @@
 asset_id: DMAF-FWK-009
 title: DMAF Practice Capability Catalogue
 status: Draft
-version: 0.6.0
+version: 0.8.0
 owner: DMAF Practice Lead
 release: Release-1.5
 
@@ -209,9 +209,10 @@ Each domain section will define an initial set of capabilities.
 | Migration Factory | 8 | Drafted |
 | Coexistence & Validation | 8 | Drafted |
 | AI & Automation | 8 | Drafted |
-| Executive Advisory | Pending | Not Started |
+| Executive Advisory | 8 | Drafted |
 | Platform Operations, Adoption & Value Realization | Pending | Not Started |
 | Modernization Intelligence Workbench | Pending | Not Started |
+
 
 ---
 
@@ -1873,9 +1874,282 @@ Future versions of this domain section may include:
 
 ---
 
-# 34. Status
+# 34. Practice Domain 7 — Executive Advisory
 
-This Practice Capability Catalogue is currently in **Draft v0.7.0** status.
+## 34.1 Domain Purpose
+
+The Executive Advisory domain defines how modernization is communicated, positioned, governed, and made decision-ready for senior stakeholders.
+
+This domain ensures that Databricks-led modernization can be understood by executives who may not be involved in technical implementation details but are accountable for investment decisions, risk acceptance, operating model change, business value, and transformation outcomes.
+
+Executive Advisory is critical because modernization programs often fail when the technical approach is sound but the executive story is unclear.
+
+---
+
+## 34.2 Capability Summary
+
+| Capability ID    | Capability Name                         | Primary Lifecycle Stages                    | Maturity Target   |
+| ---------------- | --------------------------------------- | ------------------------------------------- | ----------------- |
+| DMAF-CAP-EXA-001 | Executive Narrative Development         | Stage 0, Stage 1, Stage 3                   | Level 3 — Managed |
+| DMAF-CAP-EXA-002 | Advisory Workshop Facilitation          | Stage 0, Stage 1, Stage 2, Stage 3          | Level 3 — Managed |
+| DMAF-CAP-EXA-003 | Decision Framing & Options Analysis     | Stage 1, Stage 3, Stage 4, Stage 7          | Level 3 — Managed |
+| DMAF-CAP-EXA-004 | Modernization Roadmap Storytelling      | Stage 1, Stage 3, Stage 4, Stage 10         | Level 3 — Managed |
+| DMAF-CAP-EXA-005 | Proposal Positioning & Pursuit Support  | Stage 0, Stage 1                            | Level 3 — Managed |
+| DMAF-CAP-EXA-006 | Executive Visual Design                 | Stage 0, Stage 1, Stage 3, Stage 4          | Level 3 — Managed |
+| DMAF-CAP-EXA-007 | Transformation Value Communication      | Stage 1, Stage 9, Stage 10                  | Level 3 — Managed |
+| DMAF-CAP-EXA-008 | Executive Governance & Steering Support | Stage 4, Stage 6, Stage 7, Stage 8, Stage 9 | Level 3 — Managed |
+
+---
+
+## 34.3 Capability — DMAF-CAP-EXA-001 — Executive Narrative Development
+
+| Field                          | Description                                                                                                                                                                                          |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-EXA-001                                                                                                                                                                                     |
+| Capability Name                | Executive Narrative Development                                                                                                                                                                      |
+| Practice Domain                | Executive Advisory                                                                                                                                                                                   |
+| Business Objective             | Create a clear executive-level modernization story that explains why modernization is needed, why Databricks is relevant, what value is expected, what risks exist, and what decisions are required. |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 1 — Strategy & Business Value; Stage 3 — Modernization Architecture                                                              |
+| Inputs                         | Business drivers, modernization hypothesis, value themes, current-state pain points, architecture direction, risks, constraints, sponsor priorities                                                  |
+| Outputs                        | Executive narrative, modernization storyline, advisory summary, transformation positioning message                                                                                                   |
+| Methods                        | Executive story framing, value narrative development, issue-to-outcome mapping, modernization message structuring                                                                                    |
+| Assets                         | Executive narrative template, modernization story arc template, advisory summary template, value message library                                                                                     |
+| Owner                          | Engagement Lead / Practice Lead                                                                                                                                                                      |
+| KPIs                           | Executive clarity, sponsor alignment, narrative reuse rate, stakeholder acceptance of modernization rationale                                                                                        |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                    |
+| Dependencies                   | Business Value Framing, Modernization Value Mapping, Target-State Architecture Design                                                                                                                |
+| Workbench Automation Potential | Executive narrative generator, value theme extractor, modernization storyline drafter, message consistency checker                                                                                   |
+
+### Notes
+
+This capability supports the DMAF principle **Executive Storytelling Matters**. It helps make complex modernization programs understandable and decision-ready.
+
+---
+
+## 34.4 Capability — DMAF-CAP-EXA-002 — Advisory Workshop Facilitation
+
+| Field                          | Description                                                                                                                                                               |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-EXA-002                                                                                                                                                          |
+| Capability Name                | Advisory Workshop Facilitation                                                                                                                                            |
+| Practice Domain                | Executive Advisory                                                                                                                                                        |
+| Business Objective             | Facilitate structured advisory sessions that align stakeholders, clarify modernization objectives, surface risks, confirm priorities, and guide decision-making.          |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 1 — Strategy & Business Value; Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture |
+| Inputs                         | Workshop objectives, stakeholder list, discovery questions, value themes, architecture topics, decision points, risks, constraints                                        |
+| Outputs                        | Workshop agenda, facilitated discussion notes, decisions, open questions, alignment summary, recommended next steps                                                       |
+| Methods                        | Advisory workshop design, stakeholder facilitation, decision capture, issue framing, alignment review                                                                     |
+| Assets                         | Advisory workshop agenda template, facilitation guide, decision capture template, workshop summary template                                                               |
+| Owner                          | Engagement Lead / Practice Lead                                                                                                                                           |
+| KPIs                           | Workshop objective completion, decision capture quality, stakeholder participation, open question closure rate                                                            |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                         |
+| Dependencies                   | Executive Sponsor Alignment, Discovery Intake & Evidence Management, Decision Framing & Options Analysis                                                                  |
+| Workbench Automation Potential | Workshop agenda generator, stakeholder question generator, decision summary drafting, action item extraction                                                              |
+
+### Notes
+
+This capability helps convert discussion into structured modernization evidence, decisions, and next steps.
+
+---
+
+## 34.5 Capability — DMAF-CAP-EXA-003 — Decision Framing & Options Analysis
+
+| Field                          | Description                                                                                                                                         |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-EXA-003                                                                                                                                    |
+| Capability Name                | Decision Framing & Options Analysis                                                                                                                 |
+| Practice Domain                | Executive Advisory                                                                                                                                  |
+| Business Objective             | Present modernization options, trade-offs, risks, benefits, constraints, and recommendations in a form that supports executive decision-making.     |
+| Lifecycle Stages               | Stage 1 — Strategy & Business Value; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning; Stage 7 — Coexistence & Validation |
+| Inputs                         | Discovery findings, architecture options, migration scenarios, coexistence constraints, risks, investment considerations, stakeholder concerns      |
+| Outputs                        | Decision brief, options analysis, trade-off summary, recommendation, decision log                                                                   |
+| Methods                        | Options analysis, decision tree framing, risk-benefit analysis, trade-off facilitation, recommendation review                                       |
+| Assets                         | Decision brief template, options analysis matrix, trade-off summary template, executive decision log                                                |
+| Owner                          | Engagement Lead / Solution Architect                                                                                                                |
+| KPIs                           | Decision turnaround time, decision traceability, number of unresolved decision points, recommendation acceptance rate                               |
+| Maturity Target                | Level 3 — Managed                                                                                                                                   |
+| Dependencies                   | Architecture Decision Management, Risk & Constraint Identification, Investment Case Development                                                     |
+| Workbench Automation Potential | Options comparison generator, trade-off summarizer, decision brief drafter, unresolved decision detector                                            |
+
+### Notes
+
+This capability ensures executives are not asked to approve vague recommendations. Decisions should include context, options, implications, and risks.
+
+---
+
+## 34.6 Capability — DMAF-CAP-EXA-004 — Modernization Roadmap Storytelling
+
+| Field                          | Description                                                                                                                                                                      |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-EXA-004                                                                                                                                                                 |
+| Capability Name                | Modernization Roadmap Storytelling                                                                                                                                               |
+| Practice Domain                | Executive Advisory                                                                                                                                                               |
+| Business Objective             | Communicate the modernization journey as a clear sequence of outcomes, phases, decisions, risks, and value realization milestones.                                               |
+| Lifecycle Stages               | Stage 1 — Strategy & Business Value; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning; Stage 10 — Continuous Optimization & Modernization Intelligence |
+| Inputs                         | Strategic roadmap, migration wave plan, architecture roadmap, value map, dependencies, milestones, delivery constraints                                                          |
+| Outputs                        | Executive roadmap view, transformation journey story, milestone narrative, roadmap briefing                                                                                      |
+| Methods                        | Roadmap storytelling, milestone framing, phase narrative development, business outcome sequencing                                                                                |
+| Assets                         | Executive roadmap template, modernization journey diagram, milestone narrative template, roadmap briefing deck                                                                   |
+| Owner                          | Engagement Lead / Solution Architect                                                                                                                                             |
+| KPIs                           | Roadmap clarity, stakeholder acceptance, decision point visibility, alignment between roadmap and value drivers                                                                  |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                |
+| Dependencies                   | Strategic Roadmap Framing, Migration Wave Planning, Modernization Value Mapping                                                                                                  |
+| Workbench Automation Potential | Roadmap narrative generator, milestone summarizer, roadmap-to-value mapper, executive journey visual generator                                                                   |
+
+### Notes
+
+This capability translates delivery sequence into executive meaning. It should explain not only what happens when, but why the sequence matters.
+
+---
+
+## 34.7 Capability — DMAF-CAP-EXA-005 — Proposal Positioning & Pursuit Support
+
+| Field                          | Description                                                                                                                                                                |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-EXA-005                                                                                                                                                           |
+| Capability Name                | Proposal Positioning & Pursuit Support                                                                                                                                     |
+| Practice Domain                | Executive Advisory                                                                                                                                                         |
+| Business Objective             | Position DMAF capabilities, Databricks modernization value, delivery approach, and advisory differentiators in pursuit and proposal materials.                             |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 1 — Strategy & Business Value                                                                          |
+| Inputs                         | Opportunity qualification notes, business drivers, current-state pain points, client priorities, relevant DMAF capabilities, reference architectures, delivery assumptions |
+| Outputs                        | Proposal narrative, pursuit strategy, scope positioning, value proposition, differentiator messaging                                                                       |
+| Methods                        | Pursuit positioning, proposal narrative development, value proposition framing, scope shaping, objection handling                                                          |
+| Assets                         | Proposal accelerator, pursuit qualification checklist, positioning statement library, modernization proposal outline                                                       |
+| Owner                          | Account Executive / Engagement Lead                                                                                                                                        |
+| KPIs                           | Proposal quality, pursuit conversion support, narrative reuse rate, alignment to client business drivers                                                                   |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                          |
+| Dependencies                   | Modernization Opportunity Qualification, Business Value Framing, Executive Narrative Development                                                                           |
+| Workbench Automation Potential | Proposal outline generator, pursuit messaging assistant, value proposition drafter, differentiator mapper                                                                  |
+
+### Notes
+
+This capability turns DMAF into reusable go-to-market intellectual property. It supports sales and advisory motions without reducing DMAF to a generic proposal template.
+
+---
+
+## 34.8 Capability — DMAF-CAP-EXA-006 — Executive Visual Design
+
+| Field                          | Description                                                                                                                                                                   |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-EXA-006                                                                                                                                                              |
+| Capability Name                | Executive Visual Design                                                                                                                                                       |
+| Practice Domain                | Executive Advisory                                                                                                                                                            |
+| Business Objective             | Create simple, high-impact visuals that help executives understand modernization strategy, architecture, roadmap, risk, value, and decisions.                                 |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 1 — Strategy & Business Value; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning |
+| Inputs                         | Executive narrative, roadmap, architecture direction, capability model, value map, risks, decision points                                                                     |
+| Outputs                        | Executive diagrams, one-page visuals, roadmap visuals, before/after views, decision visuals, presentation graphics                                                            |
+| Methods                        | Executive visual storytelling, abstraction, before/after framing, roadmap visualization, decision visualization                                                               |
+| Assets                         | Executive one-page template, before/after modernization diagram, roadmap visual template, decision visual template                                                            |
+| Owner                          | Engagement Lead / Practice Lead                                                                                                                                               |
+| KPIs                           | Visual clarity, reuse rate, executive comprehension, reduction in explanation time                                                                                            |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                             |
+| Dependencies                   | Executive Narrative Development, Modernization Roadmap Storytelling, Target-State Architecture Design                                                                         |
+| Workbench Automation Potential | Executive visual generator, diagram draft assistant, visual consistency checker, one-page artifact generator                                                                  |
+
+### Notes
+
+This capability is important because senior stakeholders often understand modernization faster through visuals than through long technical documents.
+
+---
+
+## 34.9 Capability — DMAF-CAP-EXA-007 — Transformation Value Communication
+
+| Field                          | Description                                                                                                                                                             |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-EXA-007                                                                                                                                                        |
+| Capability Name                | Transformation Value Communication                                                                                                                                      |
+| Practice Domain                | Executive Advisory                                                                                                                                                      |
+| Business Objective             | Communicate modernization value throughout the journey so stakeholders understand progress, outcomes, risks reduced, capabilities enabled, and platform value realized. |
+| Lifecycle Stages               | Stage 1 — Strategy & Business Value; Stage 9 — Platform Operations, Adoption & Value Realization; Stage 10 — Continuous Optimization & Modernization Intelligence       |
+| Inputs                         | Value drivers, success metrics, migration progress, adoption metrics, platform KPIs, business outcomes, lessons learned                                                 |
+| Outputs                        | Value realization narrative, transformation progress summary, executive value update, outcome communication                                                             |
+| Methods                        | Value communication, outcome storytelling, KPI interpretation, executive progress reporting                                                                             |
+| Assets                         | Value realization summary template, executive value update, outcome communication template, KPI interpretation guide                                                    |
+| Owner                          | Engagement Lead / Platform Lead                                                                                                                                         |
+| KPIs                           | Value realization visibility, executive confidence, metric-to-value traceability, stakeholder understanding of outcomes                                                 |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                       |
+| Dependencies                   | Success Metric Definition, Modernization Value Mapping, Platform Operations, Adoption & Value Realization                                                               |
+| Workbench Automation Potential | Value update generator, KPI-to-narrative converter, outcome summary drafter, benefit realization dashboarding                                                           |
+
+### Notes
+
+This capability ensures modernization value remains visible after the initial strategy and proposal stages. It links delivery progress to business and platform outcomes.
+
+---
+
+## 34.10 Capability — DMAF-CAP-EXA-008 — Executive Governance & Steering Support
+
+| Field                          | Description                                                                                                                                                                                                |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-EXA-008                                                                                                                                                                                           |
+| Capability Name                | Executive Governance & Steering Support                                                                                                                                                                    |
+| Practice Domain                | Executive Advisory                                                                                                                                                                                         |
+| Business Objective             | Support executive steering, governance, escalation, and decision-making during modernization delivery, validation, cutover, and adoption.                                                                  |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 6 — Migration Factory Execution; Stage 7 — Coexistence & Validation; Stage 8 — Production Cutover; Stage 9 — Platform Operations, Adoption & Value Realization |
+| Inputs                         | Delivery status, risks, issues, decisions, validation status, cutover readiness, value metrics, adoption status                                                                                            |
+| Outputs                        | Steering committee briefing, executive status summary, escalation summary, decision log, risk and issue narrative                                                                                          |
+| Methods                        | Executive steering support, status synthesis, escalation framing, decision facilitation, governance cadence management                                                                                     |
+| Assets                         | Steering committee deck template, executive status report, escalation summary template, decision log template                                                                                              |
+| Owner                          | Engagement Lead / Delivery Manager                                                                                                                                                                         |
+| KPIs                           | Executive decision turnaround, escalation closure rate, steering cadence adherence, status clarity, unresolved executive risks                                                                             |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                          |
+| Dependencies                   | Factory Execution Governance, Migration Metrics & Reporting, Cutover Readiness Assessment                                                                                                                  |
+| Workbench Automation Potential | Executive status generator, risk and issue summarizer, decision log extraction, steering deck generator                                                                                                    |
+
+### Notes
+
+This capability ensures executives remain engaged with the decisions and risks that matter most without being overwhelmed by delivery detail.
+
+---
+
+# 35. Executive Advisory Capability Map
+
+| Capability ID    | Capability                              | Supports Executive Clarity | Supports Decisions | Supports Value | Supports Workbench |
+| ---------------- | --------------------------------------- | -------------------------- | ------------------ | -------------- | ------------------ |
+| DMAF-CAP-EXA-001 | Executive Narrative Development         | Yes                        | Yes                | Yes            | Yes                |
+| DMAF-CAP-EXA-002 | Advisory Workshop Facilitation          | Yes                        | Yes                | Yes            | Yes                |
+| DMAF-CAP-EXA-003 | Decision Framing & Options Analysis     | Yes                        | Yes                | Yes            | Yes                |
+| DMAF-CAP-EXA-004 | Modernization Roadmap Storytelling      | Yes                        | Yes                | Yes            | Yes                |
+| DMAF-CAP-EXA-005 | Proposal Positioning & Pursuit Support  | Yes                        | Yes                | Yes            | Yes                |
+| DMAF-CAP-EXA-006 | Executive Visual Design                 | Yes                        | Yes                | Yes            | Yes                |
+| DMAF-CAP-EXA-007 | Transformation Value Communication      | Yes                        | Yes                | Yes            | Yes                |
+| DMAF-CAP-EXA-008 | Executive Governance & Steering Support | Yes                        | Yes                | Yes            | Yes                |
+
+---
+
+# 36. Executive Advisory Capability Governance
+
+The Executive Advisory capabilities should be governed according to the following rules:
+
+1. Do not create executive narratives that are disconnected from evidence.
+2. Do not reduce modernization to technical implementation language.
+3. Do not present decisions without options, implications, and risks.
+4. Do not create roadmap visuals that imply certainty where assumptions remain open.
+5. Do not use proposal language that conflicts with approved DMAF terminology.
+6. Do not present value realization claims without supporting metrics or rationale.
+7. Do not overwhelm executive stakeholders with delivery detail that obscures decisions.
+8. Ensure executive-facing outputs are clear, traceable, and aligned to business value.
+
+---
+
+# 37. Future Enhancements
+
+Future versions of this domain section may include:
+
+* executive narrative template;
+* advisory workshop facilitation guide;
+* decision brief template;
+* roadmap storytelling deck;
+* proposal accelerator;
+* executive one-page visual library;
+* value realization communication template;
+* steering committee deck template;
+* Workbench executive summary generator.
+
+---
+
+# 38. Status
+
+This Practice Capability Catalogue is currently in **Draft v0.8.0** status.
 
 The following practice domains have been drafted:
 
@@ -1885,6 +2159,7 @@ The following practice domains have been drafted:
 * Migration Factory
 * Coexistence & Validation
 * AI & Automation
+* Executive Advisory
 
 Remaining capability domains are pending.
 
