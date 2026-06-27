@@ -201,17 +201,17 @@ Each domain section will define an initial set of capabilities.
 
 ## 7. Initial Capability Catalogue Summary
 
-| Practice Domain                                   | Initial Capability Count | Status      |
-| ------------------------------------------------- | -----------------------: | ----------- |
-| Strategy & Business Value                         |                        7 | Drafted     |
-| Discovery & Assessment                            |                  Pending | Not Started |
-| Modernization Architecture                        |                  Pending | Not Started |
-| Migration Factory                                 |                  Pending | Not Started |
-| Coexistence & Validation                          |                  Pending | Not Started |
-| AI & Automation                                   |                  Pending | Not Started |
-| Executive Advisory                                |                  Pending | Not Started |
-| Platform Operations, Adoption & Value Realization |                  Pending | Not Started |
-| Modernization Intelligence Workbench              |                  Pending | Not Started |
+| Practice Domain | Initial Capability Count | Status |
+|---|---:|---|
+| Strategy & Business Value | 7 | Drafted |
+| Discovery & Assessment | 8 | Drafted |
+| Modernization Architecture | Pending | Not Started |
+| Migration Factory | Pending | Not Started |
+| Coexistence & Validation | Pending | Not Started |
+| AI & Automation | Pending | Not Started |
+| Executive Advisory | Pending | Not Started |
+| Platform Operations, Adoption & Value Realization | Pending | Not Started |
+| Modernization Intelligence Workbench | Pending | Not Started |
 
 ---
 
@@ -496,10 +496,288 @@ Future versions of this domain section may include:
 
 ---
 
-# 14. Status
+# 14. Practice Domain 2 — Discovery & Assessment
 
-This Practice Capability Catalogue is currently in **Draft v0.2.0** status.
+## 14.1 Domain Purpose
 
-The Strategy & Business Value domain capabilities have been drafted.
+The Discovery & Assessment domain defines how DMAF gathers, normalizes, interprets, and scores current-state modernization evidence.
+
+This domain creates the factual basis for modernization decisions. It helps ensure that strategy, architecture, migration planning, coexistence, validation, and executive recommendations are based on evidence rather than assumptions.
+
+Discovery & Assessment is especially important because modernization programs often begin with incomplete, inconsistent, outdated, or fragmented information. DMAF must therefore provide repeatable capabilities for intake, interpretation, scoring, synthesis, and gap identification.
+
+---
+
+## 14.2 Capability Summary
+
+| Capability ID    | Capability Name                           | Primary Lifecycle Stages  | Maturity Target   |
+| ---------------- | ----------------------------------------- | ------------------------- | ----------------- |
+| DMAF-CAP-DAS-001 | Discovery Intake & Evidence Management    | Stage 1, Stage 2          | Level 3 — Managed |
+| DMAF-CAP-DAS-002 | Application & Workflow Inventory Analysis | Stage 2, Stage 4          | Level 3 — Managed |
+| DMAF-CAP-DAS-003 | Data Source & Dependency Mapping          | Stage 2, Stage 3, Stage 4 | Level 3 — Managed |
+| DMAF-CAP-DAS-004 | Current-State Architecture Assessment     | Stage 2, Stage 3          | Level 3 — Managed |
+| DMAF-CAP-DAS-005 | Modernization Complexity Scoring          | Stage 2, Stage 4          | Level 3 — Managed |
+| DMAF-CAP-DAS-006 | Migration Readiness Assessment            | Stage 2, Stage 4, Stage 5 | Level 3 — Managed |
+| DMAF-CAP-DAS-007 | Risk & Constraint Identification          | Stage 2, Stage 3, Stage 4 | Level 3 — Managed |
+| DMAF-CAP-DAS-008 | Discovery Findings Synthesis              | Stage 2, Stage 3, Stage 4 | Level 3 — Managed |
+
+---
+
+## 14.3 Capability — DMAF-CAP-DAS-001 — Discovery Intake & Evidence Management
+
+| Field                          | Description                                                                                                                                                            |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-DAS-001                                                                                                                                                       |
+| Capability Name                | Discovery Intake & Evidence Management                                                                                                                                 |
+| Practice Domain                | Discovery & Assessment                                                                                                                                                 |
+| Business Objective             | Establish a repeatable approach for collecting, organizing, validating, and managing discovery inputs so modernization decisions are based on reliable evidence.       |
+| Lifecycle Stages               | Stage 1 — Strategy & Business Value; Stage 2 — Discovery & Assessment                                                                                                  |
+| Inputs                         | Client documents, application inventories, workflow lists, architecture diagrams, interview notes, screenshots, data samples, runbooks, extracts, existing assessments |
+| Outputs                        | Discovery evidence register, intake log, evidence quality notes, gap list, source document index                                                                       |
+| Methods                        | Discovery intake method, evidence classification, document review, interview capture, evidence gap analysis                                                            |
+| Assets                         | Discovery intake checklist, evidence register template, interview note template, discovery folder structure, evidence gap tracker                                      |
+| Owner                          | Lead Business Analyst / Solution Architect                                                                                                                             |
+| KPIs                           | Discovery input completeness, evidence traceability, unresolved evidence gaps, duplicate or conflicting input count                                                    |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                      |
+| Dependencies                   | Strategy & Business Value, Executive Advisory, Modernization Intelligence Workbench                                                                                    |
+| Workbench Automation Potential | AI-assisted document intake, source classification, duplicate detection, evidence gap detection, discovery workspace creation                                          |
+
+### Notes
+
+This capability prevents discovery from becoming a loose document collection exercise. It establishes the evidence base required for assessment, architecture, and migration planning.
+
+---
+
+## 14.4 Capability — DMAF-CAP-DAS-002 — Application & Workflow Inventory Analysis
+
+| Field                          | Description                                                                                                                                      |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-DAS-002                                                                                                                                 |
+| Capability Name                | Application & Workflow Inventory Analysis                                                                                                        |
+| Practice Domain                | Discovery & Assessment                                                                                                                           |
+| Business Objective             | Analyze application, workflow, job, and pipeline inventories to understand modernization scope, complexity, ownership, and migration candidates. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 4 — Migration Factory Planning                                                                           |
+| Inputs                         | Application inventory, workflow inventory, job schedules, ETL mappings, pipeline lists, ownership data, platform metadata                        |
+| Outputs                        | Normalized inventory, application/workflow profile, scope summary, inventory quality assessment, candidate grouping                              |
+| Methods                        | Inventory normalization, workflow classification, application profiling, scope segmentation, ownership analysis                                  |
+| Assets                         | Application inventory template, workflow inventory workbook, inventory normalization guide, application profile template                         |
+| Owner                          | Lead Business Analyst / Solution Architect                                                                                                       |
+| KPIs                           | Inventory completeness, number of applications profiled, number of workflows classified, percentage of inventory with owners identified          |
+| Maturity Target                | Level 3 — Managed                                                                                                                                |
+| Dependencies                   | Discovery Intake & Evidence Management, Modernization Complexity Scoring, Migration Factory                                                      |
+| Workbench Automation Potential | Inventory parsing, metadata extraction, workflow classification, duplicate application detection, inventory quality scoring                      |
+
+### Notes
+
+This capability is foundational for migration factory planning. Without an accurate inventory, wave planning, estimation, and dependency sequencing will be unreliable.
+
+---
+
+## 14.5 Capability — DMAF-CAP-DAS-003 — Data Source & Dependency Mapping
+
+| Field                          | Description                                                                                                                                                        |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-DAS-003                                                                                                                                                   |
+| Capability Name                | Data Source & Dependency Mapping                                                                                                                                   |
+| Practice Domain                | Discovery & Assessment                                                                                                                                             |
+| Business Objective             | Identify source systems, target systems, upstream dependencies, downstream consumers, data flows, and integration points that affect modernization scope and risk. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning                                                       |
+| Inputs                         | System inventory, workflow inventory, data flow diagrams, ETL mappings, source extracts, target tables, downstream file lists, interface documentation             |
+| Outputs                        | Dependency map, source-to-target relationship summary, upstream/downstream impact view, integration risk notes                                                     |
+| Methods                        | Dependency mapping, source-to-target analysis, interface review, data lineage approximation, downstream impact analysis                                            |
+| Assets                         | Dependency mapping template, source-to-target matrix, interface inventory template, dependency risk checklist                                                      |
+| Owner                          | Solution Architect / Data Architect                                                                                                                                |
+| KPIs                           | Dependency coverage, number of unresolved dependencies, downstream impact clarity, percentage of critical flows mapped                                             |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                  |
+| Dependencies                   | Application & Workflow Inventory Analysis, Current-State Architecture Assessment, Coexistence & Validation                                                         |
+| Workbench Automation Potential | Relationship extraction from inventories, dependency graph generation, missing dependency detection, downstream impact summarization                               |
+
+### Notes
+
+This capability is critical for avoiding modernization surprises. Dependency visibility directly affects architecture decisions, migration sequencing, validation design, and cutover risk.
+
+---
+
+## 14.6 Capability — DMAF-CAP-DAS-004 — Current-State Architecture Assessment
+
+| Field                          | Description                                                                                                                                                                |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-DAS-004                                                                                                                                                           |
+| Capability Name                | Current-State Architecture Assessment                                                                                                                                      |
+| Practice Domain                | Discovery & Assessment                                                                                                                                                     |
+| Business Objective             | Assess the current-state technology, data, integration, orchestration, governance, and operational architecture to inform Databricks target-state and transition planning. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture                                                                                                     |
+| Inputs                         | Architecture diagrams, system inventories, infrastructure notes, platform documentation, security models, orchestration schedules, operational runbooks                    |
+| Outputs                        | Current-state architecture summary, architecture risk notes, modernization constraints, transition considerations                                                          |
+| Methods                        | Architecture review, platform capability assessment, architecture gap analysis, technical constraint assessment                                                            |
+| Assets                         | Current-state architecture assessment template, platform capability checklist, architecture gap worksheet, modernization constraint log                                    |
+| Owner                          | Solution Architect / Enterprise Architect                                                                                                                                  |
+| KPIs                           | Architecture coverage, number of architectural constraints identified, completeness of platform capability assessment, target-state relevance                              |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                          |
+| Dependencies                   | Data Source & Dependency Mapping, Modernization Architecture, Governance & Security                                                                                        |
+| Workbench Automation Potential | Architecture note summarization, diagram interpretation support, platform capability extraction, architecture gap recommendation                                           |
+
+### Notes
+
+This capability creates the bridge between discovery and architecture. It ensures the target-state design accounts for the realities of the current environment.
+
+---
+
+## 14.7 Capability — DMAF-CAP-DAS-005 — Modernization Complexity Scoring
+
+| Field                          | Description                                                                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-DAS-005                                                                                                                                                    |
+| Capability Name                | Modernization Complexity Scoring                                                                                                                                    |
+| Practice Domain                | Discovery & Assessment                                                                                                                                              |
+| Business Objective             | Score modernization candidates using consistent complexity factors so planning, sequencing, estimating, and risk decisions are evidence-based.                      |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 4 — Migration Factory Planning                                                                                              |
+| Inputs                         | Application inventory, workflow inventory, dependency map, data volume indicators, transformation complexity, technology stack, business criticality, testing needs |
+| Outputs                        | Complexity score, complexity tier, scoring rationale, candidate prioritization input, wave planning input                                                           |
+| Methods                        | Complexity scoring model, weighted factor assessment, scoring workshop, complexity calibration                                                                      |
+| Assets                         | Complexity scoring workbook, scoring rubric, complexity heatmap template, scoring calibration guide                                                                 |
+| Owner                          | Lead Business Analyst / Migration Lead                                                                                                                              |
+| KPIs                           | Percentage of candidates scored, scoring consistency, scoring confidence, number of high-complexity candidates identified                                           |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                   |
+| Dependencies                   | Application & Workflow Inventory Analysis, Data Source & Dependency Mapping, Migration Factory                                                                      |
+| Workbench Automation Potential | AI-assisted scoring suggestions, complexity factor extraction, heatmap generation, scoring anomaly detection                                                        |
+
+### Notes
+
+This capability supports industrialized delivery by creating a repeatable basis for migration wave planning. It should not be treated as a purely mechanical scoring exercise; expert review is required.
+
+---
+
+## 14.8 Capability — DMAF-CAP-DAS-006 — Migration Readiness Assessment
+
+| Field                          | Description                                                                                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-DAS-006                                                                                                                                                                         |
+| Capability Name                | Migration Readiness Assessment                                                                                                                                                           |
+| Practice Domain                | Discovery & Assessment                                                                                                                                                                   |
+| Business Objective             | Determine whether applications, workflows, data sources, teams, environments, dependencies, and governance conditions are ready to proceed into pilot, planning, or migration execution. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 4 — Migration Factory Planning; Stage 5 — Reference Implementation / Pilot                                                                       |
+| Inputs                         | Discovery findings, complexity scores, dependency map, architecture assessment, environment readiness, resource availability, validation needs                                           |
+| Outputs                        | Readiness assessment, readiness gaps, recommended next steps, pilot candidate recommendations, readiness risk summary                                                                    |
+| Methods                        | Readiness scoring, readiness review workshop, gap assessment, pilot candidate selection                                                                                                  |
+| Assets                         | Migration readiness checklist, readiness scoring template, pilot selection criteria, readiness risk summary template                                                                     |
+| Owner                          | Solution Architect / Migration Lead                                                                                                                                                      |
+| KPIs                           | Readiness score, number of readiness gaps, pilot candidate confidence, remediation action closure rate                                                                                   |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                        |
+| Dependencies                   | Modernization Complexity Scoring, Current-State Architecture Assessment, Migration Factory Planning                                                                                      |
+| Workbench Automation Potential | Readiness scoring support, pilot candidate recommendation, readiness gap detection, remediation backlog generation                                                                       |
+
+### Notes
+
+This capability helps prevent premature migration execution. It ensures that planning reflects readiness, not just desire to move quickly.
+
+---
+
+## 14.9 Capability — DMAF-CAP-DAS-007 — Risk & Constraint Identification
+
+| Field                          | Description                                                                                                                                                    |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-DAS-007                                                                                                                                               |
+| Capability Name                | Risk & Constraint Identification                                                                                                                               |
+| Practice Domain                | Discovery & Assessment                                                                                                                                         |
+| Business Objective             | Identify risks, constraints, assumptions, gaps, and unknowns that may affect modernization scope, architecture, sequencing, validation, cost, or adoption.     |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning                                                   |
+| Inputs                         | Discovery evidence, stakeholder interviews, architecture notes, inventory gaps, dependency map, business constraints, regulatory or operational considerations |
+| Outputs                        | Risk and constraint register, assumptions log, issue list, unknowns list, mitigation themes                                                                    |
+| Methods                        | Risk identification, constraint analysis, assumption capture, stakeholder concern analysis, impact assessment                                                  |
+| Assets                         | Risk register template, constraint log, assumption tracker, discovery issue log, executive risk summary template                                               |
+| Owner                          | Engagement Lead / Lead Business Analyst                                                                                                                        |
+| KPIs                           | Number of risks identified, unresolved critical risks, number of assumptions requiring validation, mitigation ownership clarity                                |
+| Maturity Target                | Level 3 — Managed                                                                                                                                              |
+| Dependencies                   | Discovery Intake & Evidence Management, Current-State Architecture Assessment, Executive Advisory                                                              |
+| Workbench Automation Potential | Risk extraction from notes, assumption detection, contradiction detection, risk categorization, mitigation suggestion drafting                                 |
+
+### Notes
+
+This capability should surface uncertainty early. DMAF should distinguish confirmed facts from assumptions, gaps, risks, and open questions.
+
+---
+
+## 14.10 Capability — DMAF-CAP-DAS-008 — Discovery Findings Synthesis
+
+| Field                          | Description                                                                                                                                                                            |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-DAS-008                                                                                                                                                                       |
+| Capability Name                | Discovery Findings Synthesis                                                                                                                                                           |
+| Practice Domain                | Discovery & Assessment                                                                                                                                                                 |
+| Business Objective             | Convert discovery evidence into clear findings, implications, recommendations, and next steps for architecture, migration planning, executive decision-making, and delivery readiness. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning                                                                           |
+| Inputs                         | Evidence register, inventory analysis, dependency map, architecture assessment, complexity scoring, readiness assessment, risk register                                                |
+| Outputs                        | Discovery findings report, executive findings summary, architecture implications, migration planning inputs, recommended next steps                                                    |
+| Methods                        | Findings synthesis, evidence-to-recommendation mapping, executive summary development, gap and implication analysis                                                                    |
+| Assets                         | Discovery findings template, executive findings deck, findings-to-recommendations matrix, discovery closeout checklist                                                                 |
+| Owner                          | Engagement Lead / Solution Architect                                                                                                                                                   |
+| KPIs                           | Findings clarity, stakeholder acceptance, recommendation traceability, number of unresolved evidence gaps at discovery close                                                           |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                      |
+| Dependencies                   | All Discovery & Assessment capabilities, Executive Advisory, Modernization Architecture, Migration Factory                                                                             |
+| Workbench Automation Potential | AI-assisted findings synthesis, recommendation drafting, evidence traceability mapping, executive summary generation                                                                   |
+
+### Notes
+
+This capability is the output bridge from discovery into decision-making. It ensures discovery does not end with raw facts, but with usable modernization intelligence.
+
+---
+
+# 15. Discovery & Assessment Capability Map
+
+| Capability ID    | Capability                                | Supports Evidence Quality | Supports Architecture | Supports Migration Planning | Supports Workbench |
+| ---------------- | ----------------------------------------- | ------------------------- | --------------------- | --------------------------- | ------------------ |
+| DMAF-CAP-DAS-001 | Discovery Intake & Evidence Management    | Yes                       | Yes                   | Yes                         | Yes                |
+| DMAF-CAP-DAS-002 | Application & Workflow Inventory Analysis | Yes                       | Yes                   | Yes                         | Yes                |
+| DMAF-CAP-DAS-003 | Data Source & Dependency Mapping          | Yes                       | Yes                   | Yes                         | Yes                |
+| DMAF-CAP-DAS-004 | Current-State Architecture Assessment     | Yes                       | Yes                   | Yes                         | Yes                |
+| DMAF-CAP-DAS-005 | Modernization Complexity Scoring          | Yes                       | Yes                   | Yes                         | Yes                |
+| DMAF-CAP-DAS-006 | Migration Readiness Assessment            | Yes                       | Yes                   | Yes                         | Yes                |
+| DMAF-CAP-DAS-007 | Risk & Constraint Identification          | Yes                       | Yes                   | Yes                         | Yes                |
+| DMAF-CAP-DAS-008 | Discovery Findings Synthesis              | Yes                       | Yes                   | Yes                         | Yes                |
+
+---
+
+# 16. Discovery & Assessment Capability Governance
+
+The Discovery & Assessment capabilities should be governed according to the following rules:
+
+1. Do not proceed to architecture or migration planning without sufficient discovery evidence.
+2. Do not treat incomplete inventories as complete.
+3. Do not hide assumptions inside recommendations.
+4. Do not score complexity without documenting scoring rationale.
+5. Do not treat dependency mapping as optional for complex modernization.
+6. Do not present discovery findings without distinguishing facts, assumptions, risks, and gaps.
+7. Ensure discovery outputs are traceable to source evidence.
+8. Ensure discovery findings can be consumed by architecture, migration planning, validation, and executive advisory work.
+
+---
+
+# 17. Future Enhancements
+
+Future versions of this domain section may include:
+
+* discovery intake workflow;
+* evidence register template;
+* application inventory workbook;
+* workflow inventory workbook;
+* dependency mapping workbook;
+* current-state architecture assessment template;
+* complexity scoring workbook;
+* readiness assessment checklist;
+* discovery findings deck;
+* Workbench discovery intake agent;
+* AI-assisted evidence gap analyzer.
+
+---
+
+# 18. Status
+
+This Practice Capability Catalogue is currently in **Draft v0.3.0** status.
+
+The following practice domains have been drafted:
+
+* Strategy & Business Value
+* Discovery & Assessment
 
 Remaining capability domains are pending.
