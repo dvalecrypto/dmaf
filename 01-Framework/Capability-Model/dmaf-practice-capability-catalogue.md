@@ -3,7 +3,7 @@
 asset_id: DMAF-FWK-009
 title: DMAF Practice Capability Catalogue
 status: Draft
-version: 0.8.0
+version: 0.9.0
 owner: DMAF Practice Lead
 release: Release-1.5
 
@@ -210,9 +210,8 @@ Each domain section will define an initial set of capabilities.
 | Coexistence & Validation | 8 | Drafted |
 | AI & Automation | 8 | Drafted |
 | Executive Advisory | 8 | Drafted |
-| Platform Operations, Adoption & Value Realization | Pending | Not Started |
+| Platform Operations, Adoption & Value Realization | 8 | Drafted |
 | Modernization Intelligence Workbench | Pending | Not Started |
-
 
 ---
 
@@ -2147,9 +2146,283 @@ Future versions of this domain section may include:
 
 ---
 
-# 38. Status
+# 38. Practice Domain 8 — Platform Operations, Adoption & Value Realization
 
-This Practice Capability Catalogue is currently in **Draft v0.8.0** status.
+## 38.1 Domain Purpose
+
+The Platform Operations, Adoption & Value Realization domain defines how the modernized Databricks platform is operated, adopted, governed, optimized, and measured after migration.
+
+This domain ensures that modernization does not end at technical cutover. A migration is only successful when the modernized platform becomes a trusted, supportable, adopted, cost-aware, and value-producing operating environment.
+
+This domain connects production transition, operating model, enablement, FinOps, governance maturity, platform KPIs, value realization, and continuous optimization.
+
+---
+
+## 38.2 Capability Summary
+
+| Capability ID    | Capability Name                            | Primary Lifecycle Stages            | Maturity Target   |
+| ---------------- | ------------------------------------------ | ----------------------------------- | ----------------- |
+| DMAF-CAP-POV-001 | Platform Operating Model Design            | Stage 8, Stage 9                    | Level 3 — Managed |
+| DMAF-CAP-POV-002 | Adoption & Enablement Planning             | Stage 8, Stage 9, Stage 10          | Level 3 — Managed |
+| DMAF-CAP-POV-003 | Support Model Transition                   | Stage 8, Stage 9                    | Level 3 — Managed |
+| DMAF-CAP-POV-004 | Runbook & Operational Readiness Management | Stage 8, Stage 9                    | Level 3 — Managed |
+| DMAF-CAP-POV-005 | FinOps & Consumption Management            | Stage 3, Stage 6, Stage 9, Stage 10 | Level 3 — Managed |
+| DMAF-CAP-POV-006 | Platform KPI & Value Realization Tracking  | Stage 1, Stage 9, Stage 10          | Level 3 — Managed |
+| DMAF-CAP-POV-007 | Governance Maturity Improvement            | Stage 3, Stage 9, Stage 10          | Level 3 — Managed |
+| DMAF-CAP-POV-008 | Continuous Optimization Management         | Stage 9, Stage 10                   | Level 3 — Managed |
+
+---
+
+## 38.3 Capability — DMAF-CAP-POV-001 — Platform Operating Model Design
+
+| Field                          | Description                                                                                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-POV-001                                                                                                                                              |
+| Capability Name                | Platform Operating Model Design                                                                                                                               |
+| Practice Domain                | Platform Operations, Adoption & Value Realization                                                                                                             |
+| Business Objective             | Define how the modernized Databricks platform will be owned, governed, supported, funded, operated, improved, and adopted after migration.                    |
+| Lifecycle Stages               | Stage 8 — Production Cutover; Stage 9 — Platform Operations, Adoption & Value Realization                                                                     |
+| Inputs                         | Target-state architecture, production readiness plan, support requirements, governance requirements, ownership model, platform team structure, adoption goals |
+| Outputs                        | Platform operating model, role model, governance cadence, ownership map, operating principles, platform management responsibilities                           |
+| Methods                        | Operating model design, role and responsibility mapping, governance cadence design, platform ownership review                                                 |
+| Assets                         | Platform operating model template, RACI template, governance cadence template, ownership model worksheet                                                      |
+| Owner                          | Platform Lead / Customer Success Lead                                                                                                                         |
+| KPIs                           | Ownership clarity, operating model approval, governance cadence adoption, unresolved role ambiguity count                                                     |
+| Maturity Target                | Level 3 — Managed                                                                                                                                             |
+| Dependencies                   | Target-State Architecture Design, Production Readiness Support, Governance & Security, Executive Advisory                                                     |
+| Workbench Automation Potential | Operating model draft generator, RACI assistant, governance cadence recommender, ownership gap detector                                                       |
+
+### Notes
+
+This capability prevents modernization from ending with a technical deployment but no clear operating model. It defines how the platform will live after migration.
+
+---
+
+## 38.4 Capability — DMAF-CAP-POV-002 — Adoption & Enablement Planning
+
+| Field                          | Description                                                                                                                                                |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-POV-002                                                                                                                                           |
+| Capability Name                | Adoption & Enablement Planning                                                                                                                             |
+| Practice Domain                | Platform Operations, Adoption & Value Realization                                                                                                          |
+| Business Objective             | Plan how users, engineers, analysts, platform teams, governance stakeholders, and business teams will adopt and effectively use the modernized platform.   |
+| Lifecycle Stages               | Stage 8 — Production Cutover; Stage 9 — Platform Operations, Adoption & Value Realization; Stage 10 — Continuous Optimization & Modernization Intelligence |
+| Inputs                         | Stakeholder groups, platform capabilities, target operating model, training needs, adoption barriers, role expectations, onboarding requirements           |
+| Outputs                        | Adoption plan, enablement roadmap, training themes, onboarding approach, stakeholder adoption risks                                                        |
+| Methods                        | Adoption planning, stakeholder segmentation, enablement needs assessment, onboarding journey design                                                        |
+| Assets                         | Adoption plan template, enablement roadmap template, stakeholder adoption matrix, onboarding checklist                                                     |
+| Owner                          | Platform Lead / Customer Success Lead                                                                                                                      |
+| KPIs                           | Adoption rate, enablement completion, active platform user growth, stakeholder satisfaction, onboarding cycle time                                         |
+| Maturity Target                | Level 3 — Managed                                                                                                                                          |
+| Dependencies                   | Platform Operating Model Design, Executive Advisory, Knowledge Management, Reusable Accelerators                                                           |
+| Workbench Automation Potential | Enablement plan generator, stakeholder adoption tracker, onboarding checklist generation, adoption risk summarization                                      |
+
+### Notes
+
+This capability treats adoption as planned work, not an assumption. The modernized platform only creates value when teams know how to use it effectively.
+
+---
+
+## 38.5 Capability — DMAF-CAP-POV-003 — Support Model Transition
+
+| Field                          | Description                                                                                                                                                            |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-POV-003                                                                                                                                                       |
+| Capability Name                | Support Model Transition                                                                                                                                               |
+| Practice Domain                | Platform Operations, Adoption & Value Realization                                                                                                                      |
+| Business Objective             | Define how support responsibilities, incident handling, escalation paths, service expectations, and ownership move from project delivery into steady-state operations. |
+| Lifecycle Stages               | Stage 8 — Production Cutover; Stage 9 — Platform Operations, Adoption & Value Realization                                                                              |
+| Inputs                         | Production readiness assessment, support requirements, operating model, incident response expectations, team roles, service levels, known risks                        |
+| Outputs                        | Support model, escalation path, incident response model, handoff plan, service responsibility map                                                                      |
+| Methods                        | Support transition planning, incident model design, escalation path mapping, operational handoff review                                                                |
+| Assets                         | Support model template, escalation matrix, handoff checklist, incident response template                                                                               |
+| Owner                          | Platform Lead / Delivery Manager                                                                                                                                       |
+| KPIs                           | Support ownership clarity, incident response readiness, handoff completion, post-cutover issue response time                                                           |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                      |
+| Dependencies                   | Production Readiness Support, Cutover Readiness Assessment, Platform Operating Model Design                                                                            |
+| Workbench Automation Potential | Support model drafter, escalation matrix generator, handoff gap detector, post-cutover issue summarizer                                                                |
+
+### Notes
+
+This capability ensures project teams do not leave operations teams with unclear responsibilities after go-live.
+
+---
+
+## 38.6 Capability — DMAF-CAP-POV-004 — Runbook & Operational Readiness Management
+
+| Field                          | Description                                                                                                                                                               |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-POV-004                                                                                                                                                          |
+| Capability Name                | Runbook & Operational Readiness Management                                                                                                                                |
+| Practice Domain                | Platform Operations, Adoption & Value Realization                                                                                                                         |
+| Business Objective             | Ensure that operational procedures, monitoring expectations, maintenance routines, job schedules, restart procedures, and support instructions are documented and usable. |
+| Lifecycle Stages               | Stage 8 — Production Cutover; Stage 9 — Platform Operations, Adoption & Value Realization                                                                                 |
+| Inputs                         | Production workloads, job schedules, platform architecture, monitoring requirements, incident scenarios, support model, operational constraints                           |
+| Outputs                        | Runbooks, operational checklist, monitoring requirements, restart procedures, known issue guidance, operational readiness status                                          |
+| Methods                        | Runbook development, operational readiness review, monitoring requirement review, support scenario walkthrough                                                            |
+| Assets                         | Runbook template, operational readiness checklist, monitoring requirement template, support scenario checklist                                                            |
+| Owner                          | Platform Lead / Operations Lead                                                                                                                                           |
+| KPIs                           | Runbook completeness, operational readiness score, monitoring coverage, number of undocumented support scenarios                                                          |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                         |
+| Dependencies                   | Production Readiness Support, Support Model Transition, Governance & Security                                                                                             |
+| Workbench Automation Potential | Runbook draft generation, operational checklist generation, monitoring gap detection, support scenario summarization                                                      |
+
+### Notes
+
+This capability ensures platform operations can be performed repeatedly and reliably after delivery teams transition out.
+
+---
+
+## 38.7 Capability — DMAF-CAP-POV-005 — FinOps & Consumption Management
+
+| Field                          | Description                                                                                                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-POV-005                                                                                                                                                                                          |
+| Capability Name                | FinOps & Consumption Management                                                                                                                                                                           |
+| Practice Domain                | Platform Operations, Adoption & Value Realization                                                                                                                                                         |
+| Business Objective             | Establish cost visibility, consumption awareness, optimization practices, and financial accountability for Databricks platform usage.                                                                     |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 6 — Migration Factory Execution; Stage 9 — Platform Operations, Adoption & Value Realization; Stage 10 — Continuous Optimization & Modernization Intelligence |
+| Inputs                         | Workload characteristics, compute usage, job schedules, architecture design, environment strategy, consumption data, cost allocation needs                                                                |
+| Outputs                        | FinOps operating view, cost driver model, consumption dashboard concept, optimization backlog, showback or chargeback considerations                                                                      |
+| Methods                        | Cost driver analysis, consumption review, workload optimization review, FinOps cadence design                                                                                                             |
+| Assets                         | FinOps checklist, cost driver worksheet, consumption dashboard template, optimization backlog template                                                                                                    |
+| Owner                          | Platform Lead / FinOps Lead                                                                                                                                                                               |
+| KPIs                           | Cost visibility, consumption trend, optimization savings, cost allocation coverage, number of unmanaged cost drivers                                                                                      |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                         |
+| Dependencies                   | FinOps & Cost Optimization, Target-State Architecture Design, Migration Metrics & Reporting                                                                                                               |
+| Workbench Automation Potential | Consumption summary generator, cost driver analyzer, optimization recommendation engine, FinOps dashboard generation                                                                                      |
+
+### Notes
+
+This capability ensures modernization value includes sustainable platform economics. FinOps should be considered during architecture and execution, not only after costs grow.
+
+---
+
+## 38.8 Capability — DMAF-CAP-POV-006 — Platform KPI & Value Realization Tracking
+
+| Field                          | Description                                                                                                                                                           |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-POV-006                                                                                                                                                      |
+| Capability Name                | Platform KPI & Value Realization Tracking                                                                                                                             |
+| Practice Domain                | Platform Operations, Adoption & Value Realization                                                                                                                     |
+| Business Objective             | Track whether the modernized platform is producing expected outcomes across adoption, performance, delivery speed, governance, cost, reliability, and business value. |
+| Lifecycle Stages               | Stage 1 — Strategy & Business Value; Stage 9 — Platform Operations, Adoption & Value Realization; Stage 10 — Continuous Optimization & Modernization Intelligence     |
+| Inputs                         | Success metrics, business value map, platform goals, migration metrics, adoption metrics, operational metrics, cost metrics, stakeholder feedback                     |
+| Outputs                        | Platform KPI model, value realization dashboard, benefits tracking summary, outcome narrative, improvement recommendations                                            |
+| Methods                        | KPI design, value realization tracking, outcome measurement, platform performance review, executive value reporting                                                   |
+| Assets                         | Platform KPI template, value realization tracker, KPI dashboard concept, benefits realization summary                                                                 |
+| Owner                          | Platform Lead / Engagement Lead                                                                                                                                       |
+| KPIs                           | KPI coverage, value realization visibility, outcome traceability, executive confidence, improvement action closure                                                    |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                     |
+| Dependencies                   | Success Metric Definition, Transformation Value Communication, FinOps & Consumption Management                                                                        |
+| Workbench Automation Potential | KPI dashboard generation, value realization narrative generator, outcome-to-metric mapper, improvement recommendation engine                                          |
+
+### Notes
+
+This capability reinforces that platform value is the destination. It connects modernization outcomes back to the value logic defined earlier in the lifecycle.
+
+---
+
+## 38.9 Capability — DMAF-CAP-POV-007 — Governance Maturity Improvement
+
+| Field                          | Description                                                                                                                                                        |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Capability ID                  | DMAF-CAP-POV-007                                                                                                                                                   |
+| Capability Name                | Governance Maturity Improvement                                                                                                                                    |
+| Practice Domain                | Platform Operations, Adoption & Value Realization                                                                                                                  |
+| Business Objective             | Improve data governance, security, policy adoption, access management, lineage practices, and platform controls as the modernized platform matures.                |
+| Lifecycle Stages               | Stage 3 — Modernization Architecture; Stage 9 — Platform Operations, Adoption & Value Realization; Stage 10 — Continuous Optimization & Modernization Intelligence |
+| Inputs                         | Governance architecture, security requirements, platform operating model, access patterns, audit needs, policy gaps, lineage needs, governance maturity baseline   |
+| Outputs                        | Governance maturity assessment, improvement backlog, control adoption plan, policy improvement recommendations, governance operating cadence                       |
+| Methods                        | Governance maturity review, access control review, policy gap analysis, control adoption planning                                                                  |
+| Assets                         | Governance maturity assessment, Unity Catalog maturity checklist, access control review template, governance improvement backlog                                   |
+| Owner                          | Platform Lead / Governance Lead                                                                                                                                    |
+| KPIs                           | Governance maturity level, policy adoption, access review completion, unresolved governance gaps, control effectiveness                                            |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                  |
+| Dependencies                   | Governance Architecture Design, Governance & Security, Risk & Compliance                                                                                           |
+| Workbench Automation Potential | Governance maturity scoring, access review summarization, policy gap detection, governance improvement recommendation                                              |
+
+### Notes
+
+This capability supports long-term platform trust. Governance maturity should improve as platform adoption expands.
+
+---
+
+## 38.10 Capability — DMAF-CAP-POV-008 — Continuous Optimization Management
+
+| Field                          | Description                                                                                                                                          |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-POV-008                                                                                                                                     |
+| Capability Name                | Continuous Optimization Management                                                                                                                   |
+| Practice Domain                | Platform Operations, Adoption & Value Realization                                                                                                    |
+| Business Objective             | Maintain an ongoing backlog of platform, workload, governance, cost, adoption, performance, and value improvement opportunities after modernization. |
+| Lifecycle Stages               | Stage 9 — Platform Operations, Adoption & Value Realization; Stage 10 — Continuous Optimization & Modernization Intelligence                         |
+| Inputs                         | Platform KPIs, FinOps insights, incident trends, adoption feedback, governance gaps, performance observations, lessons learned, user requests        |
+| Outputs                        | Continuous optimization backlog, improvement roadmap, prioritized optimization actions, lessons learned updates, value improvement recommendations   |
+| Methods                        | Optimization review, improvement backlog management, prioritization, lessons learned capture, continuous improvement cadence                         |
+| Assets                         | Optimization backlog template, improvement prioritization matrix, lessons learned template, continuous improvement cadence guide                     |
+| Owner                          | Platform Lead / Practice Lead                                                                                                                        |
+| KPIs                           | Optimization backlog closure rate, improvement value delivered, recurring issue reduction, cost optimization outcomes, adoption improvement          |
+| Maturity Target                | Level 3 — Managed                                                                                                                                    |
+| Dependencies                   | Platform KPI & Value Realization Tracking, FinOps & Consumption Management, Knowledge Management                                                     |
+| Workbench Automation Potential | Optimization recommendation engine, improvement backlog generator, KPI trend analyzer, lessons learned extraction                                    |
+
+### Notes
+
+This capability ensures modernization learning and platform feedback are converted into continuous improvement rather than lost after project closure.
+
+---
+
+# 39. Platform Operations, Adoption & Value Realization Capability Map
+
+| Capability ID    | Capability                                 | Supports Operations | Supports Adoption | Supports Value | Supports Workbench |
+| ---------------- | ------------------------------------------ | ------------------- | ----------------- | -------------- | ------------------ |
+| DMAF-CAP-POV-001 | Platform Operating Model Design            | Yes                 | Yes               | Yes            | Yes                |
+| DMAF-CAP-POV-002 | Adoption & Enablement Planning             | Yes                 | Yes               | Yes            | Yes                |
+| DMAF-CAP-POV-003 | Support Model Transition                   | Yes                 | Yes               | Yes            | Yes                |
+| DMAF-CAP-POV-004 | Runbook & Operational Readiness Management | Yes                 | Yes               | Yes            | Yes                |
+| DMAF-CAP-POV-005 | FinOps & Consumption Management            | Yes                 | Yes               | Yes            | Yes                |
+| DMAF-CAP-POV-006 | Platform KPI & Value Realization Tracking  | Yes                 | Yes               | Yes            | Yes                |
+| DMAF-CAP-POV-007 | Governance Maturity Improvement            | Yes                 | Yes               | Yes            | Yes                |
+| DMAF-CAP-POV-008 | Continuous Optimization Management         | Yes                 | Yes               | Yes            | Yes                |
+
+---
+
+# 40. Platform Operations, Adoption & Value Realization Capability Governance
+
+The Platform Operations, Adoption & Value Realization capabilities should be governed according to the following rules:
+
+1. Do not treat production cutover as the end of modernization.
+2. Do not transition to operations without clear ownership.
+3. Do not assume adoption without an enablement plan.
+4. Do not operate the platform without support responsibilities and escalation paths.
+5. Do not ignore cost and consumption after migration.
+6. Do not claim value realization without defined metrics.
+7. Do not allow governance maturity to remain static as adoption grows.
+8. Ensure continuous optimization improves platform value, operating practices, reusable assets, and future DMAF intelligence.
+
+---
+
+# 41. Future Enhancements
+
+Future versions of this domain section may include:
+
+* platform operating model template;
+* adoption and enablement roadmap;
+* support model template;
+* runbook package template;
+* FinOps dashboard concept;
+* platform KPI library;
+* value realization tracker;
+* governance maturity assessment;
+* continuous optimization backlog;
+* Workbench value realization dashboard.
+
+---
+
+# 42. Status
+
+This Practice Capability Catalogue is currently in **Draft v0.9.0** status.
 
 The following practice domains have been drafted:
 
@@ -2160,6 +2433,9 @@ The following practice domains have been drafted:
 * Coexistence & Validation
 * AI & Automation
 * Executive Advisory
+* Platform Operations, Adoption & Value Realization
 
-Remaining capability domains are pending.
+Remaining capability domain:
+
+* Modernization Intelligence Workbench
 
