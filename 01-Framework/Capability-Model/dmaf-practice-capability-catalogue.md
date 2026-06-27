@@ -208,7 +208,7 @@ Each domain section will define an initial set of capabilities.
 | Modernization Architecture | 8 | Drafted |
 | Migration Factory | 8 | Drafted |
 | Coexistence & Validation | 8 | Drafted |
-| AI & Automation | Pending | Not Started |
+| AI & Automation | 8 | Drafted |
 | Executive Advisory | Pending | Not Started |
 | Platform Operations, Adoption & Value Realization | Pending | Not Started |
 | Modernization Intelligence Workbench | Pending | Not Started |
@@ -1593,9 +1593,289 @@ Future versions of this domain section may include:
 
 ---
 
-# 30. Status
+# 30. Practice Domain 6 — AI & Automation
 
-This Practice Capability Catalogue is currently in **Draft v0.6.0** status.
+## 30.1 Domain Purpose
+
+The AI & Automation domain defines how automation and AI-assisted techniques accelerate modernization while preserving human governance, traceability, and accountability.
+
+This domain ensures that DMAF uses AI and automation deliberately rather than opportunistically. It supports faster discovery, better interpretation of complex inputs, reusable prompt patterns, automated metadata extraction, recommendation drafting, testing support, artifact generation, and future Workbench services.
+
+AI & Automation must remain governed by the DMAF principle:
+
+```text id="uxk3zj"
+AI Accelerates, People Govern
+```
+
+AI-generated outputs should support practitioner judgment. They should not replace architecture accountability, delivery governance, client validation, or executive decision-making.
+
+---
+
+## 30.2 Capability Summary
+
+| Capability ID    | Capability Name                          | Primary Lifecycle Stages                     | Maturity Target   |
+| ---------------- | ---------------------------------------- | -------------------------------------------- | ----------------- |
+| DMAF-CAP-AIA-001 | AI-Assisted Discovery Interpretation     | Stage 2, Stage 3, Stage 4                    | Level 3 — Managed |
+| DMAF-CAP-AIA-002 | Metadata Extraction Automation           | Stage 2, Stage 4, Stage 6                    | Level 3 — Managed |
+| DMAF-CAP-AIA-003 | Code & Logic Interpretation Support      | Stage 2, Stage 5, Stage 6                    | Level 3 — Managed |
+| DMAF-CAP-AIA-004 | Recommendation Drafting & Review Support | Stage 0, Stage 2, Stage 3, Stage 4           | Level 3 — Managed |
+| DMAF-CAP-AIA-005 | Test Case & Validation Support           | Stage 5, Stage 6, Stage 7                    | Level 3 — Managed |
+| DMAF-CAP-AIA-006 | Automated Artifact Generation            | Stage 0, Stage 2, Stage 3, Stage 4, Stage 10 | Level 3 — Managed |
+| DMAF-CAP-AIA-007 | Automation Pattern Management            | Stage 4, Stage 6, Stage 10                   | Level 3 — Managed |
+| DMAF-CAP-AIA-008 | AI Governance & Human Review Model       | All stages                                   | Level 3 — Managed |
+
+---
+
+## 30.3 Capability — DMAF-CAP-AIA-001 — AI-Assisted Discovery Interpretation
+
+| Field                          | Description                                                                                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-AIA-001                                                                                                                                                                         |
+| Capability Name                | AI-Assisted Discovery Interpretation                                                                                                                                                     |
+| Practice Domain                | AI & Automation                                                                                                                                                                          |
+| Business Objective             | Use AI to help interpret discovery inputs, identify themes, extract modernization signals, summarize current-state evidence, and surface gaps or contradictions for practitioner review. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning                                                                             |
+| Inputs                         | Discovery notes, inventories, diagrams, screenshots, application lists, workflow lists, interview notes, architecture documents, technical extracts                                      |
+| Outputs                        | Discovery summaries, extracted themes, evidence gaps, contradiction notes, modernization signals, preliminary findings                                                                   |
+| Methods                        | AI-assisted document review, evidence interpretation, theme extraction, contradiction detection, practitioner validation review                                                          |
+| Assets                         | Discovery interpretation prompt library, evidence review checklist, AI-assisted discovery summary template, contradiction log                                                            |
+| Owner                          | AI Enablement Lead / Lead Business Analyst                                                                                                                                               |
+| KPIs                           | Discovery interpretation cycle time, number of gaps detected, reviewer acceptance rate, number of AI outputs requiring correction                                                        |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                        |
+| Dependencies                   | Discovery Intake & Evidence Management, Discovery Findings Synthesis, Knowledge Management                                                                                               |
+| Workbench Automation Potential | Discovery input interpretation agent, evidence gap analyzer, contradiction detector, discovery summary generator                                                                         |
+
+### Notes
+
+This capability helps practitioners make sense of messy engagement inputs. AI should identify possible patterns, but findings must be reviewed and confirmed by accountable practitioners.
+
+---
+
+## 30.4 Capability — DMAF-CAP-AIA-002 — Metadata Extraction Automation
+
+| Field                          | Description                                                                                                                                                                      |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-AIA-002                                                                                                                                                                 |
+| Capability Name                | Metadata Extraction Automation                                                                                                                                                   |
+| Practice Domain                | AI & Automation                                                                                                                                                                  |
+| Business Objective             | Automate extraction of useful metadata from source files, inventories, platform exports, workflow lists, scripts, and technical documents to accelerate assessment and planning. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 4 — Migration Factory Planning; Stage 6 — Migration Factory Execution                                                                    |
+| Inputs                         | Source system exports, ETL metadata, workflow files, job schedules, table lists, file inventories, code repositories, configuration files                                        |
+| Outputs                        | Extracted metadata, normalized inventory fields, source-to-target candidates, lineage hints, platform object lists                                                               |
+| Methods                        | Metadata parsing, automated extraction, normalization, field mapping, extraction quality review                                                                                  |
+| Assets                         | Metadata extraction script, metadata mapping template, extraction quality checklist, normalized inventory model                                                                  |
+| Owner                          | AI Enablement Lead / Solution Architect                                                                                                                                          |
+| KPIs                           | Extraction accuracy, metadata coverage, manual effort reduction, unresolved parsing errors, reviewer correction rate                                                             |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                |
+| Dependencies                   | Application & Workflow Inventory Analysis, Data Source & Dependency Mapping, Automation                                                                                          |
+| Workbench Automation Potential | Metadata ingestion service, inventory auto-parser, lineage hint generator, extraction quality dashboard                                                                          |
+
+### Notes
+
+This capability is especially important for large migration programs where manual inventory creation is slow, inconsistent, and error-prone.
+
+---
+
+## 30.5 Capability — DMAF-CAP-AIA-003 — Code & Logic Interpretation Support
+
+| Field                          | Description                                                                                                                                                                                                       |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-AIA-003                                                                                                                                                                                                  |
+| Capability Name                | Code & Logic Interpretation Support                                                                                                                                                                               |
+| Practice Domain                | AI & Automation                                                                                                                                                                                                   |
+| Business Objective             | Use AI-assisted techniques to help interpret legacy code, ETL logic, transformation rules, scheduling logic, SQL, scripts, and business rules so modernization teams can understand and validate migration scope. |
+| Lifecycle Stages               | Stage 2 — Discovery & Assessment; Stage 5 — Reference Implementation / Pilot; Stage 6 — Migration Factory Execution                                                                                               |
+| Inputs                         | SQL scripts, ETL mappings, workflow definitions, code snippets, scheduling rules, transformation logic, business rule documentation                                                                               |
+| Outputs                        | Logic summaries, transformation descriptions, business rule candidates, complexity indicators, conversion notes, review questions                                                                                 |
+| Methods                        | Code interpretation, transformation logic summarization, business rule extraction, SME review, complexity annotation                                                                                              |
+| Assets                         | Code interpretation prompt library, transformation summary template, business rule extraction worksheet, SME review checklist                                                                                     |
+| Owner                          | Solution Architect / AI Enablement Lead                                                                                                                                                                           |
+| KPIs                           | Logic interpretation accuracy, SME correction rate, number of business rules extracted, reduction in manual code review time                                                                                      |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                                 |
+| Dependencies                   | Modernization Complexity Scoring, Migration Pattern Management, Validation Strategy Design                                                                                                                        |
+| Workbench Automation Potential | Code interpretation agent, transformation rule summarizer, business rule extractor, complexity annotation support                                                                                                 |
+
+### Notes
+
+This capability supports understanding; it should not be treated as automatic code conversion. AI interpretation must be reviewed by technical SMEs and validated against actual system behavior.
+
+---
+
+## 30.6 Capability — DMAF-CAP-AIA-004 — Recommendation Drafting & Review Support
+
+| Field                          | Description                                                                                                                                                                |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-AIA-004                                                                                                                                                           |
+| Capability Name                | Recommendation Drafting & Review Support                                                                                                                                   |
+| Practice Domain                | AI & Automation                                                                                                                                                            |
+| Business Objective             | Use AI to draft modernization recommendations, options, implications, risks, and next steps based on governed DMAF methods and reviewed evidence.                          |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning |
+| Inputs                         | Discovery findings, business value themes, architecture notes, capability mappings, risks, constraints, complexity scores, roadmap themes                                  |
+| Outputs                        | Draft recommendations, option summaries, implication notes, risk-based recommendations, next-step recommendations                                                          |
+| Methods                        | Recommendation drafting, evidence-to-recommendation mapping, option framing, human review, recommendation traceability review                                              |
+| Assets                         | Recommendation prompt library, recommendation review checklist, evidence-to-recommendation matrix, executive recommendation template                                       |
+| Owner                          | Engagement Lead / Solution Architect                                                                                                                                       |
+| KPIs                           | Recommendation traceability, reviewer acceptance rate, number of unsupported claims removed, recommendation cycle time                                                     |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                          |
+| Dependencies                   | Discovery Findings Synthesis, Target-State Architecture Design, Strategic Roadmap Framing, Executive Advisory                                                              |
+| Workbench Automation Potential | Recommendation generator, evidence traceability mapper, option comparison generator, unsupported-claim detector                                                            |
+
+### Notes
+
+This capability helps accelerate consulting output, but recommendations must remain traceable to evidence, framework principles, and practitioner judgment.
+
+---
+
+## 30.7 Capability — DMAF-CAP-AIA-005 — Test Case & Validation Support
+
+| Field                          | Description                                                                                                                                                      |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-AIA-005                                                                                                                                                 |
+| Capability Name                | Test Case & Validation Support                                                                                                                                   |
+| Practice Domain                | AI & Automation                                                                                                                                                  |
+| Business Objective             | Use automation and AI-assisted techniques to help generate validation ideas, test cases, reconciliation checks, exception categories, and evidence requirements. |
+| Lifecycle Stages               | Stage 5 — Reference Implementation / Pilot; Stage 6 — Migration Factory Execution; Stage 7 — Coexistence & Validation                                            |
+| Inputs                         | Business rules, transformation logic, validation strategy, reconciliation approach, source-target mappings, acceptance criteria, risk profile                    |
+| Outputs                        | Draft test cases, validation scenarios, reconciliation check suggestions, evidence requirements, exception categories                                            |
+| Methods                        | Test scenario generation, validation rule extraction, reconciliation check design, reviewer validation                                                           |
+| Assets                         | Test case generation prompt library, validation scenario template, reconciliation checklist, evidence requirement checklist                                      |
+| Owner                          | Test Manager / Data Architect                                                                                                                                    |
+| KPIs                           | Test coverage improvement, reviewer acceptance rate, number of validation gaps detected, defect leakage reduction                                                |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                |
+| Dependencies                   | Validation Strategy Design, Reconciliation Design, Code & Logic Interpretation Support, Exception Handling & Resolution Model                                    |
+| Workbench Automation Potential | Test case generator, validation coverage analyzer, reconciliation check recommender, evidence gap detector                                                       |
+
+### Notes
+
+AI-generated test cases are suggestions. They must be reviewed against business rules, data behavior, acceptance criteria, and risk.
+
+---
+
+## 30.8 Capability — DMAF-CAP-AIA-006 — Automated Artifact Generation
+
+| Field                          | Description                                                                                                                                                                                                                                 |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-AIA-006                                                                                                                                                                                                                            |
+| Capability Name                | Automated Artifact Generation                                                                                                                                                                                                               |
+| Practice Domain                | AI & Automation                                                                                                                                                                                                                             |
+| Business Objective             | Generate first-draft DMAF artifacts such as summaries, templates, diagrams, assessments, recommendations, checklists, and executive-ready content from structured or semi-structured inputs.                                                |
+| Lifecycle Stages               | Stage 0 — Opportunity Qualification & Modernization Strategy; Stage 2 — Discovery & Assessment; Stage 3 — Modernization Architecture; Stage 4 — Migration Factory Planning; Stage 10 — Continuous Optimization & Modernization Intelligence |
+| Inputs                         | Approved DMAF templates, discovery evidence, architecture notes, inventories, roadmap themes, risk registers, value drivers, capability metadata                                                                                            |
+| Outputs                        | Draft artifacts, executive summaries, discovery reports, architecture summaries, roadmap views, checklists, recommendation drafts                                                                                                           |
+| Methods                        | Template-driven generation, prompt-based drafting, artifact review workflow, metadata-driven output creation                                                                                                                                |
+| Assets                         | Artifact generation prompt library, artifact review checklist, template catalogue, output quality checklist                                                                                                                                 |
+| Owner                          | Practice Lead / AI Enablement Lead                                                                                                                                                                                                          |
+| KPIs                           | Artifact drafting cycle time, reviewer acceptance rate, reuse rate, number of generated artifacts requiring major rework                                                                                                                    |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                                                                           |
+| Dependencies                   | Knowledge Management, Reusable Accelerators, Executive Advisory, Modernization Intelligence Workbench                                                                                                                                       |
+| Workbench Automation Potential | Artifact generator, deck outline generator, diagram draft generator, executive summary generator, asset packaging service                                                                                                                   |
+
+### Notes
+
+This capability should accelerate production of reusable and client-facing artifacts. It must not bypass review, sanitization, quality control, or governance.
+
+---
+
+## 30.9 Capability — DMAF-CAP-AIA-007 — Automation Pattern Management
+
+| Field                          | Description                                                                                                                                                                                    |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-AIA-007                                                                                                                                                                               |
+| Capability Name                | Automation Pattern Management                                                                                                                                                                  |
+| Practice Domain                | AI & Automation                                                                                                                                                                                |
+| Business Objective             | Identify, govern, reuse, and improve automation patterns that reduce manual effort and improve consistency across discovery, planning, migration, validation, reporting, and asset management. |
+| Lifecycle Stages               | Stage 4 — Migration Factory Planning; Stage 6 — Migration Factory Execution; Stage 10 — Continuous Optimization & Modernization Intelligence                                                   |
+| Inputs                         | Repeated manual tasks, delivery pain points, reusable scripts, prompt patterns, workflow candidates, lessons learned, Workbench backlog items                                                  |
+| Outputs                        | Automation pattern catalogue, automation candidates, reusable scripts, workflow designs, improvement backlog                                                                                   |
+| Methods                        | Automation opportunity identification, pattern documentation, reuse review, automation governance, improvement prioritization                                                                  |
+| Assets                         | Automation pattern catalogue, automation opportunity template, script inventory, workflow design template                                                                                      |
+| Owner                          | AI Enablement Lead / Practice Lead                                                                                                                                                             |
+| KPIs                           | Automation reuse rate, manual effort reduction, number of governed automation patterns, automation defect or exception rate                                                                    |
+| Maturity Target                | Level 3 — Managed                                                                                                                                                                              |
+| Dependencies                   | Migration Pattern Management, Knowledge Management, Reusable Accelerators, Modernization Intelligence Workbench                                                                                |
+| Workbench Automation Potential | Automation pattern recommender, script catalogue, workflow automation service, reuse tracking dashboard                                                                                        |
+
+### Notes
+
+Automation patterns should be treated as governed assets. Scripts, prompts, and workflows should be reusable, explainable, and maintained.
+
+---
+
+## 30.10 Capability — DMAF-CAP-AIA-008 — AI Governance & Human Review Model
+
+| Field                          | Description                                                                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Capability ID                  | DMAF-CAP-AIA-008                                                                                                                                         |
+| Capability Name                | AI Governance & Human Review Model                                                                                                                       |
+| Practice Domain                | AI & Automation                                                                                                                                          |
+| Business Objective             | Define how AI-assisted outputs are reviewed, governed, approved, corrected, rejected, or escalated so DMAF maintains trust, quality, and accountability. |
+| Lifecycle Stages               | All stages                                                                                                                                               |
+| Inputs                         | AI-generated outputs, prompts, source evidence, review criteria, quality standards, approval rules, risk considerations                                  |
+| Outputs                        | AI review model, approval criteria, review log, exception handling rules, governance checklist, prompt usage guidance                                    |
+| Methods                        | Human-in-the-loop review, AI output validation, prompt review, evidence checking, quality gate review                                                    |
+| Assets                         | AI governance checklist, human review checklist, AI output review log, prompt quality standard, AI usage policy template                                 |
+| Owner                          | Practice Lead / AI Enablement Lead                                                                                                                       |
+| KPIs                           | AI output acceptance rate, number of unsupported AI claims detected, review completion rate, prompt reuse quality, AI-related quality issues             |
+| Maturity Target                | Level 3 — Managed                                                                                                                                        |
+| Dependencies                   | Risk & Compliance, Governance & Security, Knowledge Management, Executive Advisory                                                                       |
+| Workbench Automation Potential | AI review workflow, unsupported-claim detector, citation and evidence checker, prompt governance dashboard                                               |
+
+### Notes
+
+This capability governs the use of AI across DMAF. It is required because AI-assisted modernization outputs can accelerate work but also introduce risk if unsupported, unreviewed, or disconnected from evidence.
+
+---
+
+# 31. AI & Automation Capability Map
+
+| Capability ID    | Capability                               | Supports Acceleration | Supports Governance | Supports Quality | Supports Workbench |
+| ---------------- | ---------------------------------------- | --------------------- | ------------------- | ---------------- | ------------------ |
+| DMAF-CAP-AIA-001 | AI-Assisted Discovery Interpretation     | Yes                   | Yes                 | Yes              | Yes                |
+| DMAF-CAP-AIA-002 | Metadata Extraction Automation           | Yes                   | Yes                 | Yes              | Yes                |
+| DMAF-CAP-AIA-003 | Code & Logic Interpretation Support      | Yes                   | Yes                 | Yes              | Yes                |
+| DMAF-CAP-AIA-004 | Recommendation Drafting & Review Support | Yes                   | Yes                 | Yes              | Yes                |
+| DMAF-CAP-AIA-005 | Test Case & Validation Support           | Yes                   | Yes                 | Yes              | Yes                |
+| DMAF-CAP-AIA-006 | Automated Artifact Generation            | Yes                   | Yes                 | Yes              | Yes                |
+| DMAF-CAP-AIA-007 | Automation Pattern Management            | Yes                   | Yes                 | Yes              | Yes                |
+| DMAF-CAP-AIA-008 | AI Governance & Human Review Model       | Yes                   | Yes                 | Yes              | Yes                |
+
+---
+
+# 32. AI & Automation Capability Governance
+
+The AI & Automation capabilities should be governed according to the following rules:
+
+1. Do not treat AI-generated outputs as approved without human review.
+2. Do not use AI to create recommendations that cannot be traced to evidence.
+3. Do not treat code interpretation as automatic code conversion.
+4. Do not use automation patterns that are not documented, reviewable, or reusable.
+5. Do not allow AI-generated artifacts to bypass quality gates.
+6. Do not use AI outputs in executive-facing materials without practitioner validation.
+7. Do not automate a capability before the underlying method is understood.
+8. Ensure prompts, scripts, agents, and generated artifacts remain aligned to DMAF taxonomy, governance, and traceability standards.
+
+---
+
+# 33. Future Enhancements
+
+Future versions of this domain section may include:
+
+* AI-assisted discovery prompt library;
+* metadata extraction script catalogue;
+* code interpretation prompt library;
+* recommendation drafting prompt library;
+* test case generation pattern;
+* artifact generation workflow;
+* AI governance checklist;
+* prompt quality standard;
+* Workbench AI agent catalogue;
+* human review workflow.
+
+---
+
+# 34. Status
+
+This Practice Capability Catalogue is currently in **Draft v0.7.0** status.
 
 The following practice domains have been drafted:
 
@@ -1604,6 +1884,7 @@ The following practice domains have been drafted:
 * Modernization Architecture
 * Migration Factory
 * Coexistence & Validation
+* AI & Automation
 
 Remaining capability domains are pending.
 
