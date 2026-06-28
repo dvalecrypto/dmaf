@@ -120,48 +120,112 @@ The Framework Core now provides standalone reference files that support future p
 
 ## Sprint 3 — Practice Capability Catalogue
 
-**Status:** In Progress
+**Status:** Complete
 **Release:** Release 1.5 Practice Architecture
 **Primary Folder:** `01-Framework/Capability-Model/`
-**Start Date:** 2026-06-26
+**Completion Date:** 2026-06-27
 
 ### Objective
 
 Create the first detailed Practice Capability Catalogue for DMAF.
 
-The purpose of this sprint is to define the reusable capabilities within each approved practice domain and establish the structure for future methods, assets, KPIs, maturity assessment, ownership, and Workbench automation.
+The purpose of this sprint was to define the reusable capabilities within each approved practice domain and establish the structure for future methods, assets, KPIs, maturity assessment, ownership, and Workbench automation.
 
-### Planned Outputs
+### Completed Outputs
 
-* Practice Capability Catalogue
-* Capability definition template refinement
-* Capability-to-domain mapping
-* Capability-to-lifecycle mapping
-* Initial capability maturity targets
-* Capability ownership model refinement
-* Capability-to-asset planning structure
-* Capability-to-Workbench automation potential
+* Practice Capability Catalogue created
+* Capability definition template established
+* Capability ID convention established
+* Capability-to-domain mapping completed
+* Capability-to-lifecycle mapping completed
+* Initial capability maturity targets documented
+* Capability ownership model applied
+* Workbench automation potential identified
+* Sprint 3 QA review completed
 
-### Acceptance Criteria
+### Capability Catalogue Summary
 
-Sprint 3 may be considered complete when:
+| Practice Domain                                   | Capability Count | Status      |
+| ------------------------------------------------- | ---------------: | ----------- |
+| Strategy & Business Value                         |                7 | Drafted     |
+| Discovery & Assessment                            |                8 | Drafted     |
+| Modernization Architecture                        |                8 | Drafted     |
+| Migration Factory                                 |                8 | Drafted     |
+| Coexistence & Validation                          |                8 | Drafted     |
+| AI & Automation                                   |                8 | Drafted     |
+| Executive Advisory                                |                8 | Drafted     |
+| Platform Operations, Adoption & Value Realization |                8 | Drafted     |
+| Modernization Intelligence Workbench              |                8 | Drafted     |
+| **Total**                                         |           **71** | **Drafted** |
 
-1. Each of the nine practice domains has an initial set of defined capabilities.
-2. Each capability has a clear business objective.
-3. Each capability is mapped to a practice domain.
-4. Each capability is mapped to relevant lifecycle stages.
-5. Initial owners are identified.
-6. Initial maturity targets are documented.
-7. Future methods and assets can be derived from the catalogue.
-8. Workbench automation potential is identified where relevant.
-9. Terminology remains consistent with the DMAF Taxonomy and Glossary.
-10. All Sprint 3 files are committed and pushed to GitHub.
+### Completion Notes
+
+Sprint 3 moved DMAF from framework architecture into practice architecture.
+
+The Practice Capability Catalogue now defines the initial reusable capability model for all nine approved practice domains. It provides the organizing structure for future methods, reusable assets, maturity assessment, KPIs, ownership, and Workbench automation.
 
 ### Sprint 3 Outcome
 
-**In Progress — Practice Capability Catalogue development started.**
+**Complete — Initial Practice Capability Catalogue drafted and QA reviewed.**
 
 ---
+
+## Sprint 4 — Methods and Asset Mapping
+
+**Status:** Complete
+**Release:** Release 1.5 Practice Architecture
+**Primary Folder:** `01-Framework/Capability-Model/`
+**Completion Date:** 2026-06-28
+
+### Objective
+
+Map approved DMAF capabilities to candidate methods and reusable assets.
+
+The purpose of this sprint was to ensure that future templates, workbooks, diagrams, prompts, checklists, decks, dashboards, and Workbench specifications are created from approved capabilities rather than added randomly.
+
+### Completed Outputs
+
+* DMAF Capability Method Asset Map created
+* All nine practice domains mapped
+* Capabilities mapped to candidate methods
+* Capabilities mapped to candidate reusable assets
+* Asset types classified
+* Priority levels assigned
+* Workbench potential identified
+* Initial priority build list created
+* Sprint 4 QA review completed
+
+### Method and Asset Mapping Summary
+
+| Practice Domain                                   | Mapping Rows | Status     |
+| ------------------------------------------------- | -----------: | ---------- |
+| Strategy & Business Value                         |           14 | Mapped     |
+| Discovery & Assessment                            |           16 | Mapped     |
+| Modernization Architecture                        |           16 | Mapped     |
+| Migration Factory                                 |           16 | Mapped     |
+| Coexistence & Validation                          |           16 | Mapped     |
+| AI & Automation                                   |           16 | Mapped     |
+| Executive Advisory                                |           16 | Mapped     |
+| Platform Operations, Adoption & Value Realization |           16 | Mapped     |
+| Modernization Intelligence Workbench              |           16 | Mapped     |
+| **Total**                                         |      **142** | **Mapped** |
+
+### Completion Notes
+
+Sprint 4 extended DMAF traceability from framework concepts to capabilities, methods, and candidate reusable assets.
+
+The key control rule established in Sprint 4 is:
+
+```text
+No method or asset should be created unless it maps to an approved capability.
+```
+
+This prevents uncontrolled content expansion and prepares DMAF for focused priority asset development.
+
+### Sprint 4 Outcome
+
+**Complete — Capability-to-method and capability-to-asset mapping completed and QA reviewed.**
+
 
 
 **In Progress — Framework Core extraction underway.**
