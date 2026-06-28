@@ -226,6 +226,69 @@ This prevents uncontrolled content expansion and prepares DMAF for focused prior
 
 **Complete — Capability-to-method and capability-to-asset mapping completed and QA reviewed.**
 
+---
+
+## Sprint 5 — Priority Asset Build Pack
+
+**Status:** In Progress
+**Release:** Release 1.5 Practice Architecture / Release 2.0 Consulting Assets
+**Primary Folder:** `03-Assets/`
+**Start Date:** 2026-06-28
+
+### Objective
+
+Build the first reusable DMAF assets from the approved capability-to-method and capability-to-asset map.
+
+The purpose of this sprint is to move from framework and mapping into practical consulting assets that can be reused in advisory, discovery, architecture, migration planning, validation, executive communication, platform operations, and future Workbench scenarios.
+
+### Sprint 5 Control Rule
+
+No asset should be created unless it maps to an approved DMAF capability.
+
+Each Sprint 5 asset should include:
+
+* approved metadata;
+* related practice domain;
+* related capability;
+* related lifecycle stage;
+* related guiding principles;
+* intended audience;
+* asset type;
+* usage guidance;
+* review checklist;
+* future Workbench potential.
+
+### Planned Starter Assets
+
+| Priority | Asset                                     | Related Domain                                    | Related Capability                                           |
+| -------- | ----------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| 1        | Opportunity Qualification Checklist       | Strategy & Business Value                         | DMAF-CAP-SBV-001 — Modernization Opportunity Qualification   |
+| 2        | Application Inventory Workbook            | Discovery & Assessment                            | DMAF-CAP-DAS-002 — Application & Workflow Inventory Analysis |
+| 3        | Modernization Complexity Scoring Workbook | Discovery & Assessment                            | DMAF-CAP-DAS-005 — Modernization Complexity Scoring          |
+| 4        | Target-State Architecture Template        | Modernization Architecture                        | DMAF-CAP-MAR-001 — Target-State Architecture Design          |
+| 5        | Migration Wave Planning Workbook          | Migration Factory                                 | DMAF-CAP-MGF-001 — Migration Wave Planning                   |
+| 6        | Validation Strategy Template              | Coexistence & Validation                          | DMAF-CAP-COV-004 — Validation Strategy Design                |
+| 7        | AI Output Review Checklist                | AI & Automation                                   | DMAF-CAP-AIA-008 — AI Governance & Human Review Model        |
+| 8        | Executive One-Page Template               | Executive Advisory                                | DMAF-CAP-EXA-006 — Executive Visual Design                   |
+| 9        | Platform Operating Model Template         | Platform Operations, Adoption & Value Realization | DMAF-CAP-POV-001 — Platform Operating Model Design           |
+| 10       | Workbench Quality Checklist               | Modernization Intelligence Workbench              | DMAF-CAP-MIW-008 — Workbench Governance & Quality Control    |
+
+### Acceptance Criteria
+
+Sprint 5 may be considered complete when:
+
+1. At least five priority assets are created.
+2. Each asset maps to an approved capability.
+3. Each asset uses approved DMAF metadata.
+4. Each asset includes usage guidance.
+5. Each asset includes review criteria.
+6. Each asset identifies future Workbench potential.
+7. Sprint 5 QA review is completed.
+8. All Sprint 5 files are committed and pushed to GitHub.
+
+### Sprint 5 Outcome
+
+**In Progress — Priority Asset Build Pack started.**
 
 
 **In Progress — Framework Core extraction underway.**
