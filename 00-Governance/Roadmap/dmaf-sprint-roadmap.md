@@ -16,7 +16,7 @@ Recommended sprint structure:
 | Sprint 3  | Capability Model                 | Completed - Practice domains, capabilities, maturity model                |
 | Sprint 4  | Asset Architecture               | Completed - Asset catalog and metadata standards                          |
 | Sprint 5  | Migration Factory Toolkit        | Completed - Scoring, waves, factory model                                 |
-| Sprint 6  | Coexistence & Validation Toolkit | Validation and cutover framework                              |
+| Sprint 6  | Coexistence & Validation Toolkit | Completed - Validation and cutover framework                              |
 | Sprint 7  | Architecture Library             | Databricks reference architectures                            |
 | Sprint 8  | Executive Advisory Toolkit       | Discovery findings, proposals, exec narratives                |
 | Sprint 9  | Industry Pack — Banking          | TD/CIBC/BMO-style prospect and play materials                 |
