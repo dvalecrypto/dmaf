@@ -333,4 +333,58 @@ Future Workbench Enablement
 
 ---
 
+## Sprint 6 — Asset Index, Release Packaging, and Client-Ready Starter Pack
+
+**Status:** In Progress
+**Release:** Release 2.0 Consulting Assets
+**Primary Folder:** `03-Assets/`
+**Start Date:** 2026-06-29
+
+### Objective
+
+Package the Sprint 5 reusable assets into a more navigable, reusable, and release-ready consulting asset library.
+
+The purpose of this sprint is to make the initial DMAF asset pack easier to find, understand, reuse, govern, and eventually prepare for client-facing use.
+
+### Sprint 6 Focus Areas
+
+| Priority | Focus Area                   | Purpose                                                                       |
+| -------: | ---------------------------- | ----------------------------------------------------------------------------- |
+|        1 | Asset Index                  | Make all reusable assets easy to find and understand.                         |
+|        2 | Asset Metadata Standard      | Standardize metadata expectations across Markdown and workbook assets.        |
+|        3 | Release Notes                | Capture the Sprint 5 asset pack as a formal release.                          |
+|        4 | Client-Ready Starter Pack    | Identify which assets are suitable for external-facing use.                   |
+|        5 | Example Pack                 | Prepare sample-filled versions using a representative modernization scenario. |
+|        6 | Workbench Metadata Readiness | Prepare assets for future Workbench indexing and retrieval.                   |
+
+### Planned Sprint 6 Outputs
+
+| Output                               | Repository Path                                                | Status  |
+| ------------------------------------ | -------------------------------------------------------------- | ------- |
+| DMAF Asset Index                     | `03-Assets/README.md`                                          | Planned |
+| Asset Metadata Standard              | `00-Governance/Governance/dmaf-asset-metadata-standard.md`     | Planned |
+| Release 2.0 Notes                    | `00-Governance/Release-Notes/release-2.0-consulting-assets.md` | Planned |
+| Client-Ready Starter Pack Definition | `03-Assets/dmaf-client-ready-starter-pack.md`                  | Planned |
+| Example Scenario Pack Plan           | `03-Assets/dmaf-example-scenario-pack-plan.md`                 | Planned |
+| Workbench Metadata Readiness Review  | `05-Workbench/dmaf-workbench-metadata-readiness-review.md`     | Planned |
+
+### Acceptance Criteria
+
+Sprint 6 may be considered complete when:
+
+1. the Sprint 5 asset pack is indexed;
+2. each reusable asset has a clear description and usage context;
+3. asset metadata expectations are documented;
+4. Release 2.0 notes are created;
+5. client-ready assets are identified;
+6. example-pack candidates are identified;
+7. Workbench metadata readiness is reviewed;
+8. Sprint 6 QA review is completed;
+9. Sprint 6 roadmap status is updated to complete.
+
+### Sprint 6 Outcome
+
+**In Progress — Asset packaging and release readiness started.**
+
+---
 
